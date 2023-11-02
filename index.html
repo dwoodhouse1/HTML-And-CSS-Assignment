@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="cookie-app">
-      <!-- Cookie class goes here-->
+      <!-- Cookie class goes here (not needed for this assignment)-->
     </div>
 
 
@@ -20,32 +20,213 @@
             <div id="header">
               <header> 
               <!-- Header class properties goes here-->
-                <h1> Test h1 element</h1>
+              <div class="inner">
+                <div class="container">
+                  <div class="row"></div>
+
+                  <div class="logo-container">
+                    <!-- Logo container divs will go here-->
+                  </div>
+
+                  <div class="actions">
+                    <a href="#">Support</a> ><!--Support button at the top-->
+                    <span class="pull-left icon-mouse">
+
+                    </span>
+                    <a href="#">Contact</a> <!-- Contact button at the top-->
+                  </div>
+
+                  <!--Search bar with button designed for desktop, another one will be needed for mobile viewport-->
+                  <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="utf-8" class="search-form">
+                    <label for="search-input" class="hidden">Search:</label>
+                    <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value>
+                    <button type="submit" id="search-submit"> Search Button
+                      <span class="glyphicon"></span>
+                    </button>
+                  </form>
+
+                  <!-- Hamburger button-->
+                  <button type="button" class="btn hamburger" data-toggle="sidebar"> Hamburger Button
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner">
+
+                      </span>
+                    </span>
+                  </button>
+                </div>
+
+              </div>
               </header>
+            </div>
+
+            <div class="main-navigation"> <!-- Navigation bar -->
+              <div class="container"> Banner List
+                <ul>
+                  <li>Bespoke Software</li>
+                  <li>IT Support</li>
+                  <li>Digital Marketing</li>
+                  <li>Telecom Services</li>
+                  <li>Web Design</li>
+                  <li>Cyber Security</li>
+                  <li>Developer Course</li>
+                </ul>
+              </div>
             </div>
             
             <div id="banner">
 
-              <!-- Banner div's go here-->
+              <!-- Banner div's go here (this is hard stuff, will need to look into this further)-->
+                <div class="rotate-banner">
+                  <div class="rotate-stage" style="transform: translate3d(-10000px, 0px, 0px); transition: all 0.25s ease 0s; width: 33000px;">
+                    <div class="rotate-item" style="width:1905px; margin-right: 0px;">
+                      <picture> Where my picture
+                        <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-K0pn.webp" type="image/webp">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+
 
             </div>
 
-            <div id="middle">
+            <div id="middle"> <!-- All div's related to the middle content (everything between header and footer) goes here-->
 
-              <!-- All div's related to the middle content (everything between header and footer) goes here-->
+              <div class="container"> <!-- Starting from the "Our Services" text all the way down to above the partners slideshow-->
+                <div class="cms-block">
+                  <div class="service-list">
+                    <div class="row">
+                      <div class="col-md clearfix">
+                        <h1 class="h1">
+                          <strong>Our Services</strong>
+                        </h1>
+    
+                        <h2 class="h2">
+                          <a href="#">View Our Work
+                            <em class="icon-arrow-right"></em>
+                          </a>
+                        </h2>
+                      </div>
+
+                      <div class="col-md">
+                        <span class="h2"> Bespoke Software</span>
+                      </div>
+
+                      <div class="col-md">
+                        <span class="h2"> IT Support</span>
+                      </div>
+
+                      <div class="col-md">
+                        <span class="h2"> Digital Marketing</span>
+                      </div>
+
+                      <div class="col-lg col-md col-sm">
+                        <span class="h2"> Telecoms Services</span>
+                      </div>
+
+                      <div class="col-lg col-md col-sm">
+                        <span class="h2"> Web Design</span>
+                      </div>
+
+                      <div class="col-lg col-md col-sm">
+                        <span class="h2"> Cyber Secruity</span>
+                      </div>
+
+                      <div class="col-lg col-md col-sm">
+                        <span class="h2"> Developer Training</span>
+                      </div>
+
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="partners-slideshow"> <!--All div's related to the partner logo slideshow will go here-->
+
+                <div class="cms-block">
+                  <div class="section">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="homepage-branded-text"> <!-- Block contains the "Welcome to Netmatters" text just below the partner logo slideshow-->
+                <div class="cms-block" >
+                  <div class="brand-bg">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md">
+                          <h2 class="h2"> Welcome to Netmatters</h2>
+                          <p>
+                              <strong>Net Matters is a leading 
+                              <a href="#">Bespoke Sofwatre</a>
+                              ,
+                              <a href="#">IT Support</a>
+                              , and
+                              <a href="#">Digital Marketing</a>
+                              company based in the East of England with offices in 
+                              <a href="#" target="_blank">London</a>
+                              ,&nbsp;
+                              <a href="#">Cambridge</a>
+                              ,
+                              <a href="#">Wymondham</a>
+                              , and
+                              <a href="#">Great Yarmouth</a>
+                              .
+                            </strong>
+                          </p>
+                          <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in 
+                            mind: to help improve your business with the most appropriate solutions. 
+                          </p>
+                          <p> We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship
+                             in an upfront manner.
+                          </p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              
+
+              <div class="section"> <!-- area containing the 3 news posts side by side-->
+                <div class="container">
+              </div>
+
+              
             </div>
             
+            <div class="cms-block"> <!-- Contains the slideshow of clients-->
+              <div class="clients">
+
+              </div>
+            </div>
+
+            <div class="newsletter"> <!-- Contains the Email Newsletter Sign up block-->
+              <div class="container">
+
+              </div>
+            </div>
             
             <footer>
+              <div class="container"> <!-- Contains the footer block (NOT THE COPYRIGHT & LICENSING ONE)-->
+                <div class="footer-row">
 
+                </div>
+              </div>
               <!-- container footer goes here-->
 
             </footer>
 
             <div class="footer-bottom">
-
+              <!-- All div's related to the copyright & licensing footer goes here-->
 
             </div>
+            
 
 
           </div>
