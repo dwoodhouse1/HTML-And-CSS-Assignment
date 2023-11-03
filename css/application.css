@@ -1,1 +1,8 @@
-.container{max-width:em(990px);margin:0 auto;padding:0 em(15px) 0 em(15px)}
+/* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.container {
+  max-width: em(990px);
+  margin: 0 auto;
+  padding: 0 em(15px) 0 em(15px);
+}
+
+/*# sourceMappingURL=application.css.map */
