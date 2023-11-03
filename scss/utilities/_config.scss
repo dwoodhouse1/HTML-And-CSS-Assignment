@@ -6,7 +6,9 @@
 
 $white: #fff;
 $black: #0b0b0b;
-$grey: #4A4C59;
+$grey: #4a4c59;
+
+
 //$dark-grey: #212330;  x-dark grey
 
 // Font Stacks
@@ -34,6 +36,7 @@ $brkpoint-xlg: 2000px;
 
 $color-palettes: (
     grey: (
+        example: rgb(128,128,128),
         xx-light: lighten($grey, 43%),
         x-light: lighten($grey, 35%),
         light: lighten($grey, 12%),

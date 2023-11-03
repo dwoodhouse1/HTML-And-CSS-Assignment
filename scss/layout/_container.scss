@@ -4,7 +4,7 @@
 
 
 .container {
-  max-width: em(990px);
+  max-width:  auto; //em(990px);
   margin: 0 auto;
   padding: 0 em(15px) 0 em(15px);
   background-color: grey;
@@ -16,45 +16,114 @@
   display:flexbox;
   padding-top: 20%;
  
+  &-bottom {
+    display: flexbox;
+    width: 100%;
+    justify-content: space-between;
+    left: 0;
+    background-color: palette(grey, x-dark);
+   
+  }
+
+  &-company-info {
+    background-color: black;
+    color:white;
+    @include viewport(small) {
+      background-color: green;
+    }
+    @include viewport(medium) {
+      background-color: orange;
+    }
+    @include viewport(large) {
+      background-color: maroon;
+    }
+  }
+
+  &-socials {
+    color:white;
+  }
   
 }
 
-.footer-company-info {
-  background-color: black;
-  color:white;
-  @include mq(small) {
-    background-color: green;
-  }
-  @include mq(medium) {
-    background-color: orange;
-  }
-  @include mq(large) {
-    background-color: maroon;
-  }
-}
 
-.footer-socials {
-  color:white;
-}
+
+
 
 .btn {
   color: white;
 }
 
-.footer-{
+.footer-row{
 
 }
 
-.footer-bottom {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  left: 0;
-  background-color: palette(grey, x-dark);
-}
+
 
 .licence {
+  display: flex;
+  
+  justify-content: left;
   font-size: $font-size-s;
-  background-color: $grey;
+  background-color: palette(grey, x-dark);
   color: $white;
+
+  @include viewport(medium) {
+    justify-content: center;
+  }
 }
+
+.footer-bottom .licence {
+  @include viewport(small) {
+    padding: 5px 0 10px;
+    flex-direction: column;
+    
+  }
+
+  @include viewport(medium) {
+    flex-direction: row;
+  }
+}
+
+.visible-xs {
+  
+
+  @include viewport(small) {
+    display: auto;
+  }
+
+  @include viewport(medium) {
+    display: none;
+  }
+  
+  
+}
+
+.p {
+  margin: 0;
+  //padding-bottom: 0;
+}
+.ul {
+  display:flex;
+  
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+   & > li:first-of-type{
+    
+     @include viewport(small) {
+       display: none;
+     }
+
+     @include viewport(medium) {
+       display: inline-block;
+     }
+   }
+  
+}
+
+.li-hypthen {
+  margin-left: em(10px);
+  margin-right: em(10px);
+}
+

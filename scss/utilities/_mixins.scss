@@ -4,7 +4,7 @@
 
 // Media Queries
 
-@mixin mq($break) {
+@mixin viewport($break) {
     
     @if $break == "small" { // small generally used for mobile phones
         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {

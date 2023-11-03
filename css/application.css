@@ -17,7 +17,7 @@ h4 {
 
 /* line 6, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container {
-  max-width: 61.875em;
+  max-width: auto;
   margin: 0 auto;
   padding: 0 0.9375em 0 0.9375em;
   background-color: grey;
@@ -29,57 +29,140 @@ h4 {
   padding-top: 20%;
 }
 
-/* line 22, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.footer-company-info {
-  background-color: black;
-  color: white;
-}
-
-@media (min-width: 1px) and (max-width: 768px) {
-  /* line 22, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-  .footer-company-info {
-    background-color: green;
-  }
-}
-
-@media (min-width: 769px) {
-  /* line 22, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-  .footer-company-info {
-    background-color: orange;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 22, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-  .footer-company-info {
-    background-color: maroon;
-  }
-}
-
-/* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.footer-socials {
-  color: white;
-}
-
-/* line 40, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.btn {
-  color: white;
-}
-
-/* line 48, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 19, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .footer-bottom {
-  display: flex;
+  display: flexbox;
   width: 100%;
   justify-content: space-between;
   left: 0;
   background-color: #25262c;
 }
 
-/* line 56, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 28, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.footer-company-info {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 28, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .footer-company-info {
+    background-color: green;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 28, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .footer-company-info {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 28, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .footer-company-info {
+    background-color: maroon;
+  }
+}
+
+/* line 42, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.footer-socials {
+  color: white;
+}
+
+/* line 52, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.btn {
+  color: white;
+}
+
+/* line 62, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .licence {
+  display: flex;
+  justify-content: left;
   font-size: 13px;
-  background-color: #4A4C59;
+  background-color: #25262c;
   color: #fff;
+}
+
+@media (min-width: 769px) {
+  /* line 62, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .licence {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 75, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .footer-bottom .licence {
+    padding: 5px 0 10px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 75, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .footer-bottom .licence {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 87, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .visible-xs {
+    display: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 87, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .visible-xs {
+    display: none;
+  }
+}
+
+/* line 101, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.p {
+  margin: 0;
+}
+
+/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .ul > li:first-of-type {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .ul > li:first-of-type {
+    display: inline-block;
+  }
+}
+
+/* line 125, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.li-hypthen {
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+}
+
+/* line 6, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 11, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=application.css.map */
