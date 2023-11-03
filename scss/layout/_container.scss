@@ -2,8 +2,43 @@
 // Container
 // ==========================================================================
 
+
 .container {
   max-width: em(990px);
   margin: 0 auto;
   padding: 0 em(15px) 0 em(15px);
+  background-color: grey;
+}
+
+.footer {
+  display:flexbox;
+  padding-top: 20%;
+ 
+  
+}
+
+.footer-company-info {
+  background-color: black;
+  color:white;
+  @include mq(small) {
+    background-color: green;
+  }
+  @include mq(medium) {
+    background-color: orange;
+  }
+  @include mq(large) {
+    background-color: maroon;
+  }
+}
+
+.footer-socials {
+  color:white;
+}
+
+.btn {
+  color: white;
+}
+
+.footer-{
+
 }

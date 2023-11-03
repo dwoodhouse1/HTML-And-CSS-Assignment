@@ -2,5 +2,13 @@
 // Base Styles
 // ==========================================================================
 
+* {
+ 
+  font-family: $font-family--primary;
+  font-size: em($base-font-size);
+}
 
+.newsletter{
+    padding-bottom: em(50px);
+}
 

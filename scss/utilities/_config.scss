@@ -2,3 +2,24 @@
 // Global Config
 // ==========================================================================
 
+// Descriptive Base Colors
+
+$white: #fff;
+
+// Font Stacks
+
+$font-url--google: 'http://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900';
+$font-family--primary: 'Poppins', sans-serif;
+
+
+// Font Defaults
+
+$base-font-size: 16px;
+
+
+// Viewport Breakpoints
+
+$brkpoint-sm: 1px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1024px;
+$brkpoint-xlg: 2000px;

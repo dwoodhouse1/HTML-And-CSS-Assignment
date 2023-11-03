@@ -2,5 +2,27 @@
 // Mixins
 // ==========================================================================
 
+// Media Queries
 
+@mixin mq($break) {
+    
+    @if $break == "small" { // small generally used for mobile phones
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+            @content;
+        }
+    }
+    @else if $break == "medium" { // medium generally used for laptops/tablets
+        @media (min-width: #{$brkpoint-md + 1}) {
+            @content;
+        }
+    }
+    @else if $break == "large" { // large generally used for desktop monitors
+        @media (min-width: $brkpoint-lg) {
+            @content;
+        }
+    }
+    @else {
+        @error "No value could be retrieved for break for `#{$break}`";
+    }
+}
 
