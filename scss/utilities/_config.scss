@@ -5,6 +5,9 @@
 // Descriptive Base Colors
 
 $white: #fff;
+$black: #0b0b0b;
+$grey: #4A4C59;
+//$dark-grey: #212330;  x-dark grey
 
 // Font Stacks
 
@@ -15,6 +18,9 @@ $font-family--primary: 'Poppins', sans-serif;
 // Font Defaults
 
 $base-font-size: 16px;
+$font-size-xs: 8px;
+$font-size-s: 13px;
+$font-size-l: 24px;
 
 
 // Viewport Breakpoints
@@ -23,3 +29,22 @@ $brkpoint-sm: 1px;
 $brkpoint-md: 768px;
 $brkpoint-lg: 1024px;
 $brkpoint-xlg: 2000px;
+
+// Color Palette Modifiers
+
+$color-palettes: (
+    grey: (
+        xx-light: lighten($grey, 43%),
+        x-light: lighten($grey, 35%),
+        light: lighten($grey, 12%),
+        base: $grey,
+        dark: darken($grey, 8%),
+        x-dark: darken($grey, 16%),
+        
+    ),
+    black: (
+        light: lighten($black, 10%),
+        base: $black,
+        dark: darken($black, 10%)
+    )
+);

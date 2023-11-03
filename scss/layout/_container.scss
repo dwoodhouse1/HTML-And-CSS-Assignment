@@ -10,6 +10,8 @@
   background-color: grey;
 }
 
+
+// Footer classes
 .footer {
   display:flexbox;
   padding-top: 20%;
@@ -41,4 +43,18 @@
 
 .footer-{
 
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  left: 0;
+  background-color: palette(grey, x-dark);
+}
+
+.licence {
+  font-size: $font-size-s;
+  background-color: $grey;
+  color: $white;
 }

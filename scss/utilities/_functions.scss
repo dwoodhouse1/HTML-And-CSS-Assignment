@@ -14,11 +14,17 @@
 	@return ($target / $context) * 1em;
 }
 
+// Capitalize all letters of all first words
+
+@function capitalize($word) {
+  @return to-upper-case(str-slice($word,1,1)) + str-slice($word, 2);
+}
+
 // Call the color palette modifiers in color values
 
-// @function palette($palette, $shade: 'base') {
-// 	@return map-get(map-get($color-palettes, $palette), $shade);
-// }
+@function palette($palette, $shade: 'base') {
+ 	@return map-get(map-get($color-palettes, $palette), $shade);
+}
 
 
 
