@@ -3,21 +3,49 @@
 // ==========================================================================
 
 
+#container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  //overflow: hidden;
+  max-width:  $brkpoint-xlg;
+  //margin: 0 auto;
+  //padding: 0 em(15px) 0 em(15px);
+  background-color: $white;
+
+  @include viewport(small) {
+    flex-direction: column;
+  }
+
+ 
+
+  @include viewport(large) {
+    flex-direction: column;
+  }
+
+
+}
+
 .container {
-  max-width:  auto; //em(990px);
   margin: 0 auto;
   padding: 0 em(15px) 0 em(15px);
-  background-color: grey;
+  background-color: palette(grey, base);
+}
+
+.main {
+  display:grid;
+  width: 95%;
 }
 
 
 // Footer classes
 .footer {
-  display:flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding-top: 20%;
  
   &-bottom {
-    display: flexbox;
     width: 100%;
     justify-content: space-between;
     left: 0;
@@ -26,41 +54,94 @@
   }
 
   &-company-info {
-    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pallete(grey, x-light);
     color:white;
+
+    //@include img-sizing(em(100px), em(100px) );
+
     @include viewport(small) {
-      background-color: green;
+      flex-direction: column;
     }
-    @include viewport(medium) {
-      background-color: orange;
-    }
-    @include viewport(large) {
-      background-color: maroon;
-    }
+    
   }
 
   &-socials {
+    display: flex;
+    gap: em(10px);
     color:white;
+
+    @include viewport(medium) {
+      flex-direction: row;
+    }
+    
+  }
+
+  &-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    @include viewport(small) {
+      flex-direction: column;
+    }
+
+    @include viewport(medium) {
+
+    }
+
+    @include viewport(large) {
+      
+      flex-direction: row;
+    }
+
+    
+  }
+
+  &-menu {
+    display: flex;
+    background-color: palette(grey, dark);
+    font-size: $font-size-s;
+
+    @include viewport(small) {
+      padding: 5px 0 10px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    @include viewport(large) {
+      flex-direction: row;
+    }
   }
   
 }
 
-
-
-
-
-.btn {
-  color: white;
+footer {
+  
+  //width: 100%;
 }
 
-.footer-row{
 
+footer h4 {
+ // display: flex;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  color: $white;
+  text-transform: uppercase;
 }
 
+
+
+li {
+  list-style: none;
+  justify-content: center;
+}
 
 
 .licence {
-  display: flex;
+  //display: flex;
   
   justify-content: left;
   font-size: $font-size-s;
@@ -72,17 +153,19 @@
   }
 }
 
-.footer-bottom .licence {
-  @include viewport(small) {
-    padding: 5px 0 10px;
-    flex-direction: column;
+// .footer-bottom .licence {
+//   @include viewport(small) {
+//     padding: 5px 0 10px;
+//     flex-direction: column;
     
-  }
+    
+//   }
 
-  @include viewport(medium) {
-    flex-direction: row;
-  }
-}
+//   @include viewport(medium) {
+//     flex-direction: row;
+//     justify-content: center;
+//   }
+// }
 
 .visible-xs {
   
@@ -105,7 +188,7 @@
 .ul {
   display:flex;
   
-  padding: 0;
+  padding-left: 1px;
   margin: 0;
   list-style-type: none;
 
@@ -118,6 +201,7 @@
      @include viewport(medium) {
        display: inline-block;
      }
+     
    }
   
 }
@@ -126,4 +210,12 @@
   margin-left: em(10px);
   margin-right: em(10px);
 }
+
+// .col-xs {
+//   width: 100%;
+//   color: $white;
+// }
+
+
+
 

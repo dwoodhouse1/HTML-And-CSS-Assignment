@@ -2,13 +2,125 @@
 // Buttons
 // ==========================================================================
 
+.btn {
+    background-color: palette(grey, base);
+    color: white;
+    row-gap: em(10px);
+    justify-content: center;
+    
+  }
 
 a {
     color: $white;
     text-decoration: none;
+    text-align: center;
+    
 }
 
 a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
+// Social icons
+
+#footer-logo {
+    @include img-sizing(em(450px), em(100px))
+}
+.facebook {
+    //@include img-replace("facebook.png", em(100px), em(100px), flex);
+    align-items: center;
+    background-color: palette(grey, x-dark);
+    @include img-sizing(em(75px), em(75px), flex);
+   
+    
+
+    &:hover {
+        background-color: $facebook-color;
+    }
+  }
+  
+  .linkedin {
+    //@include img-replace("linkedin2.png", em(100px), em(100px), flex);
+    align-items: center;
+    background-color: palette(grey, x-dark);
+    @include img-sizing(em(75px), em(75px), flex);
+    &:hover {
+        background-color: $linkedin-color;
+    }
+  }
+  
+  .twitter {
+   // @include img-replace("twitter.png", em(100px), em(100px), flex);
+    align-items: center;
+    background-color: palette(grey, x-dark);
+    @include img-sizing(em(75px), em(75px), flex);
+    &:hover {
+        background-color: $twitter-color;
+    }
+  }
+  
+  .instagram {
+    background-color: palette(grey, x-dark);
+    align-items: center;
+    @include img-sizing(em(75px), em(75px), flex);
+    &:hover {
+        background-color: $instagram-color
+    }
+    margin-right: em(400px);
+    @include viewport(large) {
+        margin-right: 0;
+    }
+    
+  }
+
+
+  .label-checkbox {
+    display:inline-block;
+    cursor:pointer;
+    width: 32px;
+    height: 32px;
+    background-color: palette(grey, base);
+    border: 3px solid palette(grey, x-dark);
+    margin-right: em(20px);
+
+    &::before {
+        content: "";
+        color: $white;
+        display:block;
+        position: center;
+       // top:50%;
+        //left:50%;
+        transform:translate(50%, -20%);
+        width:0;
+        height:0;
+        border-top: 0;
+       // border-bottom: 3px solid #fff;
+        //border-left: 3px solid #fff;
+        //color: #fff;
+        //font-size: 20px;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + .label-checkbox {
+        background-color: palette(grey, x-dark);
+        border: 3px solid palette(grey, x-dark);
+        
+
+        &::before {
+            scale: 2;
+            width: 10px;
+            height: 10px;
+            position: center;
+            content: "\2713";
+        }
+        
+        
+    }
+  }
+
+  
+  

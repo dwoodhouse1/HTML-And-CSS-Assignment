@@ -7,6 +7,10 @@
 $white: #fff;
 $black: #0b0b0b;
 $grey: #4a4c59;
+$facebook-color: #3b5998;
+$twitter-color: #1DA1F2;
+$linkedin-color: #0077B5;
+$instagram-color: #E1306C;
 
 
 //$dark-grey: #212330;  x-dark grey
@@ -51,3 +55,12 @@ $color-palettes: (
         dark: darken($black, 10%)
     )
 );
+
+// Path to Image Assets folder
+
+$path-rel: "../img";
+
+
+// Color Gradients
+
+

@@ -12,17 +12,34 @@
         }
     }
     @else if $break == "medium" { // medium generally used for laptops/tablets
-        @media (min-width: #{$brkpoint-md + 1}) {
+        @media (min-width: #{$brkpoint-md + 1}) and (max-width: $brkpoint-lg) {
             @content;
         }
     }
     @else if $break == "large" { // large generally used for desktop monitors
-        @media (min-width: $brkpoint-lg) {
+        @media (min-width: #{$brkpoint-lg + 1}) and (max-width: $brkpoint-xlg) {
             @content;
         }
     }
     @else {
         @error "No value could be retrieved for break for `#{$break}`";
     }
+}
+
+
+// Image
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+	background-image: url('#{$path-rel}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $disp;
+}
+
+@mixin img-sizing($w, $h, $disp: block) {
+    width: $w;
+    height: $h;
+    display: $disp;
 }
 
