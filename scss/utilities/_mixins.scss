@@ -43,3 +43,18 @@
     display: $disp;
 }
 
+// Button
+
+@mixin btn-format() {
+    background-color: palette(grey, base);
+    color: white;
+    row-gap: em(10px);
+    
+}
+
+@mixin btn-format-socials() {
+    background-color: palette(grey, x-dark);
+    //align-content: center;
+    justify-content: center;
+}
+

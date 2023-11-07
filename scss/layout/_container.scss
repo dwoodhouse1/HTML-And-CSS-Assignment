@@ -2,6 +2,10 @@
 // Container
 // ==========================================================================
 
+html, body {
+  max-width: 2000px;
+  max-height: 700px;
+}
 
 #container {
   height: 100%;
@@ -27,21 +31,27 @@
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 em(15px) 0 em(15px);
+  //margin-right: auto;
+  //margin-left:auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+ //padding: 0 em(15px) 0 em(15px);
   background-color: palette(grey, base);
 }
 
 .main {
-  display:grid;
-  width: 95%;
+ position: relative;
 }
 
 
 // Footer classes
+
+
+
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   position: relative;
   padding-top: 20%;
  
@@ -55,9 +65,12 @@
 
   &-company-info {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    //flex-wrap: wrap;
     background-color: pallete(grey, x-light);
     color:white;
+    row-gap: 10px;
 
     //@include img-sizing(em(100px), em(100px) );
 
@@ -69,6 +82,7 @@
 
   &-socials {
     display: flex;
+    flex-wrap:wrap;
     gap: em(10px);
     color:white;
 
@@ -80,9 +94,11 @@
 
   &-row{
     display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 
     @include viewport(small) {
       flex-direction: column;
@@ -102,11 +118,12 @@
 
   &-menu {
     display: flex;
-    background-color: palette(grey, dark);
+    //background-color: palette(grey, dark); // overflows from the container for some reason.
     font-size: $font-size-s;
 
     @include viewport(small) {
-      padding: 5px 0 10px;
+    
+     // padding: 5px 0 10px;
       flex-wrap: wrap;
       flex-direction: column;
     }
@@ -115,12 +132,16 @@
       flex-direction: row;
     }
   }
+
+  &-logo img {
+    width: 100%;
+    vertical-align: middle;
+  }
   
 }
 
-footer {
-  
-  //width: 100%;
+footer ul li a {
+  color: $white;
 }
 
 
@@ -211,11 +232,42 @@ li {
   margin-right: em(10px);
 }
 
-// .col-xs {
-//   width: 100%;
-//   color: $white;
-// }
+ .col-xs {
+  width: 100%;
+   color: $white;
+ }
 
+.newsletter {
+  background-color: palette(grey, xx-light);
+  padding: 15px;
+}
+
+.form-input {
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  & label {
+    padding-top: 15px;
+  }
+
+  @include viewport(medium) {
+    flex-wrap: wrap;
+  }
+
+  @include viewport (large) {
+    flex-wrap: wrap;
+  }
+
+}
+
+.media-body {
+  display:table-cell;
+  vertical-align: top;
+  line-height: 32px;
+}
 
 
 

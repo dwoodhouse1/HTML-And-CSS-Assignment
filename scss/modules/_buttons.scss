@@ -3,35 +3,39 @@
 // ==========================================================================
 
 .btn {
-    background-color: palette(grey, base);
-    color: white;
-    row-gap: em(10px);
-    justify-content: center;
-    
+    @include btn-format();
+
+    &:hover {
+        background-color: $black;
+    }
+  }
+
+  .btn-subscribe {
+    margin-left: em(10px);
   }
 
 a {
-    color: $white;
+    color: palette(grey, x-dark);
     text-decoration: none;
     text-align: center;
     
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 // Social icons
 
 #footer-logo {
-    @include img-sizing(em(450px), em(100px))
+   // @include img-sizing(em(200px), em(100px));
 }
 .facebook {
     //@include img-replace("facebook.png", em(100px), em(100px), flex);
-    align-items: center;
-    background-color: palette(grey, x-dark);
+    
     @include img-sizing(em(75px), em(75px), flex);
+    @include btn-format-socials;
    
     
 
@@ -42,9 +46,9 @@ a:hover {
   
   .linkedin {
     //@include img-replace("linkedin2.png", em(100px), em(100px), flex);
-    align-items: center;
-    background-color: palette(grey, x-dark);
+    @include btn-format-socials;
     @include img-sizing(em(75px), em(75px), flex);
+
     &:hover {
         background-color: $linkedin-color;
     }
@@ -52,17 +56,16 @@ a:hover {
   
   .twitter {
    // @include img-replace("twitter.png", em(100px), em(100px), flex);
-    align-items: center;
-    background-color: palette(grey, x-dark);
+    @include btn-format-socials;
     @include img-sizing(em(75px), em(75px), flex);
+
     &:hover {
         background-color: $twitter-color;
     }
   }
   
   .instagram {
-    background-color: palette(grey, x-dark);
-    align-items: center;
+    @include btn-format-socials;
     @include img-sizing(em(75px), em(75px), flex);
     &:hover {
         background-color: $instagram-color
@@ -74,15 +77,27 @@ a:hover {
     
   }
 
+  .btn-subscribe {
+    flex-direction: row;
+    padding-top: 10px;
+    padding-right: 50%;
+  }
+
+
+
+  // Checkbox
 
   .label-checkbox {
     display:inline-block;
     cursor:pointer;
     width: 32px;
     height: 32px;
-    background-color: palette(grey, base);
+    background-color: palette(grey, xx-light);
     border: 3px solid palette(grey, x-dark);
+    border-radius: 10%;
+    margin-top: em(20px);
     margin-right: em(20px);
+    margin-left: em(20px);
 
     &::before {
         content: "";
@@ -106,8 +121,8 @@ a:hover {
     display: none;
 
     &:checked + .label-checkbox {
-        background-color: palette(grey, x-dark);
-        border: 3px solid palette(grey, x-dark);
+        background-color: palette(grey, base);
+        border: 3px solid palette(grey, base);
         
 
         &::before {
