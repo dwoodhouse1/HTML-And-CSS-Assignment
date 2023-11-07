@@ -44,6 +44,91 @@ html, body {
  position: relative;
 }
 
+// Articles Classes
+
+.latest-articles {
+  background-color: $white;
+}
+
+.readtime {
+  display: inline;
+  text-transform: uppercase;
+  color: palette(grey,xx-light);
+  font-weight: $font-weight-xl;
+}
+
+.block-one {
+  display: flex;
+  top:0;
+  border: 1px solid palette(grey, x-light);
+  border-radius: 2%;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 30px;
+  margin: 20px 20px;
+  position: relative;
+  transition: .5s ease;
+  //padding: 2%;
+
+  &:hover {
+    top:-10px;
+    transition: .5s ease;
+  }
+
+  & h3 {
+    color: $blue;
+  }
+}
+
+.block-two {
+  @extend .block-one;
+
+  & h3 {
+    color: $purple;
+  }
+}
+
+.block-three {
+  @extend .block-one;
+
+  & h3 {
+    color: $green;
+  }
+  
+}
+
+
+.article-content {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  
+  
+
+  text-align: left;
+  @include viewport(small) {
+    flex-direction: column;
+  }
+}
+
+ .article-link {
+   //top:0;
+  position: relative;
+  //transition: .5s ease;
+  text-decoration: none;
+  text-align: left;
+  font-size: $font-size-s;
+  color: palette(grey, xx-light);
+  
+    &:hover {
+      text-decoration: none;
+    }
+
+    
+
+  
+ }
+
 
 // Footer classes
 
@@ -232,10 +317,14 @@ li {
   margin-right: em(10px);
 }
 
- .col-xs {
+.col-xs {
   width: 100%;
-   color: $white;
- }
+  color: $white;
+}
+
+.col-l {
+  display: flex;
+}
 
 .newsletter {
   background-color: palette(grey, xx-light);
