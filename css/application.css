@@ -436,4 +436,35 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   content: "\2713";
 }
 
+/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.clients {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+/* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.clients img {
+  filter: grayscale(1);
+}
+
+/* line 157, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.clients img:hover {
+  filter: grayscale(0);
+}
+
+/* line 164, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.item {
+  display: flex;
+  max-height: 70px;
+  height: 70px;
+  width: auto;
+  align-items: center;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=application.css.map */

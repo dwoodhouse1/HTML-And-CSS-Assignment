@@ -137,5 +137,42 @@ a {
     }
   }
 
+
+  // Client Slideshow Buttons
+
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    background-color: $white;
+    display: flex;
+    justify-content: flex-start;
+   // flex-wrap: wrap;
+    overflow-x: hidden;
+
+    & img {
+
+        filter:grayscale(1);
+    
+        &:hover {
+            filter:grayscale(0);
+        }
+      }
+
+  }
+
+  .item {
+    display: flex;
+    max-height: 70px;
+    height: 70px;
+    width: auto;
+    align-items: center;
+    padding: 20px;
+
+  }
+
+  
+  
+
   
   
