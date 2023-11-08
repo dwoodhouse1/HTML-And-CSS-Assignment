@@ -10,7 +10,7 @@ html, body {
 #container {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: initial;
   //overflow: hidden;
   max-width:  $brkpoint-xlg;
   //margin: 0 auto;
@@ -59,12 +59,13 @@ html, body {
 
 .block-one {
   display: flex;
+  
   top:0;
   border: 1px solid palette(grey, x-light);
   border-radius: 2%;
   flex-direction: column;
-  row-gap: 15px;
-  padding: 30px;
+  //row-gap: 15px;
+  //padding: 30px;
   margin: 20px 20px;
   position: relative;
   transition: .5s ease;
@@ -97,11 +98,20 @@ html, body {
   
 }
 
+.block-content {
+  display: block;
+  padding: 30px;
+
+  & p {
+    text-wrap: wrap;
+  }
+}
 
 .article-content {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
-  padding: 15px;
+  padding: 15px 15px 15px 0;
   
   
 
@@ -127,6 +137,26 @@ html, body {
     
 
   
+ }
+
+ .latest-articles {
+  padding-left: 0;
+ }
+
+ .user{
+  display:table;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid palette(grey, x-light);
+  
+  &>*{
+    display:table-cell;
+    vertical-align: middle;
+  }
+ }
+
+ .info {
+  padding-left: 20px;
  }
 
 
@@ -219,7 +249,7 @@ html, body {
   }
 
   &-logo img {
-    width: 100%;
+    //width: 100%;
     vertical-align: middle;
   }
   
