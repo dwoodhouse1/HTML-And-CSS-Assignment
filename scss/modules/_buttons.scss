@@ -72,9 +72,9 @@ a {
 
 // Social icons
 
-#footer-logo {
-   // @include img-sizing(em(200px), em(100px));
-}
+// .footer-logo {
+//    @include img-sizing(em(200px), em(100px));
+// }
 .facebook {
     //@include img-replace("facebook.png", em(100px), em(100px), flex);
     
@@ -116,7 +116,7 @@ a {
     &:hover {
         background-color: $instagram-color
     }
-    margin-right: em(400px);
+    //margin-right: em(400px);
     @include viewport(large) {
         margin-right: 0;
     }
