@@ -30,6 +30,8 @@ $base-font-size: 16px;
 $font-size-xs: 8px;
 $font-size-s: 13px;
 $font-size-l: 24px;
+$font-size-xl: 36px;
+$font-size-xxl: 64px;
 
 // Font Weights
 
@@ -43,7 +45,7 @@ $font-weight-xd: 700;
 // Viewport Breakpoints
 
 $brkpoint-sm: 1px;
-$brkpoint-md: 768px;
+$brkpoint-md: 320px;
 $brkpoint-lg: 1024px;
 $brkpoint-xlg: 2000px;
 

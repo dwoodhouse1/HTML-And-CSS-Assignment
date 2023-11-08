@@ -19,11 +19,37 @@
       line-height: 1rem;
       z-index: 1;
 
+      &-one {
+        background-color: $green;
+      }
+
+      &-two {
+        background-color: $blue;
+      }
+
+      &-three {
+        background-color: $purple;
+      }
     }
+
+    
 
     &-news{
       text-align: center;
-     margin-right: 300px;
+      
+      width: 100px;
+
+      &-one{
+        background-color: $green;
+      }
+
+      &-two {
+        background-color: $blue;
+      }
+
+      &-three {
+        background-color: $purple;
+      }
     }
   }
 

@@ -3,13 +3,18 @@
 // ==========================================================================
 
 html, body {
-  max-width: 2000px;
-  max-height: 700px;
+  min-width: 100%;
+    //max-width: 2000px;
+ // max-height: 700px;
+ height: 100%;
+ width: 100%;
 }
 
 #container {
+  min-height: 100%;
+  min-width: 100%;
   height: 100%;
-  width: 100%;
+ // width: 450px;
   position: initial;
   //overflow: hidden;
   max-width:  $brkpoint-xlg;
@@ -31,8 +36,10 @@ html, body {
 }
 
 .container {
-  //margin-right: auto;
-  //margin-left:auto;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left:auto;
   padding-left: 15px;
   padding-right: 15px;
   
@@ -46,6 +53,10 @@ html, body {
 
 // Articles Classes
 
+.headings-bar {
+  display:flex;
+  justify-content: spa;
+}
 .latest-articles {
   background-color: $white;
 }
@@ -77,7 +88,7 @@ html, body {
   }
 
   & h3 {
-    color: $blue;
+    color: $green;
   }
 }
 
@@ -85,15 +96,17 @@ html, body {
   @extend .block-one;
 
   & h3 {
-    color: $purple;
+    color: $blue;
   }
+
+  
 }
 
 .block-three {
   @extend .block-one;
 
   & h3 {
-    color: $green;
+    color: $purple;
   }
   
 }
@@ -147,7 +160,6 @@ html, body {
   display:table;
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid palette(grey, x-light);
   
   &>*{
     display:table-cell;
@@ -157,6 +169,11 @@ html, body {
 
  .info {
   padding-left: 20px;
+ }
+
+ .divider {
+  border-top: 1px solid #a3a5b3;
+  margin-top: 50px;
  }
 
 

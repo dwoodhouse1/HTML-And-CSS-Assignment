@@ -8,8 +8,9 @@
   font-size: em($base-font-size);
 }
 
-h4 {
-    color: $white;
+h1 {
+  font-size: em($font-size-xl);
+  font-weight:400; //$font-size-l;
 }
 
 h2 {
@@ -20,8 +21,24 @@ h2 {
   color: palette(grey, x-dark);
 }
 
+h3 {
+  font-size: em($font-size-l);
+}
+
+h4 {
+    color: $white;
+}
+
+
+
 .newsletter{
     padding-bottom: em(50px);
+}
+
+
+
+p {
+  font-size: em($base-font-size);
 }
 
 
