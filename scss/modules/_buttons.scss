@@ -72,8 +72,86 @@
       }
     }
 
+    &-software {
+      @include btn-format();
+      @extend .service-block-one;
+      text-transform: uppercase;
+      padding:  15px 5px;
+      color: $white;
+      background-color: $grey-blue;
+
+      // &:hover { // SEE .service-block-one class
+      //   background-color: $white;
+      //   color: $grey-blue;
+      // }
+    }
+
+    &-it {
+      @include btn-format();
+      @extend .service-block-two;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $blue;
+      color: $white;
+    }
+
+    &-dm {
+      @include btn-format();
+      @extend .service-block-three;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $green;
+      color: $white;
+
+    }
+
+    &-ts { 
+      @include btn-format();
+      @extend .service-block-four;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $red;
+      color: $white;
+
+    }
+
+    &-wd {
+      @include btn-format();
+      @extend .service-block-five;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $purple;
+      color: $white;
+
+    }
+
+    &-cs {
+      @include btn-format();
+      @extend .service-block-six;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $red-light;
+      color: $white;
+
+    }
+
+    &-dt {
+      @include btn-format();
+      @extend .service-block-seven;
+      text-transform: uppercase;
+      padding: 15px 5px;
+      background-color: $red-tomato;
+      color: $white;
+
+    }
+
   }
 
+  // .btn-software:hover {
+  //   background-color: $white;
+  // }
+
+  
   .btn-subscribe {
     margin-left: em(10px);
   }
@@ -152,12 +230,7 @@ a {
 
   // Arrow Right Icon
 
-  .icon-arrow-right {
-    font-size: 32px;
-    margin-right: -4px;
-    margin-left: 12px;
-    
-  }
+  
   
 
 

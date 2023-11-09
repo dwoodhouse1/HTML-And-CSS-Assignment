@@ -26,5 +26,19 @@
  	@return map-get(map-get($color-palettes, $palette), $shade);
 }
 
+// Calling the Font Family from Icomoon
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?esuxuj');
+  src:  url('fonts/icomoon.eot?esuxuj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?esuxuj') format('truetype'),
+    url('fonts/icomoon.woff?esuxuj') format('woff'),
+    url('fonts/icomoon.svg?esuxuj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 
 

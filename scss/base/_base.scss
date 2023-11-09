@@ -21,6 +21,10 @@ h2 {
   color: palette(grey, x-dark);
 }
 
+.h2 {
+  padding-bottom: 10px;
+}
+
 h3 {
   font-size: em($font-size-l);
 }
@@ -40,6 +44,11 @@ h4 {
 
 p {
   font-size: em($base-font-size);
+}
+
+.p {
+  padding-bottom: 10px;
+  //text-wrap: wrap;
 }
 
 
