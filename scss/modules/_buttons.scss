@@ -51,6 +51,27 @@
         background-color: $purple;
       }
     }
+
+    &-aboutus {
+      background-color: palette(grey, x-dark);
+      margin-bottom: 17px;
+    }
+
+    &-reviews {
+      margin-bottom: 20px;
+      width: 80%;
+      display: inline-block;
+      background-color: black;
+
+      &-google {
+        background-color: $blue;
+      }
+
+      &-trustpilot {
+        background-color: $green;
+      }
+    }
+
   }
 
   .btn-subscribe {
@@ -127,6 +148,15 @@ a {
     flex-direction: row;
     padding-top: 10px;
     padding-right: 50%;
+  }
+
+  // Arrow Right Icon
+
+  .icon-arrow-right {
+    font-size: 32px;
+    margin-right: -4px;
+    margin-left: 12px;
+    
   }
   
 

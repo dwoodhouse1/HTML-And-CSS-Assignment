@@ -36,7 +36,7 @@ html, body {
 }
 
 .container {
-  //width: 100%;
+  width: 100%;
   height: 100%;
   margin-right: auto;
   margin-left:auto;
@@ -50,6 +50,43 @@ html, body {
 
 .main {
  position: relative;
+}
+
+.brand-bg {
+  color: $white;
+
+  & a {
+   color: $white;
+  }
+
+  & h2 {
+    color: $white;
+  }
+}
+.reviews {
+  color: $white;
+}
+
+.client-quote {
+  font-style: italic;
+}
+
+.client-quote-author {
+  font-weight: $font-weight-d;
+  color: palette(grey, x-light);
+
+  & a {
+    color: $white;
+  }
+}
+
+.aboutus {
+  margin-bottom: em(50px);
+}
+
+.star {
+  display:inline-block;
+  font-size: 50px;
 }
 
 // Articles Classes
