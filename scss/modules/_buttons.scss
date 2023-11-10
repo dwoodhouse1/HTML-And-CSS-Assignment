@@ -351,11 +351,14 @@ a {
   // Search bar Submit button
 
   #search-submit {
-    color: palette(grey, x-dark);
+   @extend .search-bar;
+  
     position: absolute;
-    right: 5px;
+    right: 0;
+    top: 1%;
     line-height: 47px;
   }
+
 
   
   

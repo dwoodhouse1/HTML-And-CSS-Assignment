@@ -2,6 +2,35 @@
 // Form Elements
 // ==========================================================================
 
+// Search Form
+
+.search-form {
+    display: flex;
+    padding-top: 10px;
+    outline: none;
+
+    &-btn {
+        @extend .search-bar;
+        width: 20%;
+        outline: none;
+    }
+  }
+  .form-control {
+    height: 47px;
+    width: 100%;
+    
+  }
+  .search-bar {
+    display: inline-block;
+    background-color: rgba(0,0,0,.1);
+    outline: rgba(0,0,0,.1);
+    
+    border: 2px solid rgba(0,0,0,.1);
+  }
+
+
+
+
 // Form Checkbox
 
 .label-checkbox {
