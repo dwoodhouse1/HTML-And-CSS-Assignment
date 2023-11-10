@@ -41,16 +41,56 @@ html, body {
   margin-right: auto;
   margin-left:auto;
   margin-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &-header{
+    background-color: $white;
+  }
   
  //padding: 0 em(15px) 0 em(15px);
   background-color: palette(grey, base);
 }
 
+.row {
+  display: table;
+  width: 100%;
+}
+
 .main {
  position: relative;
+
+//  &-navigation img {
+//   height: 100%;
+//   width: 100%;
+//  }
 }
+
+.logo-container {
+  display:table;
+  table-layout: fixed;
+}
+
+.mobile-container {
+  display: table-cell;
+}
+
+.banner-content {
+  filter: invert(0);
+  width: 320px;
+  //color: $white;
+  position: absolute;
+  text-align: center;
+  font-weight: $font-weight-l;
+
+ & p {
+  font-weight: $base-font-weight;
+ }
+}
+
 
 // Services Section
 
@@ -190,6 +230,7 @@ html, body {
 
 .brand-bg {
   color: $white;
+  margin: 15px;
 
   & a {
    color: $white;
@@ -204,6 +245,7 @@ html, body {
 
 // Review section
 .reviews {
+  margin: 15px;
   color: $white;
 }
 
@@ -257,7 +299,6 @@ html, body {
   border-radius: 2%;
   flex-direction: column;
   //row-gap: 15px;
-  padding: 30px;
   margin: 20px 20px;
   position: relative;
   transition: .5s ease;

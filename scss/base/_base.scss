@@ -8,10 +8,15 @@
   font-size: em($base-font-size);
 }
 
+#header {
+  color: $white;
+}
+
 h1 {
   font-size: em($font-size-xl);
   font-weight:400; //$font-size-l;
 }
+
 
 h2 {
   box-sizing: border-box;
