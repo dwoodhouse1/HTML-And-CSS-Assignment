@@ -46,6 +46,17 @@
 
 // Button
 
+@mixin hamburger() {
+    content: "";
+    display:block;
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 0;
+    left: 0;
+}
+
 @mixin btn-format() {
     height: auto;
     line-height: 35px;

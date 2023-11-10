@@ -146,6 +146,7 @@
     }
 
     &-whyus {
+      padding: 15px;
       background-color: $purple;
       font-weight: $base-font-weight;
     }
@@ -275,6 +276,86 @@ a {
 
   // Latest News Buttons
 
+
+  // Hamburger button
+
+  .container-hamburger {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .hamburger-box {
+    display: inline-block;
+    width: 33px;
+    height: 19px;
+    position: relative;
+  }
+  
+  
+  .hamburger-inner {
+    left: 0;
+    top: 10px;
+  
+    @include hamburger();
+  
+    &::before {
+      @include hamburger();
+      top: -10px;
+      bottom: 0;
+    }
+  
+    &::after {
+      @include hamburger();
+      top: 10px;
+    }
+  }
+  
+  .hamburger-spin:hover {
+    .hamburger-inner {
+  
+      @include hamburger();
+  
+      transform: rotate(225deg);
+      transition-delay: .12s;
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+      transition: .5s ease;
+  
+      &::before {
+        @include hamburger();
+        top:0;
+        opacity: 0;
+  
+        transition: top .1s ease-out
+          ,opacity .1s ease-out .12s;
+  
+        transform: rotate(45deg);
+  
+        &:hover {
+          top: 10px;
+        }
+      }
+  
+      &::after {
+        @include hamburger();
+        bottom: 0;
+        top: 0;
+        transform: rotate(-90deg);
+        transition: bottom .1s
+          ease-out, transform .22s
+          cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+      }
+    }
+  }
+
+
+  // Search bar Submit button
+
+  #search-submit {
+    color: palette(grey, x-dark);
+    position: absolute;
+    right: 5px;
+    line-height: 47px;
+  }
 
   
   
