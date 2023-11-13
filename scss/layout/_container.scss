@@ -99,7 +99,7 @@ html, body {
 
 
 
-.banner-content {
+.carousell-content {
   filter: invert(0);
   width: 320px;
   //color: $white;
@@ -326,6 +326,7 @@ html, body {
 
   & a {
    color: $white;
+   text-decoration: none;
   }
 
   & h2 {
@@ -345,14 +346,7 @@ html, body {
   font-style: italic;
 }
 
-.client-quote-author {
-  font-weight: $font-weight-d;
-  color: palette(grey, x-light);
 
-  & a {
-    color: $white;
-  }
-}
 
 
 // About us Section
@@ -390,7 +384,7 @@ html, body {
   
   top:0;
   border: 1px solid palette(grey, x-light);
-  border-radius: 2%;
+  border-radius: 0 0 2% 2%;
   flex-direction: column;
   //row-gap: 15px;
   margin: 20px 20px;
@@ -577,7 +571,6 @@ html, body {
 
   &-menu {
     display: flex;
-    //background-color: palette(grey, dark); // overflows from the container for some reason.
     font-size: $font-size-s;
 
     @include viewport(small) {
@@ -600,6 +593,8 @@ html, body {
       width: 100%;
     }
   }
+
+  
   
 }
 
@@ -742,6 +737,20 @@ li {
   line-height: 32px;
 }
 
+.about {
+  padding: 0;
+}
 
+.services {
+  padding: 0;
+ }
+
+ .industries {
+  padding: 0;
+ }
+
+ .locations {
+  padding: 0;
+ }
 
 

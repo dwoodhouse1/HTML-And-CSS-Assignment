@@ -14,6 +14,7 @@
       color: $white;
       background-color: $green;
       text-transform: uppercase;
+      text-decoration: none;
       right: 0;
       padding: 0 10px;
       line-height: 1rem;
@@ -21,14 +22,26 @@
 
       &-one {
         background-color: $green;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       &-two {
         background-color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       &-three {
         background-color: $purple;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -53,32 +66,47 @@
     }
 
     &-aboutus {
-      display: flex;
-      background-color: palette(grey, x-dark);
+      @include a-format();
+      display: block;
+      background-color: palette(grey, dark);
       margin-bottom: 16px;
       
       &-whychooseus {
-        margin-right: 64px;
+        width: 165px;
       }
 
       &-ourculture {
-        margin-right: 100px;
+        width: 140px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        background-color: $black;
       }
       
     }
 
     &-reviews {
       margin-bottom: 20px;
-      width: 80%;
-      display: inline-block;
-      background-color: black;
+      display: block;
 
       &-google {
+        width: 160px;
         background-color: $blue;
+
+        &:hover {
+          background-color: $dark-blue;
+        }
       }
 
       &-trustpilot {
+        width: 180px;
         background-color: $green;
+
+        &:hover {
+          background-color: $dark-green;
+          text-decoration: none
+        }
       }
     }
 
@@ -143,9 +171,14 @@
     }
 
     &-whyus {
+      @include a-format();
       padding: 15px;
       background-color: $purple;
       font-weight: $base-font-weight;
+
+      &:hover {
+        background-color: $dark-purple;
+      }
     }
 
   }
@@ -158,6 +191,7 @@
   .btn-subscribe {
     margin-left: em(10px);
   }
+
 
 a {
    
@@ -232,7 +266,7 @@ a {
   // Client Slideshow Buttons
 
   .clients {
-    padding-top: 50px;
+    padding-top: 10%;
     padding-bottom: 50px;
     padding-right: 20px;
     background-color: $white;
@@ -355,7 +389,7 @@ a {
     color: palette(grey, dark);
   }
 
-  // Footer buttons
+  // Anchor buttons
 
   footer ul li a {
     @include a-format();
@@ -366,6 +400,29 @@ a {
     @include a-format();
     color: $white;
   }
+
+  .client-quote-author a {
+    @include a-format();
+    font-weight: $font-weight-d;
+    color: palette(grey, x-light);
+    color: $white;
+    
+  }
+
+  .h2 a {
+    @include a-format();
+    color: palette(grey, x-dark);
+  }
+
+  .reviews a {
+    @include a-format();
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
 
 
   
