@@ -70,9 +70,52 @@
     
 }
 
+@mixin btn-format-servies() {
+    text-transform: uppercase;
+    padding: 15px 5px;
+    color: $white;
+}
+
 @mixin btn-format-socials() {
     background-color: palette(grey, x-dark);
     align-content: center;
     justify-content: center;
+}
+
+
+// Icons
+
+@mixin icon-format-services() {
+    fill: $white;
+    width: 32px;
+    height: 32px;
+    margin: 16px;
+}
+
+@mixin icon-format-socials() {
+    fill: $white;
+    width: 32px;
+    height: 32px;
+    margin-top: 8%;
+    margin-left: 33%;
+}
+
+@mixin icon-circle() {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 16px;
+}
+
+// Anchors 
+
+@mixin a-format() {
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 

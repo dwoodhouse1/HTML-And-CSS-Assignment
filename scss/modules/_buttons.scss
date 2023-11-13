@@ -6,7 +6,7 @@
     @include btn-format();
 
     &:hover {
-        background-color: $black;
+        background-color: palette(grey, x-dark);
     }
 
     &-tooltip {
@@ -53,8 +53,18 @@
     }
 
     &-aboutus {
+      display: flex;
       background-color: palette(grey, x-dark);
-      margin-bottom: 17px;
+      margin-bottom: 16px;
+      
+      &-whychooseus {
+        margin-right: 64px;
+      }
+
+      &-ourculture {
+        margin-right: 100px;
+      }
+      
     }
 
     &-reviews {
@@ -74,12 +84,10 @@
 
     &-software {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-one;
-      text-transform: uppercase;
-      padding:  15px 5px;
-      color: $white;
+      
       background-color: $grey-blue;
-
       // &:hover { // SEE .service-block-one class
       //   background-color: $white;
       //   color: $grey-blue;
@@ -88,61 +96,50 @@
 
     &-it {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-two;
-      text-transform: uppercase;
-      padding: 15px 5px;
+      
       background-color: $blue;
-      color: $white;
     }
 
     &-dm {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-three;
-      text-transform: uppercase;
-      padding: 15px 5px;
+      
       background-color: $green;
-      color: $white;
-
     }
 
     &-ts { 
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-four;
-      text-transform: uppercase;
-      padding: 15px 5px;
+      
       background-color: $red;
-      color: $white;
-
     }
 
     &-wd {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-five;
-      text-transform: uppercase;
-      padding: 15px 5px;
+      
       background-color: $purple;
-      color: $white;
-
     }
 
     &-cs {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-six;
-      text-transform: uppercase;
-      padding: 15px 5px;
+    
       background-color: $red-light;
-      color: $white;
-
     }
 
     &-dt {
       @include btn-format();
+      @include btn-format-servies();
       @extend .service-block-seven;
-      text-transform: uppercase;
-      padding: 15px 5px;
-      background-color: $red-tomato;
-      color: $white;
 
+      background-color: $red-tomato;
     }
 
     &-whyus {
@@ -163,15 +160,7 @@
   }
 
 a {
-    color: palette(grey, x-dark);
-    text-decoration: none;
-    text-align: center;
-    
-    
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+   
 }
 
 
@@ -191,7 +180,7 @@ a {
     
 
     &:hover {
-        background-color: $facebook-color;
+      background-color: $facebook-color;
     }
   }
   
@@ -357,6 +346,25 @@ a {
     right: 0;
     top: 1%;
     line-height: 47px;
+  }
+
+  //Privacy Policy Button
+  .privacy-policy {
+    @include a-format();
+    text-decoration: underline;
+    color: palette(grey, dark);
+  }
+
+  // Footer buttons
+
+  footer ul li a {
+    @include a-format();
+    color: $white;
+  }
+
+  .li-sitemap a {
+    @include a-format();
+    color: $white;
   }
 
 

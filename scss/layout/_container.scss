@@ -13,7 +13,7 @@ html, body {
 #container {
   position: relative;
   min-height: 100%;
-  width: 100%;
+  //width: 100%;
   height: 100%;
  // width: 450px;
   position: initial;
@@ -37,10 +37,10 @@ html, body {
 }
 
 .container {
-  width: 95%;
+  //width: 95%;
   height: 100%;
-  margin-right: auto;
-  margin-left:auto;
+  //margin-right: auto;
+  //margin-left:auto;
   margin-bottom: 10px;
 
   & img {
@@ -142,7 +142,6 @@ html, body {
 .service-block-one {
   @extend .block-one;
   text-align: center;
-  content: "\E918";
 
   &:hover {
     background-color: $grey-blue;
@@ -151,6 +150,16 @@ html, body {
     .btn-software {
       background-color: $white;
       color: $grey-blue;
+    }
+
+    .laptop {
+      fill: $grey-blue;
+      background-color: $white;
+    }
+
+    .icon-circle-software {
+      fill: $grey-blue;
+      background-color: $white;
     }
     
   }
@@ -167,6 +176,18 @@ html, body {
       background-color: $white;
       color: $blue;
     }
+
+    .monitor {
+      fill: $blue;
+      background-color: $white;
+    }
+
+    .icon-circle-it {
+      fill: $blue;
+      background-color: $white;
+    }
+
+    
   }
 }
 
@@ -180,6 +201,16 @@ html, body {
     .btn-dm {
       background-color: $white;
       color: $green;
+    }
+
+    .graph {
+      fill: $green;
+      background-color: $white;
+    }
+
+    .icon-circle-dm {
+      fill: $green;
+      background-color: $white;
     }
   }
 }
@@ -195,6 +226,16 @@ html, body {
       background-color: $white;
       color: $red;
     }
+
+    .telephone-services {
+      fill: $red;
+      background-color: $white;
+    }
+
+    .icon-circle-ts {
+      fill: $red;
+      background-color: $white;
+    }
   }
 }
 
@@ -208,6 +249,16 @@ html, body {
     .btn-wd {
       background-color: $white;
       color: $purple;
+    }
+
+    .code {
+      fill: $purple;
+      background-color: $white;
+    }
+
+    .icon-circle-wd {
+      fill: $purple;
+      background-color: $white;
     }
   }
 }
@@ -223,6 +274,16 @@ html, body {
       background-color: $white;
       color: $red-light;
     }
+
+    .shield {
+      fill: $red-light;
+      background-color: $white;
+    }
+
+    .icon-circle-cs {
+      fill: $red-light;
+      background-color: $white;
+    }
   }
 }
 
@@ -236,6 +297,16 @@ html, body {
     .btn-dt {
       background-color: $white;
       color: $red-tomato;
+    }
+
+    .hat {
+      fill: $red-tomato;
+      background-color: $white;
+    }
+
+    .icon-circle-dt {
+      fill: $red-tomato;
+      background-color: $white;
     }
   }
 }
@@ -286,6 +357,8 @@ html, body {
 
 // About us Section
 .aboutus {
+  display: block;
+  flex-direction: column;
   margin-bottom: em(50px);
 }
 
@@ -470,6 +543,7 @@ html, body {
     flex-wrap:wrap;
     gap: em(10px);
     color:white;
+    margin-left: 8px;
 
     @include viewport(medium) {
       flex-direction: row;
@@ -529,9 +603,7 @@ html, body {
   
 }
 
-footer ul li a {
-  color: $white;
-}
+
 
 
 footer h4 {
@@ -608,7 +680,7 @@ li {
   margin: 0;
   list-style-type: none;
 
-   & > li:first-of-type{
+   & li:first-of-type{
     
      @include viewport(small) {
        display: none;
@@ -619,6 +691,8 @@ li {
      }
      
    }
+
+   
   
 }
 
