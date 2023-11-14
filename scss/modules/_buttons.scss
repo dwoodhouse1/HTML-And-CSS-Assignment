@@ -97,10 +97,26 @@
       
       &-whychooseus {
         width: 165px;
+
+        @include viewport(large) {
+          display: inline-block;
+        }
+  
+        @include viewport(x-large) {
+          display: inline-block;
+        }
       }
 
       &-ourculture {
         width: 140px;
+
+        @include viewport(large) {
+          display: inline-block;
+        }
+  
+        @include viewport(x-large) {
+          display: inline-block;
+        }
       }
 
       &:hover {
@@ -111,12 +127,14 @@
     }
 
     &-reviews {
+      margin-top: 39px;
       margin-bottom: 20px;
       display: block;
 
       &-google {
         width: 160px;
         background-color: $blue;
+        margin-right: 10px;
 
         &:hover {
           background-color: $dark-blue;
@@ -131,6 +149,14 @@
           background-color: $dark-green;
           text-decoration: none
         }
+      }
+
+      @include viewport(large) {
+        display: inline-block;
+      }
+
+      @include viewport(x-large) {
+        display: inline-block;
       }
     }
 

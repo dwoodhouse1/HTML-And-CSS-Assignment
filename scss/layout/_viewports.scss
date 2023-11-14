@@ -75,6 +75,12 @@
         }
         
     }
+
+    &-lg {
+        @include viewport(large) {
+            display: auto;
+        }
+    }
     
 }
 
@@ -87,6 +93,18 @@
     }
     &-md {
         @include viewport(medium) {
+            display: none;
+        }
+    }
+
+    &-lg {
+        @include viewport(large) {
+            display: none;
+        }
+    }
+
+    &-xlg {
+        @include viewport(x-large) {
             display: none;
         }
     }

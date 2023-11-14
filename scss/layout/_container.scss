@@ -105,11 +105,26 @@ html, body {
 }
 
 
-
+.header-row {
+  display: flex;
+  justify-content: space-around;
+}
 
 .row {
-  display: table;
+  // display: flex;
   width: 100%;
+
+  @include viewport(small) {
+    flex-direction: column;
+  }
+
+  @include viewport(medium) {
+    flex-direction: column;
+  }
+
+  @include viewport(large) {
+    flex-direction: row;
+  }
 }
 
 .main {
@@ -167,6 +182,24 @@ html, body {
   background-color: $white;
 }
 
+.service-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-blocks {
+
+  @include viewport(large) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+  }
+
+  @include viewport(x-large) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
 .service-link {
  // color: $white;
   position: absolute;
@@ -188,7 +221,7 @@ html, body {
 }
 
 .service-block-one {
-  @extend .block-one;
+  @include serviceblock-format();
   text-align: center;
 
   &:hover {
@@ -211,10 +244,11 @@ html, body {
     }
     
   }
+
 }
 
 .service-block-two {
-  @extend .service-block-one;
+  @include serviceblock-format();
   
   &:hover {
     background-color: $blue;
@@ -237,10 +271,11 @@ html, body {
 
     
   }
+
 }
 
 .service-block-three {
-  @extend .service-block-one;
+  @include serviceblock-format();
 
   &:hover {
     background-color: $green;
@@ -261,10 +296,11 @@ html, body {
       background-color: $white;
     }
   }
+
 }
 
 .service-block-four {
-  @extend .service-block-one;
+  @include serviceblock-format();
 
   &:hover {
     background-color: $red;
@@ -288,7 +324,7 @@ html, body {
 }
 
 .service-block-five {
-  @extend .service-block-one;
+  @include serviceblock-format();
 
   &:hover {
     background-color: $purple;
@@ -312,7 +348,7 @@ html, body {
 }
 
 .service-block-six {
-  @extend .service-block-one;
+  @include serviceblock-format();
 
   &:hover {
     background-color: $red-light;
@@ -333,10 +369,12 @@ html, body {
       background-color: $white;
     }
   }
+
+  
 }
 
 .service-block-seven {
-  @extend .service-block-one;
+  @include serviceblock-format();
 
   &:hover {
     background-color: $red-tomato;
@@ -357,6 +395,15 @@ html, body {
       background-color: $white;
     }
   }
+  @include viewport(large) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  @include viewport(x-large) {
+    grid-column: 2;
+    grid-row: 3;
+  }
 }
 
 // Partners section
@@ -369,6 +416,8 @@ html, body {
 // Brand section
 
 .brand-bg {
+
+  display:inline-block;
   color: $white;
   margin: 15px;
 
@@ -380,14 +429,32 @@ html, body {
   & h2 {
     color: $white;
   }
+
+  @include viewport(large) {
+    width: 45%;
+  }
+
+  @include viewport(x-large) {
+    width: 45%;
+  }
 }
 
 
 
 // Review section
 .reviews {
+
+  display:inline-block;
   margin: 15px;
   color: $white;
+
+  @include viewport(large) {
+    width: 45%;
+  }
+
+  @include viewport(x-large) {
+    width: 45%;
+  }
 }
 
 .client-quote {
@@ -400,8 +467,12 @@ html, body {
 // About us Section
 .aboutus {
   display: block;
-  flex-direction: column;
   margin-bottom: em(50px);
+
+  @include viewport(large) {
+    display: flex;
+    column-gap: 15px;
+  }
 }
 
 .star {
@@ -428,20 +499,10 @@ html, body {
 }
 
 .block-one {
-  top:0;
-  border: 1px solid palette(grey, x-light);
-  border-radius: 0 0 2% 2%;
-  flex-direction: column;
-  //row-gap: 15px;
-  margin: 20px 20px;
-  position: relative;
-  transition: .5s ease;
-  //padding: 2%;
+  @include articleblock-format();
+  
 
-  &:hover {
-    top:-10px;
-    transition: .5s ease;
-  }
+  
 
   & h3 {
     color: $green;
@@ -462,7 +523,7 @@ html, body {
 
 
 .block-two {
-  @extend .block-one;
+  @include articleblock-format();
 
   & h3 {
     color: $blue;
@@ -479,7 +540,7 @@ html, body {
 }
 
 .block-three {
-  @extend .block-one;
+  @include articleblock-format();
 
   & h3 {
     color: $purple;

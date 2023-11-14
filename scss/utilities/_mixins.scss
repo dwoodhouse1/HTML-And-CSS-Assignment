@@ -72,6 +72,7 @@
     height: auto;
     line-height: 35px;
     padding: 5px 15px;
+    text-align: center;
     text-transform: uppercase;
     font-size: em($base-font-size);
     border-radius: 3px;
@@ -148,3 +149,40 @@
                 ease-in-out; 
 }
 
+// Article Blocks
+
+@mixin articleblock-format() {
+    top:0;
+    border: 1px solid palette(grey, x-light);
+    border-radius: 0 0 2% 2%;
+    flex-direction: column;
+    
+    margin: 20px 20px;
+    position: relative;
+    transition: .5s ease;
+
+    &:hover {
+        top:-10px;
+        transition: .5s ease;
+      }
+    
+}
+
+// Services Blocks
+
+@mixin serviceblock-format() {
+    display: flex;
+    top:0;
+    border: 1px solid palette(grey, x-light);
+    border-radius: 0 0 2% 2%;
+    flex-direction: column;
+    
+    margin: 20px 20px;
+    position: relative;
+    transition: .5s ease;
+
+    &:hover {
+        top:-10px;
+        transition: .5s ease;
+      }
+}
