@@ -428,8 +428,6 @@ html, body {
 }
 
 .block-one {
-  display: flex;
-  
   top:0;
   border: 1px solid palette(grey, x-light);
   border-radius: 0 0 2% 2%;
@@ -452,8 +450,16 @@ html, body {
   & img {
     width: 100%;
   }
+
+  @include viewport(medium) {
+    width: 50%;
+    float: left;
+    
+  }
   
 }
+
+
 
 .block-two {
   @extend .block-one;
@@ -461,6 +467,13 @@ html, body {
   & h3 {
     color: $blue;
   }
+
+  @include viewport(medium) {
+    width: 50%;
+    float: right;
+  }
+
+
 
   
 }
@@ -470,6 +483,18 @@ html, body {
 
   & h3 {
     color: $purple;
+  }
+
+  @include viewport(medium) {
+    display: none;
+  }
+
+  @include viewport(large) {
+    display: none;
+  }
+
+  @include viewport(x-large) {
+    display: block;
   }
   
 }
@@ -484,7 +509,7 @@ html, body {
 }
 
 .article-content {
-  display: flex;
+  
   flex-wrap: wrap;
   position: relative;
   padding: 15px 15px 15px 0;
@@ -494,6 +519,29 @@ html, body {
   text-align: left;
   @include viewport(small) {
     flex-direction: column;
+  }
+
+  @include viewport(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+}
+
+.article-blocks {
+
+  display: block;
+  
+  @include viewport(medium) {
+    display: flex;
+  }
+
+  @include viewport(large) {
+    display: flex;
+  }
+
+  @include viewport(x-large) {
+    display: flex;
   }
 }
 
