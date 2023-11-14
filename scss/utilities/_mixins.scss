@@ -6,28 +6,34 @@
 
 @mixin viewport($break) {
     
-    @if $break == "x-small" { // 0 to 320px wide
-        @media (max-width: $brkpoint-xs) {
+    @if $break == "small" { // small generally used for mobile phones
+        @media (min-width: $brkpoint-sm) and (max-width: #{$brkpoint-md - 1}) { // between 320px and 767px
             @content;
         }
     }
-    @else if $break == "small" { // small generally used for mobile phones
-        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) { // between 1px and 320px
-            @content;
-        }
-    }
-    @else if $break == "medium" { // medium generally used for laptops/tablets
-        @media (min-width: #{$brkpoint-md + 1}) and (max-width: $brkpoint-lg) {
+    @else if $break == "medium" { 
+        @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
             @content;
         }
     }
     @else if $break == "large" { // large generally used for desktop monitors
-        @media (min-width: #{$brkpoint-lg + 1}) and (max-width: $brkpoint-xlg) {
+        @media (min-width: $brkpoint-lg) and (max-width: #{$brkpoint-xlg - 1}) { // between 992px and 1259px
+            @content;
+        }
+    }
+    @else if $break == "x-large" { // extra large
+        @media (min-width: $brkpoint-xlg) { // greater than 1260px
             @content;
         }
     }
     @else {
         @error "No value could be retrieved for break for `#{$break}`";
+    }
+
+    @if $break == "smedium" {
+        @media (max-width: $brkpoint-smd) {
+            @content;
+        }
     }
 }
 

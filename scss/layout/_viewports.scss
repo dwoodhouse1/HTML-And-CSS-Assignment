@@ -1,0 +1,72 @@
+// ==========================================================================
+// Viewports
+// ==========================================================================
+
+// Columns
+.col-sm {
+    @include viewport(small) {
+        flex-direction: column;
+    }
+}
+
+.col-md {
+    @include viewport(medium) {
+        flex-direction: column;
+        width:50%;
+    }
+
+    &-footer-menu {
+        @include viewport(medium) {
+            width: 50%;
+        }
+    }
+}
+
+.col-lg {
+    @include viewport(large) {
+        flex-direction: column;
+    }
+}
+
+.col-xlg {
+    @include viewport(x-large) {
+        flex-direction: column;
+    }
+}
+
+// Rows
+
+.row-md {
+    @include viewport(medium) {
+        flex-direction: row;
+    }
+}
+
+.row-lg {
+    @include viewport(large) {
+        flex-direction: row;
+    }
+}
+
+.row-xlg {
+    @include viewport(x-large) {
+        flex-direction: row;
+    }
+}
+
+
+// Hiddens
+
+.visible-xs {
+  
+
+    @include viewport(small) {
+      display: auto;
+    }
+  
+    @include viewport(medium) {
+      display: none;
+    }
+    
+    
+  }

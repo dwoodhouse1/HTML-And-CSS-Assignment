@@ -565,17 +565,15 @@ html, body {
 
   &-company-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: pallete(grey, x-light);
     color:white;
-    row-gap: 10px;
 
-    //@include img-sizing(em(100px), em(100px) );
-
-    @include viewport(small) {
-      flex-direction: column;
+    @include viewport(x-large) {
+      width: 400px;
     }
     
   }
@@ -618,19 +616,11 @@ html, body {
   }
 
   &-menu {
-    display: flex;
-    font-size: $font-size-s;
-
-    @include viewport(small) {
-    
-     // padding: 5px 0 10px;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
-    @include viewport(large) {
-      flex-direction: row;
-    }
+    // display: flex;
+    // font-size: $font-size-s;
+    // justify-content: space-between;
+    // column-gap: 100px;
+  
   }
 
   &-logo  {
@@ -642,9 +632,36 @@ html, body {
     }
   }
 
-  
+ &-menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    @include viewport(medium) {
+      flex-direction: row;
+      flex-wrap:wrap;
+      width: 100%;
+    }
+
+    @include viewport(large) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-grow: 1;
+      column-gap: 10%;
+    }
+
+    @include viewport(x-large) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      column-gap: 10%;
+      flex-grow: 2;
+    }
+    
+ }  
   
 }
+
+
 
 
 
@@ -664,47 +681,31 @@ li {
   justify-content: center;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: 0;
+}
+
 
 .licence {
-  //display: flex;
+  display: flex;
   
   justify-content: left;
   font-size: $font-size-s;
   background-color: palette(grey, x-dark);
   color: $white;
 
-  @include viewport(medium) {
-    justify-content: center;
-  }
+  
+
 }
 
-// .footer-bottom .licence {
-//   @include viewport(small) {
-//     padding: 5px 0 10px;
-//     flex-direction: column;
-    
-    
-//   }
 
-//   @include viewport(medium) {
-//     flex-direction: row;
-//     justify-content: center;
-//   }
-// }
 
-.visible-xs {
-  
-
-  @include viewport(small) {
-    display: auto;
-  }
-
-  @include viewport(medium) {
-    display: none;
-  }
-  
-  
-}
 
 
 
@@ -806,9 +807,4 @@ li {
   }
 }
 
-.hidden-xs {
-  @include viewport(x-small) {
-    display: none;
-  }
-}
 
