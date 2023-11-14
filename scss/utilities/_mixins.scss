@@ -6,7 +6,12 @@
 
 @mixin viewport($break) {
     
-    @if $break == "small" { // small generally used for mobile phones
+    @if $break == "x-small" { // 0 to 320px wide
+        @media (max-width: $brkpoint-xs) {
+            @content;
+        }
+    }
+    @else if $break == "small" { // small generally used for mobile phones
         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) { // between 1px and 320px
             @content;
         }

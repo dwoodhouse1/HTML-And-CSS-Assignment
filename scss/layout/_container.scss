@@ -10,6 +10,54 @@ html, body {
  //width: 100%;
 }
 
+#shadowroot {
+
+}
+
+#cookie-settings {
+  
+}
+
+.manage-consent-bar {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background: palette(grey, light);
+  color: $white;
+  border: solid palette(grey, light);
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: $font-size-s;
+
+  &:hover {
+    background: palette(grey, x-light);
+    border: none;
+  }
+}
+
+
+
+#greetingContainer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .speechbubble {
+    
+    position: absolute;
+    width: 100px;
+    fill: $white;
+
+  }
+}
+
 #container {
   position: relative;
   min-height: 100%;
@@ -658,11 +706,7 @@ li {
   
 }
 
-.hidden-s {
-  @include viewport(small) {
-    display: none;
-  }
-}
+
 
 .p {
   margin: 0;
@@ -753,4 +797,18 @@ li {
   padding: 0;
  }
 
+
+ // Viewports
+
+ .hidden-s {
+  @include viewport(small) {
+    display: none;
+  }
+}
+
+.hidden-xs {
+  @include viewport(x-small) {
+    display: none;
+  }
+}
 

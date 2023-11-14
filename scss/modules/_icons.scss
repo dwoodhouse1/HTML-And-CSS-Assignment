@@ -69,6 +69,18 @@
     &-dt {
       background-color: $red-tomato;
     }
+
+    &-speechbubble {
+      background-color: palette(grey, x-dark);
+      margin: 0;
+    }
+  }
+
+  .icon-speechbubble {
+    display:flex;
+    flex-direction: column;
+    padding: 0 5px 5px 0;
+    margin: 0;
   }
 
 
