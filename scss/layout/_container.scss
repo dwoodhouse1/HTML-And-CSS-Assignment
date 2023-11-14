@@ -414,7 +414,7 @@ html, body {
 .headings-bar {
   display:flex;
   background-color: $white;
-  //justify-content: spa;
+  justify-content: space-between;
 }
 .latest-articles {
   background-color: $white;
@@ -828,12 +828,14 @@ li {
  }
 
 
- // Viewports
+ .float-right {
+  float:right;
+ }
 
- .hidden-s {
-  @include viewport(small) {
-    display: none;
-  }
-}
+ .text-align-md {
+  text-align: center;
+ }
+
+ 
 
 

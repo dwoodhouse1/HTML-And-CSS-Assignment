@@ -446,6 +446,24 @@ a {
     }
   }
 
+  .text-align-md a {
+    @include a-format();
+    color: palette(grey, x-dark);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .headings-bar a {
+    @include a-format();
+    color: palette(grey, x-dark);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 
 
 
