@@ -755,26 +755,7 @@ li {
   padding: 15px;
 }
 
-.form-input {
-  display:flex;
-  flex-direction: column;
-  flex-wrap:wrap;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  & label {
-    padding-top: 15px;
-  }
-
-  @include viewport(medium) {
-    flex-wrap: wrap;
-  }
-
-  @include viewport (large) {
-    flex-wrap: wrap;
-  }
-
-}
 
 .media-body {
   display:table-cell;

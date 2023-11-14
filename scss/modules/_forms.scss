@@ -82,3 +82,56 @@
         
     }
   }
+
+  // Email Newsletter Search Form
+
+  #newsletter-name {
+    @include textfield-format();
+
+    
+  }
+
+  #newsletter-email {
+    @include textfield-format();
+
+  }
+
+  .required::after {
+    content: " *";
+    color: $red;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 15px;
+  
+    & label {
+      padding-top: 15px;
+    }
+  
+    @include viewport(medium) {
+      flex-wrap: wrap;
+    }
+  
+    @include viewport (large) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include viewport (x-large) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+  }
+
+ 
+  
+
+  .sign-up-input {
+    flex: 1 1;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }

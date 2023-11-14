@@ -758,63 +758,35 @@ li {
   padding: 15px;
 }
 
-/* line 758, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.form-input {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* line 765, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.form-input label {
-  padding-top: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 758, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-  .form-input {
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  /* line 758, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-  .form-input {
-    flex-wrap: wrap;
-  }
-}
-
-/* line 779, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 760, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .media-body {
   display: table-cell;
   vertical-align: top;
   line-height: 32px;
 }
 
-/* line 785, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 766, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .about {
   padding: 0;
 }
 
-/* line 789, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 770, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .services {
   padding: 0;
 }
 
-/* line 793, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 774, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .industries {
   padding: 0;
 }
 
-/* line 797, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 778, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .locations {
   padding: 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 804, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 785, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .hidden-s {
     display: none;
   }
@@ -1001,6 +973,83 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   height: 10px;
   position: center;
   content: "\2713";
+}
+
+/* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#newsletter-name {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 95%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* line 94, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#newsletter-email {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 95%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* line 99, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.required::after {
+  content: " *";
+  color: #d64541;
+}
+
+/* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 15px;
+}
+
+/* line 110, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-input label {
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-input {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 133, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.sign-up-input {
+  flex: 1 1;
+  padding-right: 15px;
+  margin-bottom: 15px;
 }
 
 /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
