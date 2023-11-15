@@ -65,6 +65,7 @@ $brkpoint-xlg: 1260px;
 $color-palettes: (
     grey: (
         example: rgb(128,128,128),
+        xxx-light: lighten($grey, 1%),
         xx-light: lighten($grey, 43%),
         x-light: lighten($grey, 35%),
         light: lighten($grey, 12%),

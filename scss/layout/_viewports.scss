@@ -105,6 +105,7 @@
 
     &-xlg {
         @include viewport(x-large) {
+            background-color: orange;
             display: none;
         }
     }
@@ -120,3 +121,19 @@
         display: none;
     }
 }
+
+// Mobile
+
+.mobile-viewport {
+    @include viewport(medium) {
+        display: none;
+    }
+
+    @include viewport(large) {
+        display: none;
+    }
+
+    @include viewport(x-large) {
+        display: none;
+    }
+  }

@@ -9,6 +9,18 @@
     fill: $black;
     width: 24px;
     height: 24px;
+
+    @include viewport(medium) {
+      fill: $white;
+    }
+
+    @include viewport(large) {
+      fill: $white;
+    }
+
+    @include viewport(x-large) {
+      fill: $white;
+    }
   }
 
   .telephone {
@@ -83,6 +95,46 @@
     margin: 0;
   }
 
+  .mouse {
+    fill: $white;
+  }
+
+  .plane {
+    fill: $white;
+  }
+
+  .icon-format-nav {
+    @include icon-format-nav();
+    &-laptop {
+      fill: $grey-blue;
+    }
+
+    &-monitor {
+      fill: $blue;
+    }
+
+    &-graph {
+      fill: $green;
+    }
+
+    &-telephone {
+      fill: $red;
+    }
+
+    &-code {
+      fill: $purple;
+    }
+
+    &-shield {
+      fill: $red-light;
+    }
+
+    &-hat {
+      fill: $red-tomato;
+    }
+  }
+
+ 
 
   // Social Icons
 

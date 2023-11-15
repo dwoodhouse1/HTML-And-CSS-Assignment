@@ -17,6 +17,11 @@ h1 {
   font-weight:400; //$font-size-l;
 }
 
+small {
+  display:block;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+}
 
 h2 {
   box-sizing: border-box;

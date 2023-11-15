@@ -6,14 +6,30 @@
 
 .search-form {
     display: flex;
-    padding-top: 10px;
     outline: none;
 
-    &-btn {
-        @extend .search-bar;
-        width: 20%;
-        outline: none;
+    @include viewport(small) {
+      padding-top: 10px;
     }
+
+    &-mobile-btn {
+      @include search-format();
+      //background-color: orange;
+    }
+
+    &-btn {
+      @include search-format();
+      width: 80px;
+      outline: none;
+      margin-right: 5px;
+      background-color: palette(grey,x-light);
+
+      &:hover {
+        background-color: palette(grey, light);
+      }
+
+    }
+    
   }
   .form-control {
     height: 47px;
@@ -22,10 +38,31 @@
   }
   .search-bar {
     display: inline-block;
-    background-color: rgba(0,0,0,.1);
-    outline: rgba(0,0,0,.1);
+    @include textfield-format();
+  
     
-    border: 2px solid rgba(0,0,0,.1);
+    @include viewport(small) {
+      
+    }
+
+    @include viewport(medium) {
+      
+    }
+
+    // @include viewport(large) {
+    //   display: none;
+    // }
+
+    // @include viewport(x-large) {
+    //   display: none;
+    // }
+
+   
+  }
+
+  .actions {
+    display:flex;
+    
   }
 
 

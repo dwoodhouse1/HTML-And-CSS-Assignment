@@ -10,6 +10,10 @@ html, body {
  //width: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 #shadowroot {
 
 }
@@ -66,10 +70,11 @@ html, body {
  // width: 450px;
   position: initial;
   //overflow: hidden;
-  max-width:  $brkpoint-xlg;
   //margin: 0 auto;
   //padding: 0 em(15px) 0 em(15px);
   background-color: $white;
+
+  
 
   @include viewport(small) {
     flex-direction: column;
@@ -87,9 +92,10 @@ html, body {
 .container {
   //width: 95%;
   height: 100%;
-  //margin-right: auto;
-  //margin-left:auto;
-  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left:auto;
+
+  
 
   & img {
     height: 100%;
@@ -102,12 +108,35 @@ html, body {
   
  //padding: 0 em(15px) 0 em(15px);
   background-color: palette(grey, base);
+
+  &>ul {
+
+   
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+  }
+
+  
 }
+
+
 
 
 .header-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @include viewport(large) {
+    justify-content: center;
+  }
+
+  @include viewport(x-large) {
+    justify-content: center;
+  }
 }
 
 .row {
@@ -143,6 +172,7 @@ html, body {
 .logo-container {
   display:table;
   table-layout: fixed;
+  padding-right: 20px;
 }
 
 .logo {
@@ -157,18 +187,67 @@ html, body {
 }
 
 
-
+.nav-item {
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  
+}
 
 
 
 
 .carousell-content {
   filter: invert(0);
-  width: 320px;
   //color: $white;
   position: absolute;
   text-align: center;
   font-weight: $font-weight-l;
+  
+
+  @include viewport(medium) { // 768px
+    width: 560px;
+  }
+
+  @include viewport(large) {
+    
+    text-align: left;
+    
+  }
+
+  @include viewport(x-large) {
+    width: 1200px;
+    text-align: left;
+    
+  }
+  
+  & h1 {
+
+   
+    
+    @include viewport(large) {
+      width: 900px;
+      font-size: 64px;
+      
+      
+    }
+  
+    @include viewport(x-large) {
+      width: 1200px;
+      font-size: 64px;
+      text-align: left;
+      
+    }
+    
+  }
+
+  & p {
+    margin-bottom: 25px;
+  }
+
+  
 
  & p {
   font-weight: $base-font-weight;
@@ -246,6 +325,8 @@ html, body {
   }
 
 }
+
+
 
 .service-block-two {
   @include serviceblock-format();
@@ -897,6 +978,12 @@ li {
   text-align: center;
  }
 
+ // Hamburger Container
+
+ .container-hamburger {
+  display: table-cell;
+  vertical-align: middle;
  
+}
 
 

@@ -33,6 +33,34 @@
         background-color: palette(grey, x-dark);
     }
 
+    &-help {
+      display: none; // These 2 buttons will display later when we added some JS functionality.
+      padding: 10px 10px;
+      margin-right: 5px;
+
+      @include viewport(x-large) {
+        display: block;
+      }
+
+      &-support {
+        background-color: $blue;
+        border-color: $blue;
+
+        &:hover {
+          background-color: $dark-blue;
+        }
+      }
+
+      &-contact {
+        background-color: palette(grey, x-light);
+        border-color: palette(grey, x-light);
+        
+        &:hover {
+          background-color: palette(grey, light);
+        }
+      }
+    }
+
     &-tooltip {
       position: absolute;
       color: $white;
@@ -352,10 +380,7 @@ a {
 
   // Hamburger button
 
-  .container-hamburger {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  
   
   .hamburger-box {
     display: inline-block;
@@ -488,6 +513,12 @@ a {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .nav-item a {
+    @include a-format();
+    color: $white;
+    text-transform: uppercase;
   }
 
 
