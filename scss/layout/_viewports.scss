@@ -3,6 +3,15 @@
 // ==========================================================================
 
 // Columns
+
+.col-xs {
+    width: 100%;
+    color: $white;
+}
+  
+.col-l {
+    display: flex;
+}
 .col-sm {
     @include viewport(small) {
         flex-direction: column;

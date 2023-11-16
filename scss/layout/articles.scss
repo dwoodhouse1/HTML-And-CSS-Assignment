@@ -1,3 +1,166 @@
 // ==========================================================================
 // Articles Section
 // ==========================================================================
+@import "../utilities/config";
+@import "../utilities/mixins";
+
+.headings-bar {
+    display:flex;
+    background-color: $white;
+    justify-content: space-between;
+  }
+  .latest-articles {
+    background-color: $white;
+  }
+  
+  .readtime {
+    display: inline;
+    text-transform: uppercase;
+    color: palette(grey,xx-light);
+    font-weight: $font-weight-xl;
+  }
+  
+  .block-one {
+    @include articleblock-format();
+    
+    & h3 {
+      color: $green;
+    }
+  
+    & img {
+      width: 100%;
+    }
+  
+    @include viewport(medium) {
+      width: 50%;
+      float: left;
+    }
+    
+  }
+  
+  
+  
+  .block-two {
+    @include articleblock-format();
+  
+    & h3 {
+      color: $blue;
+    }
+  
+    @include viewport(medium) {
+      width: 50%;
+      float: right;
+    }
+  
+  
+  
+    
+  }
+  
+  .block-three {
+    @include articleblock-format();
+  
+    & h3 {
+      color: $purple;
+    }
+  
+    @include viewport(medium) {
+      display: none;
+    }
+  
+    @include viewport(large) {
+      display: none;
+    }
+  
+    @include viewport(x-large) {
+      display: block;
+    }
+    
+  }
+  
+  .block-content {
+    display: block;
+    padding: 30px;
+  
+    & p {
+      text-wrap: wrap;
+    }
+  }
+  
+  .article-content {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px 15px 15px 0;
+    
+    text-align: left;
+    @include viewport(small) {
+      flex-direction: column;
+    }
+  
+    @include viewport(medium) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+  }
+  
+  .article-blocks {
+  
+    display: block;
+    
+    @include viewport(medium) {
+      display: flex;
+    }
+  
+    @include viewport(large) {
+      display: flex;
+    }
+  
+    @include viewport(x-large) {
+      display: flex;
+    }
+  }
+  
+   a.article-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+    //transition: .5s ease;
+    text-decoration: none;
+    text-align: left;
+    font-size: $font-size-s;
+    color: palette(grey, xx-light);
+    
+      &:hover {
+        text-decoration: none;
+      }
+  
+   }
+  
+   .latest-articles {
+    padding-left: 0;
+   }
+  
+   .user{
+    display:table;
+    margin-top: 30px;
+    padding-top: 30px;
+    
+    &>*{
+      display:table-cell;
+      vertical-align: middle;
+    }
+   }
+  
+   .info {
+    padding-left: 20px;
+   }
+  
+   .divider {
+    border-top: 1px solid #a3a5b3;
+    margin-top: 50px;
+   }

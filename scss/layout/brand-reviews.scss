@@ -1,4 +1,100 @@
 // ==========================================================================
 // Brand + Reviews Section
 // ==========================================================================
+@import "../utilities/config";
+@import "../utilities/mixins";
 
+// Brand section
+
+.background-color-grey {
+    background-color: palette(grey, base);
+  }
+  
+.background-color-lightgrey {
+    background-color: palette(grey, xx-light);
+}
+  
+.background-color-darkgrey {
+    background-color: palette(grey, x-dark);
+}
+  
+.brand-bg {
+    color: $white;
+    
+  
+    & a {
+        color: $white;
+        text-decoration: none;
+    }
+  
+    & h2 {
+      color: $white;
+    }
+  
+    @include viewport(large) {
+      display: inline-block;
+      width: 50%;
+    }
+  
+    @include viewport(x-large) {
+      display: inline-block;
+      width: 50%;
+    }
+}
+  
+  
+  
+  // Review section
+  .reviews-bg {
+  
+    margin: 15px;
+    color: $white;
+  
+    @include viewport(large) {
+      display: inline-block;
+      width: 45%;
+    }
+  
+    @include viewport(x-large) {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+  
+  .client-quote {
+    font-style: italic;
+  }
+  
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+    
+  
+    @include viewport(x-large) {
+      flex-direction: row;
+    }
+  }
+  
+  
+  
+  
+  // About us Section
+  .aboutus {
+    display: flex;
+    margin-bottom: em(50px);
+    flex-direction: column;
+  
+    
+  
+    @include viewport(x-large) {
+      gap: 15px;
+      flex-direction: row;
+    }
+  }
+  
+  .star {
+    display:inline-block;
+    font-size: 50px;
+  }

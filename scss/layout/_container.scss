@@ -2,8 +2,34 @@
 // Container
 // ==========================================================================
 
+#container {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  position: initial;
+  background-color: $white;
 
+  @include viewport(small) {
+    flex-direction: column;
+  }
 
+  @include viewport(large) {
+    flex-direction: column;
+  }
+}
+
+#greetingContainer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .speechbubble {
+    position: absolute;
+    width: 100px;
+    fill: $white;
+  }
+}
 
 
 .manage-consent-bar {
@@ -12,7 +38,6 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-
   background: palette(grey, light);
   color: $white;
   border: solid palette(grey, light);
@@ -29,52 +54,13 @@
   }
 }
 
-
-
-#greetingContainer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-
-  .speechbubble {
-    
-    position: absolute;
-    width: 100px;
-    fill: $white;
-
-  }
-}
-
-#container {
-  position: relative;
-  min-height: 100%;
-  height: 100%;
-
-  position: initial;
-  background-color: $white;
-
-  
-
-  @include viewport(small) {
-    flex-direction: column;
-  }
-
- 
-
-  @include viewport(large) {
-    flex-direction: column;
-  }
-
-
-}
-
 .container {
   width: 80%;
   height: 100%;
   margin-right: auto;
   margin-left:auto;
   margin: auto;
+  background-color: palette(grey, base);
 
   &-banner {
     width: 100%;
@@ -89,22 +75,13 @@
     background-color: $white;
   }
   
-  background-color: palette(grey, base);
-
   &>ul {
-
-   
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
     list-style: none;
-    
   }
-
- 
-
-  
 }
 
 .container-fullwidth {
@@ -123,17 +100,10 @@
   vertical-align: middle;
 }
 
-
 .container-hamburger {
   display: table-cell;
   vertical-align: middle;
- 
 }
-
-
-
-
-
 
 .row {
   // display: flex;
@@ -160,707 +130,10 @@
   padding: 20px 0;
 }
 
-
-
-.logo {
-  display: table-cell;
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-.carousell-content {
-  filter: invert(0);
-  //color: $white;
-  position: absolute;
-  text-align: center;
-  font-weight: $font-weight-l;
-  
-
-  @include viewport(medium) { // 768px
-    width: 560px;
-  }
-
-  @include viewport(large) {
-    
-    text-align: left;
-    
-  }
-
-  @include viewport(x-large) {
-    width: 1200px;
-    text-align: left;
-    
-  }
-  
-  & h1 {
-
-   
-    
-    @include viewport(large) {
-      width: 900px;
-      font-size: 64px;
-      
-      
-    }
-  
-    @include viewport(x-large) {
-      width: 1200px;
-      font-size: 64px;
-      text-align: left;
-      
-    }
-    
-  }
-
-  & p {
-    margin-bottom: 25px;
-  }
-
-  
-
- & p {
-  font-weight: $base-font-weight;
- }
-}
-
-
-// Services Section
-
-.service {
-  background-color: $white;
-}
-
-.service-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-blocks {
-
-  @include viewport(large) {
-    display: grid;
-    
-    grid-template-columns: auto auto auto;
-    
-  }
-
-  @include viewport(x-large) {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
-.service-link {
- // color: $white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  text-align: center;
-
-  & h1 {
-    color: palette(grey, x-dark);
-  }
-
-  >span.h2 {
-    padding-bottom: 10px;
-  }
-
-}
-
-.service-block-one {
-  @include serviceblock-format();
-  text-align: center;
-
-  &:hover {
-    background-color: $grey-blue;
-    color: $white;
-    
-    .btn-software {
-      background-color: $white;
-      color: $grey-blue;
-    }
-
-    .laptop {
-      fill: $grey-blue;
-      background-color: $white;
-    }
-
-    .icon-circle-software {
-      fill: $grey-blue;
-      background-color: $white;
-    }
-    
-  }
-
-}
-
-
-
-.service-block-two {
-  @include serviceblock-format();
-  
-  &:hover {
-    background-color: $blue;
-    color: $white;
-
-    .btn-it {
-      background-color: $white;
-      color: $blue;
-    }
-
-    .monitor {
-      fill: $blue;
-      background-color: $white;
-    }
-
-    .icon-circle-it {
-      fill: $blue;
-      background-color: $white;
-    }
-
-    
-  }
-
-}
-
-.service-block-three {
-  @include serviceblock-format();
-
-  &:hover {
-    background-color: $green;
-    color: $white;
-
-    .btn-dm {
-      background-color: $white;
-      color: $green;
-    }
-
-    .graph {
-      fill: $green;
-      background-color: $white;
-    }
-
-    .icon-circle-dm {
-      fill: $green;
-      background-color: $white;
-    }
-  }
-
-}
-
-.service-block-four {
-  @include serviceblock-format();
-
-  &:hover {
-    background-color: $red;
-    color: $white;
-
-    .btn-ts {
-      background-color: $white;
-      color: $red;
-    }
-
-    .telephone-services {
-      fill: $red;
-      background-color: $white;
-    }
-
-    .icon-circle-ts {
-      fill: $red;
-      background-color: $white;
-    }
-  }
-}
-
-.service-block-five {
-  @include serviceblock-format();
-
-  &:hover {
-    background-color: $purple;
-    color: $white;
-
-    .btn-wd {
-      background-color: $white;
-      color: $purple;
-    }
-
-    .code {
-      fill: $purple;
-      background-color: $white;
-    }
-
-    .icon-circle-wd {
-      fill: $purple;
-      background-color: $white;
-    }
-  }
-}
-
-.service-block-six {
-  @include serviceblock-format();
-
-  &:hover {
-    background-color: $red-light;
-    color: $white;
-
-    .btn-cs {
-      background-color: $white;
-      color: $red-light;
-    }
-
-    .shield {
-      fill: $red-light;
-      background-color: $white;
-    }
-
-    .icon-circle-cs {
-      fill: $red-light;
-      background-color: $white;
-    }
-  }
-
-  
-}
-
-.service-block-seven {
-  @include serviceblock-format();
-
-  &:hover {
-    background-color: $red-tomato;
-    color: $white;
-
-    .btn-dt {
-      background-color: $white;
-      color: $red-tomato;
-    }
-
-    .hat {
-      fill: $red-tomato;
-      background-color: $white;
-    }
-
-    .icon-circle-dt {
-      fill: $red-tomato;
-      background-color: $white;
-    }
-  }
-  @include viewport(large) {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  @include viewport(x-large) {
-    grid-column: 2;
-    grid-row: 3;
-  }
-}
-
-// Partners section
-
 .partners {
   @extend .clients;
 }
 
-
-// Brand section
-
-.background-color-grey {
-  background-color: palette(grey, base);
-}
-
-.background-color-lightgrey {
-  background-color: palette(grey, xx-light);
-}
-
-.background-color-darkgrey {
-  background-color: palette(grey, x-dark);
-}
-
-.brand-bg {
-  color: $white;
-  
-
-  & a {
-   color: $white;
-   text-decoration: none;
-  }
-
-  & h2 {
-    color: $white;
-  }
-
-  @include viewport(large) {
-    display: inline-block;
-    width: 50%;
-  }
-
-  @include viewport(x-large) {
-    display: inline-block;
-    width: 50%;
-  }
-}
-
-
-
-// Review section
-.reviews-bg {
-
-  margin: 15px;
-  color: $white;
-
-  @include viewport(large) {
-    display: inline-block;
-    width: 45%;
-  }
-
-  @include viewport(x-large) {
-    display: inline-block;
-    width: 45%;
-  }
-}
-
-.client-quote {
-  font-style: italic;
-}
-
-.reviews {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  
-
-  @include viewport(x-large) {
-    flex-direction: row;
-  }
-}
-
-
-
-
-// About us Section
-.aboutus {
-  display: flex;
-  margin-bottom: em(50px);
-  flex-direction: column;
-
-  
-
-  @include viewport(x-large) {
-    gap: 15px;
-    flex-direction: row;
-  }
-}
-
-.star {
-  display:inline-block;
-  font-size: 50px;
-}
-
-// Articles Classes
-
-.headings-bar {
-  display:flex;
-  background-color: $white;
-  justify-content: space-between;
-}
-.latest-articles {
-  background-color: $white;
-}
-
-.readtime {
-  display: inline;
-  text-transform: uppercase;
-  color: palette(grey,xx-light);
-  font-weight: $font-weight-xl;
-}
-
-.block-one {
-  @include articleblock-format();
-  
-
-  
-
-  & h3 {
-    color: $green;
-  }
-
-  & img {
-    width: 100%;
-  }
-
-  @include viewport(medium) {
-    width: 50%;
-    float: left;
-    
-  }
-  
-}
-
-
-
-.block-two {
-  @include articleblock-format();
-
-  & h3 {
-    color: $blue;
-  }
-
-  @include viewport(medium) {
-    width: 50%;
-    float: right;
-  }
-
-
-
-  
-}
-
-.block-three {
-  @include articleblock-format();
-
-  & h3 {
-    color: $purple;
-  }
-
-  @include viewport(medium) {
-    display: none;
-  }
-
-  @include viewport(large) {
-    display: none;
-  }
-
-  @include viewport(x-large) {
-    display: block;
-  }
-  
-}
-
-.block-content {
-  display: block;
-  padding: 30px;
-
-  & p {
-    text-wrap: wrap;
-  }
-}
-
-.article-content {
-  
-  flex-wrap: wrap;
-  position: relative;
-  padding: 15px 15px 15px 0;
-  
-  
-
-  text-align: left;
-  @include viewport(small) {
-    flex-direction: column;
-  }
-
-  @include viewport(medium) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-}
-
-.article-blocks {
-
-  display: block;
-  
-  @include viewport(medium) {
-    display: flex;
-  }
-
-  @include viewport(large) {
-    display: flex;
-  }
-
-  @include viewport(x-large) {
-    display: flex;
-  }
-}
-
- a.article-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  
-  //transition: .5s ease;
-  text-decoration: none;
-  text-align: left;
-  font-size: $font-size-s;
-  color: palette(grey, xx-light);
-  
-    &:hover {
-      text-decoration: none;
-    }
-
-    
-
-  
- }
-
- .latest-articles {
-  padding-left: 0;
- }
-
- .user{
-  display:table;
-  margin-top: 30px;
-  padding-top: 30px;
-  
-  &>*{
-    display:table-cell;
-    vertical-align: middle;
-  }
- }
-
- .info {
-  padding-left: 20px;
- }
-
- .divider {
-  border-top: 1px solid #a3a5b3;
-  margin-top: 50px;
- }
-
-
-// Footer classes
-
-
-
-
-
-
-
-
-
-li {
-  list-style: none;
-  justify-content: center;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  border: 0;
-}
-
-
-.licence {
-  display: flex;
-  
-  justify-content: left;
-  font-size: $font-size-s;
-  background-color: palette(grey, x-dark);
-  color: $white;
-
-  @include viewport(small) {
-    flex-direction: column;
-  }
-
-}
-
-
-
-
-
-
-
-.ul {
-  display:flex;
-  
-  padding-left: 1px;
-  margin: 0;
-  list-style-type: none;
-
-   & li:first-of-type{
-    
-     @include viewport(small) {
-       display: none;
-     }
-
-     @include viewport(medium) {
-       display: inline-block;
-     }
-     
-   }
-
-   
-  
-}
-
-.li-hypthen {
-  margin-left: em(10px);
-  margin-right: em(10px);
-}
-
-.col-xs {
-  width: 100%;
-  color: $white;
-}
-
-.col-l {
+.link-icon-container {
   display: flex;
 }
-
-.newsletter {
-  background-color: palette(grey, xx-light);
-  padding: 15px;
-}
-
-
-
-.media-body {
-  display:table-cell;
-  vertical-align: top;
-  line-height: 32px;
-}
-
-.about {
-  padding: 0;
-}
-
-.services {
-  padding: 0;
-}
-
-.industries {
-  padding: 0;
-}
-
-.locations {
-  padding: 0;
-}
-
-
-.float-right {
-  float:right;
-}
-
-
-
-
-

@@ -3,11 +3,9 @@
 // ==========================================================================
 
 #chat-button {
-  
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),
               0 6px 20px 0 rgba(0,0,0,.10);
-
   display: flex;
   background: none;
   border: none;
@@ -30,11 +28,11 @@
     @include btn-format();
 
     &:hover {
-        background-color: palette(grey, x-dark);
+      background-color: palette(grey, x-dark);
     }
 
     &-help {
-      display: none; // These 2 buttons will display later when we added some JS functionality.
+      display: none;
       padding: 10px 10px;
       margin-right: 5px;
 
@@ -151,12 +149,9 @@
         text-decoration: none;
         background-color: $black;
       }
-      
     }
 
     &-reviews {
-      //margin-top: 15px;
-      
       display: flex;
       
       @include viewport(small) {
@@ -166,10 +161,7 @@
       &-google {
         width: 160px;
         background-color: $blue;
-        
-
-        
-        
+      
         @include viewport(x-large) {
           margin-bottom: 40px;
         }
@@ -273,26 +265,12 @@
 
   }
 
-  // .btn-software:hover {
-  //   background-color: $white;
-  // }
-
-  
   .btn-subscribe {
     margin-left: em(10px);
   }
 
+// Social Buttons
 
-a {
-   
-}
-
-
-// Social icons
-
-// .footer-logo {
-//    @include img-sizing(em(200px), em(100px));
-// }
 .facebook {
     //@include img-replace("facebook.png", em(100px), em(100px), flex);
     
@@ -347,12 +325,6 @@ a {
     padding-right: 50%;
   }
 
-  // Arrow Right Icon
-
-  
-  
-
-
   // Client Slideshow Buttons
 
   .clients {
@@ -386,14 +358,8 @@ a {
 
   }
 
-
-  // Latest News Buttons
-
-
   // Hamburger button
 
-  
-  
   .hamburger-box {
     display: inline-block;
     width: 33px;
@@ -527,26 +493,6 @@ a {
     }
   }
 
-  .nav-item a {
-    @include a-format();
-    color: $white;
-    text-transform: uppercase;
-  }
-
-  .sub-menu
-
-  .link-icon-container {
-    display: flex;
-  }
-
   .link-text {
     display: flex;
   }
-
-
-
-  
-  
-
-  
-  

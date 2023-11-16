@@ -58,12 +58,21 @@ p {
   margin-inline-end: 0px;
 }
 
+li {
+  list-style: none;
+  justify-content: center;
+}
+
 .newsletter {
     padding-bottom: em(50px);
 }
 
 .text-align-md {
   text-align: center;
+}
+
+.float-right {
+  float:right;
 }
 
 

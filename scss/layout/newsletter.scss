@@ -1,3 +1,14 @@
 // ==========================================================================
 // Newsletter Section
 // ==========================================================================
+
+.newsletter {
+    background-color: palette(grey, xx-light);
+    padding: 15px;
+}
+
+.media-body {
+    display:table-cell;
+    vertical-align: top;
+    line-height: 32px;
+}

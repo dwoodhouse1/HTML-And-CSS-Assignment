@@ -1,4 +1,234 @@
 // ==========================================================================
 // Services Section
 // ==========================================================================
+@import "../utilities/config";
+@import "../utilities/mixins";
 
+.service {
+    background-color: $white;
+}
+  
+.service-title {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.service-blocks {
+  
+    @include viewport(large) {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+  
+    @include viewport(x-large) {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+}
+  .service-link {
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+  
+    & h1 {
+      color: palette(grey, x-dark);
+    }
+  
+    >span.h2 {
+      padding-bottom: 10px;
+    }
+  
+  }
+  
+  .service-block-one {
+    @include serviceblock-format();
+    text-align: center;
+  
+    &:hover {
+      background-color: $grey-blue;
+      color: $white;
+      
+      .btn-software {
+        background-color: $white;
+        color: $grey-blue;
+      }
+  
+      .laptop {
+        fill: $grey-blue;
+        background-color: $white;
+      }
+  
+      .icon-circle-software {
+        fill: $grey-blue;
+        background-color: $white;
+      }
+      
+    }
+  
+  }
+  
+  
+  
+  .service-block-two {
+    @include serviceblock-format();
+    
+    &:hover {
+      background-color: $blue;
+      color: $white;
+  
+      .btn-it {
+        background-color: $white;
+        color: $blue;
+      }
+  
+      .monitor {
+        fill: $blue;
+        background-color: $white;
+      }
+  
+      .icon-circle-it {
+        fill: $blue;
+        background-color: $white;
+      }
+  
+      
+    }
+  
+  }
+  
+  .service-block-three {
+    @include serviceblock-format();
+  
+    &:hover {
+      background-color: $green;
+      color: $white;
+  
+      .btn-dm {
+        background-color: $white;
+        color: $green;
+      }
+  
+      .graph {
+        fill: $green;
+        background-color: $white;
+      }
+  
+      .icon-circle-dm {
+        fill: $green;
+        background-color: $white;
+      }
+    }
+  
+  }
+  
+  .service-block-four {
+    @include serviceblock-format();
+  
+    &:hover {
+      background-color: $red;
+      color: $white;
+  
+      .btn-ts {
+        background-color: $white;
+        color: $red;
+      }
+  
+      .telephone-services {
+        fill: $red;
+        background-color: $white;
+      }
+  
+      .icon-circle-ts {
+        fill: $red;
+        background-color: $white;
+      }
+    }
+  }
+  
+  .service-block-five {
+    @include serviceblock-format();
+  
+    &:hover {
+      background-color: $purple;
+      color: $white;
+  
+      .btn-wd {
+        background-color: $white;
+        color: $purple;
+      }
+  
+      .code {
+        fill: $purple;
+        background-color: $white;
+      }
+  
+      .icon-circle-wd {
+        fill: $purple;
+        background-color: $white;
+      }
+    }
+  }
+  
+  .service-block-six {
+    @include serviceblock-format();
+  
+    &:hover {
+      background-color: $red-light;
+      color: $white;
+  
+      .btn-cs {
+        background-color: $white;
+        color: $red-light;
+      }
+  
+      .shield {
+        fill: $red-light;
+        background-color: $white;
+      }
+  
+      .icon-circle-cs {
+        fill: $red-light;
+        background-color: $white;
+      }
+    }
+  
+    
+  }
+  
+  .service-block-seven {
+    @include serviceblock-format();
+  
+    &:hover {
+      background-color: $red-tomato;
+      color: $white;
+  
+      .btn-dt {
+        background-color: $white;
+        color: $red-tomato;
+      }
+  
+      .hat {
+        fill: $red-tomato;
+        background-color: $white;
+      }
+  
+      .icon-circle-dt {
+        fill: $red-tomato;
+        background-color: $white;
+      }
+    }
+    @include viewport(large) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  
+    @include viewport(x-large) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  }

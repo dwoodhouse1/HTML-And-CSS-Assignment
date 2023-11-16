@@ -5,8 +5,8 @@
 		"../../scss/layout/newsletter.scss"
 	],
 	"sourcesContent": [
-		"// ==========================================================================\r\n// Newsletter Section\r\n// =========================================================================="
+		"// ==========================================================================\r\n// Newsletter Section\r\n// ==========================================================================\r\n\r\n.newsletter {\r\n    background-color: palette(grey, xx-light);\r\n    padding: 15px;\r\n}\r\n\r\n.media-body {\r\n    display:table-cell;\r\n    vertical-align: top;\r\n    line-height: 32px;\r\n}"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AAIA,AAAA,WAAW,CAAC;EACR,gBAAgB,EAAE,uBAAuB;EACzC,OAAO,EAAE,IAAI;CAChB;;;AAED,AAAA,WAAW,CAAC;EACR,OAAO,EAAC,UAAU;EAClB,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,IAAI;CACpB"
 }

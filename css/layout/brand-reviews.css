@@ -1,2 +1,110 @@
+/* line 9, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.background-color-grey {
+  background-color: palette(grey, base);
+}
+
+/* line 13, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.background-color-lightgrey {
+  background-color: palette(grey, xx-light);
+}
+
+/* line 17, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.background-color-darkgrey {
+  background-color: palette(grey, x-dark);
+}
+
+/* line 21, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.brand-bg {
+  color: #fff;
+}
+
+/* line 25, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.brand-bg a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 30, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.brand-bg h2 {
+  color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 21, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .brand-bg {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 21, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .brand-bg {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+/* line 48, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.reviews-bg {
+  margin: 15px;
+  color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 48, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .reviews-bg {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 48, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .reviews-bg {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+/* line 64, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.client-quote {
+  font-style: italic;
+}
+
+/* line 68, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 1260px) {
+  /* line 68, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .reviews {
+    flex-direction: row;
+  }
+}
+
+/* line 84, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.aboutus {
+  display: flex;
+  margin-bottom: em(50px);
+  flex-direction: column;
+}
+
+@media (min-width: 1260px) {
+  /* line 84, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  .aboutus {
+    gap: 15px;
+    flex-direction: row;
+  }
+}
+
+/* line 97, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+.star {
+  display: inline-block;
+  font-size: 50px;
+}
 
 /*# sourceMappingURL=brand-reviews.css.map */
