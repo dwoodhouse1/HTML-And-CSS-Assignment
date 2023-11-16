@@ -39,7 +39,7 @@
       margin-right: 5px;
 
       @include viewport(x-large) {
-        display: block;
+        display: flex;
       }
 
       &-support {
@@ -155,14 +155,24 @@
     }
 
     &-reviews {
-      margin-top: 39px;
-      margin-bottom: 20px;
-      display: block;
+      //margin-top: 15px;
+      
+      display: flex;
+      
+      @include viewport(small) {
+        margin-bottom: none;
+      }
 
       &-google {
         width: 160px;
         background-color: $blue;
-        margin-right: 10px;
+        
+
+        
+        
+        @include viewport(x-large) {
+          margin-bottom: 40px;
+        }
 
         &:hover {
           background-color: $dark-blue;
@@ -172,10 +182,12 @@
       &-trustpilot {
         width: 180px;
         background-color: $green;
+        margin-bottom: 40px;
 
         &:hover {
           background-color: $dark-green;
-          text-decoration: none
+          text-decoration: none;
+          
         }
       }
 
@@ -284,7 +296,7 @@ a {
 .facebook {
     //@include img-replace("facebook.png", em(100px), em(100px), flex);
     
-    @include img-sizing(em(100px), em(50px));
+    @include img-sizing(em(50px), em(50px));
     @include btn-format-socials;
     & img {
       
@@ -299,7 +311,7 @@ a {
   .linkedin {
     //@include img-replace("linkedin2.png", em(100px), em(100px), flex);
     @include btn-format-socials;
-    @include img-sizing(em(100px), em(50px));
+    @include img-sizing(em(50px), em(50px));
 
     &:hover {
         background-color: $linkedin-color;
@@ -309,7 +321,7 @@ a {
   .twitter {
    // @include img-replace("twitter.png", em(100px), em(100px), flex);
     @include btn-format-socials;
-    @include img-sizing(em(100px), em(50px));
+    @include img-sizing(em(50px), em(50px));
 
     &:hover {
         background-color: $twitter-color;
@@ -318,7 +330,7 @@ a {
   
   .instagram {
     @include btn-format-socials;
-    @include img-sizing(em(100px), em(50px));
+    @include img-sizing(em(50px), em(50px));
     &:hover {
         background-color: $instagram-color
     }
@@ -521,6 +533,15 @@ a {
     text-transform: uppercase;
   }
 
+  .sub-menu
+
+  .link-icon-container {
+    display: flex;
+  }
+
+  .link-text {
+    display: flex;
+  }
 
 
 

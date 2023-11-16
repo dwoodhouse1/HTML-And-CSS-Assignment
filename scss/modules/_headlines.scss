@@ -2,3 +2,15 @@
 // Headlines
 // ==========================================================================
 
+.header-row {
+    display: flex;
+    justify-content: space-between;
+  
+    @include viewport(large) {
+      justify-content: center;
+    }
+  
+    @include viewport(x-large) {
+      justify-content: center;
+    }
+  }

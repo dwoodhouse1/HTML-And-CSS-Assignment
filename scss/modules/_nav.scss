@@ -2,3 +2,26 @@
 // Nav
 // ==========================================================================
 
+.nav-item {
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    
+}
+
+.nav-item a {
+    @include a-format();
+    color: $white;
+    text-transform: uppercase;
+}
+
+.sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.sub-menu-banner-title {
+    width: 100%;
+}

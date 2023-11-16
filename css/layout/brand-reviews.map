@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "brand-reviews.css",
+	"sources": [
+		"../../scss/layout/brand-reviews.scss"
+	],
+	"sourcesContent": [
+		"// ==========================================================================\r\n// Brand + Reviews Section\r\n// ==========================================================================\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ""
+}

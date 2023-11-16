@@ -1,0 +1,134 @@
+// ==========================================================================
+// Footers
+// ==========================================================================
+
+
+.footer {
+    display: flex;
+    //flex-wrap: wrap;
+    position: relative;
+    padding-top: 20%;
+   
+    &-bottom {
+      width: 100%;
+      justify-content: space-between;
+      left: 0;
+      background-color: palette(grey, x-dark);
+     
+    }
+  
+    &-company-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background-color: pallete(grey, x-light);
+      color:white;
+  
+      @include viewport(x-large) {
+        justify-content: flex-start;
+      }
+      
+    }
+  
+    &-socials {
+      display: flex;
+      flex-wrap:wrap;
+      gap: em(10px);
+      color:white;
+      margin-left: 8px;
+  
+      @include viewport(medium) {
+        flex-direction: row;
+      }
+      
+    }
+  
+    &-row{
+      display: flex;
+     // margin-left: -15px;
+     // margin-right: -15px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      @include viewport(small) {
+        flex-direction: column;
+      }
+  
+      @include viewport(medium) {
+  
+      }
+  
+      @include viewport(large) {
+        
+        flex-direction: row;
+      }
+  
+      
+    }
+  
+    &-menu {
+      // display: flex;
+      // font-size: $font-size-s;
+      // justify-content: space-between;
+      // column-gap: 100px;
+    
+    }
+  
+    &-logo  {
+     // width: 100%;
+      vertical-align: middle;
+  
+      & img {
+        width: 100%;
+      }
+    }
+  
+   &-menu-row {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      
+      @include viewport(medium) {
+        flex-direction: row;
+        flex-wrap:wrap;
+        width: 100%;
+      }
+  
+      @include viewport(large) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        column-gap: 10%;
+      }
+  
+      @include viewport(x-large) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 10%;
+        flex-grow: 2;
+      }
+      
+   }  
+    
+  }
+.footer-socials a {
+  
+
+    @include viewport(smedium) {
+      width: 35%;
+    }
+  }
+  
+  
+  
+  
+  footer h4 {
+   // display: flex;
+    //flex-wrap: wrap;
+    //justify-content: center;
+    color: $white;
+    text-transform: uppercase;
+  }

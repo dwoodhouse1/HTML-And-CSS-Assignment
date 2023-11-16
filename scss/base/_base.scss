@@ -17,24 +17,12 @@ h1 {
   font-weight:400; //$font-size-l;
 }
 
-small {
-  display:block;
-  font-size: $font-size-xs;
-  text-transform: uppercase;
-}
-
 h2 {
   box-sizing: border-box;
   font-size: 2rem;
   font-weight: 400;
   margin: 0 0 15px;
   color: palette(grey, x-dark);
-}
-
-.h2 {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  text-align: center;
 }
 
 h3 {
@@ -46,24 +34,47 @@ h4 {
   color: $white;
 }
 
-
-
-
-.newsletter{
-    padding-bottom: em(50px);
+small {
+  display:block;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
 }
-
-
 
 p {
   font-size: em($base-font-size);
 }
 
-.p {
-  padding-bottom: 10px;
+.h2 {
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
-  //text-wrap: wrap;
 }
+
+.p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.newsletter {
+    padding-bottom: em(50px);
+}
+
+.text-align-md {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

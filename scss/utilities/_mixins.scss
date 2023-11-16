@@ -11,6 +11,11 @@
             @content;
         }
     }
+    @else if $break == "smedium" {
+        @media (max-width: $brkpoint-smd) {
+            @content;
+        }
+    }
     @else if $break == "medium" { 
         @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
             @content;
@@ -30,11 +35,7 @@
         @error "No value could be retrieved for break for `#{$break}`";
     }
 
-    @if $break == "smedium" {
-        @media (max-width: $brkpoint-smd) {
-            @content;
-        }
-    }
+    
 }
 
 
@@ -115,7 +116,7 @@
     width: 32px;
     height: 32px;
     margin-top: 8%;
-    margin-left: 33%;
+    
 }
 
 @mixin icon-format-nav {
@@ -177,25 +178,16 @@
     &:hover {
         top:-10px;
         transition: .5s ease;
-      }
+    }
     
 }
 
 // Services Blocks
 
 @mixin serviceblock-format() {
+    @include articleblock-format();
     display: flex;
-    top:0;
-    border: 1px solid palette(grey, x-light);
-    border-radius: 0 0 2% 2%;
-    flex-direction: column;
-    
-    margin: 20px 20px;
-    position: relative;
-    transition: .5s ease;
-
-    &:hover {
-        top:-10px;
-        transition: .5s ease;
-      }
+    border-radius: 2%;
 }
+
+

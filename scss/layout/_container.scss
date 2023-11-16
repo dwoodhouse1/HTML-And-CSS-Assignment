@@ -2,25 +2,9 @@
 // Container
 // ==========================================================================
 
-html, body {
-  //min-width: 100%;
-    //max-width: 2000px;
- // max-height: 700px;
- //height: 100%;
- //width: 100%;
-}
 
-body {
-  margin: 0;
-}
 
-#shadowroot {
 
-}
-
-#cookie-settings {
-  
-}
 
 .manage-consent-bar {
   position: fixed;
@@ -65,13 +49,9 @@ body {
 #container {
   position: relative;
   min-height: 100%;
-  //width: 100%;
   height: 100%;
- // width: 450px;
+
   position: initial;
-  //overflow: hidden;
-  //margin: 0 auto;
-  //padding: 0 em(15px) 0 em(15px);
   background-color: $white;
 
   
@@ -90,12 +70,15 @@ body {
 }
 
 .container {
-  //width: 95%;
+  width: 80%;
   height: 100%;
   margin-right: auto;
   margin-left:auto;
+  margin: auto;
 
-  
+  &-banner {
+    width: 100%;
+  }
 
   & img {
     height: 100%;
@@ -106,7 +89,6 @@ body {
     background-color: $white;
   }
   
- //padding: 0 em(15px) 0 em(15px);
   background-color: palette(grey, base);
 
   &>ul {
@@ -120,24 +102,38 @@ body {
     
   }
 
+ 
+
   
 }
 
-
-
-
-.header-row {
-  display: flex;
-  justify-content: space-between;
-
-  @include viewport(large) {
-    justify-content: center;
-  }
-
-  @include viewport(x-large) {
-    justify-content: center;
-  }
+.container-fullwidth {
+  background-color: palette(grey, x-dark);
+  width: 100%;
 }
+
+.logo-container {
+  display:table;
+  table-layout: fixed;
+  padding-right: 20px;
+}
+
+.container-mobile {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.container-hamburger {
+  display: table-cell;
+  vertical-align: middle;
+ 
+}
+
+
+
+
+
 
 .row {
   // display: flex;
@@ -158,22 +154,13 @@ body {
 
 .main {
  position: relative;
-
-//  &-navigation img {
-//   height: 100%;
-//   width: 100%;
-//  }
 }
 
 .inner {
   padding: 20px 0;
 }
 
-.logo-container {
-  display:table;
-  table-layout: fixed;
-  padding-right: 20px;
-}
+
 
 .logo {
   display: table-cell;
@@ -181,20 +168,12 @@ body {
   max-width: 100%;
 }
 
-.container-mobile {
-  display: table-cell;
-  vertical-align: middle;
-}
 
 
-.nav-item {
-  text-align: center;
-  padding-top: 15px;
-  padding-right: 30px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  
-}
+
+
+
+
 
 
 
@@ -270,6 +249,7 @@ body {
 
   @include viewport(large) {
     display: grid;
+    
     grid-template-columns: auto auto auto;
     
   }
@@ -496,11 +476,21 @@ body {
 
 // Brand section
 
-.brand-bg {
+.background-color-grey {
+  background-color: palette(grey, base);
+}
 
-  display:inline-block;
+.background-color-lightgrey {
+  background-color: palette(grey, xx-light);
+}
+
+.background-color-darkgrey {
+  background-color: palette(grey, x-dark);
+}
+
+.brand-bg {
   color: $white;
-  margin: 15px;
+  
 
   & a {
    color: $white;
@@ -512,28 +502,31 @@ body {
   }
 
   @include viewport(large) {
-    width: 45%;
+    display: inline-block;
+    width: 50%;
   }
 
   @include viewport(x-large) {
-    width: 45%;
+    display: inline-block;
+    width: 50%;
   }
 }
 
 
 
 // Review section
-.reviews {
+.reviews-bg {
 
-  display:inline-block;
   margin: 15px;
   color: $white;
 
   @include viewport(large) {
+    display: inline-block;
     width: 45%;
   }
 
   @include viewport(x-large) {
+    display: inline-block;
     width: 45%;
   }
 }
@@ -542,17 +535,32 @@ body {
   font-style: italic;
 }
 
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  
+
+  @include viewport(x-large) {
+    flex-direction: row;
+  }
+}
+
 
 
 
 // About us Section
 .aboutus {
-  display: block;
+  display: flex;
   margin-bottom: em(50px);
+  flex-direction: column;
 
-  @include viewport(large) {
-    display: flex;
-    column-gap: 15px;
+  
+
+  @include viewport(x-large) {
+    gap: 15px;
+    flex-direction: row;
   }
 }
 
@@ -739,130 +747,9 @@ body {
 
 
 
-.footer {
-  display: flex;
-  //flex-wrap: wrap;
-  position: relative;
-  padding-top: 20%;
- 
-  &-bottom {
-    width: 100%;
-    justify-content: space-between;
-    left: 0;
-    background-color: palette(grey, x-dark);
-   
-  }
-
-  &-company-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-color: pallete(grey, x-light);
-    color:white;
-
-    @include viewport(x-large) {
-      width: 400px;
-    }
-    
-  }
-
-  &-socials {
-    display: flex;
-    flex-wrap:wrap;
-    gap: em(10px);
-    color:white;
-    margin-left: 8px;
-
-    @include viewport(medium) {
-      flex-direction: row;
-    }
-    
-  }
-
-  &-row{
-    display: flex;
-   // margin-left: -15px;
-   // margin-right: -15px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-
-    @include viewport(small) {
-      flex-direction: column;
-    }
-
-    @include viewport(medium) {
-
-    }
-
-    @include viewport(large) {
-      
-      flex-direction: row;
-    }
-
-    
-  }
-
-  &-menu {
-    // display: flex;
-    // font-size: $font-size-s;
-    // justify-content: space-between;
-    // column-gap: 100px;
-  
-  }
-
-  &-logo  {
-   // width: 100%;
-    vertical-align: middle;
-
-    & img {
-      width: 100%;
-    }
-  }
-
- &-menu-row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    @include viewport(medium) {
-      flex-direction: row;
-      flex-wrap:wrap;
-      width: 100%;
-    }
-
-    @include viewport(large) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      flex-grow: 1;
-      column-gap: 10%;
-    }
-
-    @include viewport(x-large) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      column-gap: 10%;
-      flex-grow: 2;
-    }
-    
- }  
-  
-}
 
 
 
-
-
-
-footer h4 {
- // display: flex;
-  //flex-wrap: wrap;
-  //justify-content: center;
-  color: $white;
-  text-transform: uppercase;
-}
 
 
 
@@ -890,7 +777,9 @@ li {
   background-color: palette(grey, x-dark);
   color: $white;
 
-  
+  @include viewport(small) {
+    flex-direction: column;
+  }
 
 }
 
@@ -899,10 +788,7 @@ li {
 
 
 
-.p {
-  margin: 0;
-  //padding-bottom: 0;
-}
+
 .ul {
   display:flex;
   
@@ -959,31 +845,22 @@ li {
 
 .services {
   padding: 0;
- }
-
- .industries {
-  padding: 0;
- }
-
- .locations {
-  padding: 0;
- }
-
-
- .float-right {
-  float:right;
- }
-
- .text-align-md {
-  text-align: center;
- }
-
- // Hamburger Container
-
- .container-hamburger {
-  display: table-cell;
-  vertical-align: middle;
- 
 }
+
+.industries {
+  padding: 0;
+}
+
+.locations {
+  padding: 0;
+}
+
+
+.float-right {
+  float:right;
+}
+
+
+
 
 
