@@ -1541,18 +1541,19 @@ footer h4 {
 /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .label-checkbox {
   display: inline-block;
+  float: left;
+  clear: both;
   cursor: pointer;
   width: 32px;
   height: 32px;
   background-color: #b9bbc5;
   border: 3px solid #25262c;
   border-radius: 10%;
-  margin-top: 1.25em;
   margin-right: 1.25em;
   margin-left: 1.25em;
 }
 
-/* line 81, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .label-checkbox::before {
   content: "";
   color: #fff;
@@ -1564,18 +1565,18 @@ footer h4 {
   border-top: 0;
 }
 
-/* line 99, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 101, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 input[type="checkbox"] {
   display: none;
 }
 
-/* line 102, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 input[type="checkbox"]:checked + .label-checkbox {
   background-color: #4a4c59;
   border: 3px solid #4a4c59;
 }
 
-/* line 107, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 109, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 input[type="checkbox"]:checked + .label-checkbox::before {
   scale: 2;
   width: 10px;
@@ -1584,7 +1585,7 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   content: "\2713";
 }
 
-/* line 121, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #newsletter-name {
   height: 47px;
   padding: 5px 15px;
@@ -1598,7 +1599,7 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-/* line 127, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #newsletter-email {
   height: 47px;
   padding: 5px 15px;
@@ -1612,13 +1613,13 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-/* line 132, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 134, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .required::after {
   content: " *";
   color: #d64541;
 }
 
-/* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .form-input {
   display: flex;
   flex-direction: column;
@@ -1626,20 +1627,20 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   padding-right: 15px;
 }
 
-/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 145, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .form-input label {
   padding-top: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-input {
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-input {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1647,14 +1648,14 @@ input[type="checkbox"]:checked + .label-checkbox::before {
 }
 
 @media (min-width: 1260px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-input {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-/* line 166, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .sign-up-input {
   flex: 1 1;
   padding-right: 15px;

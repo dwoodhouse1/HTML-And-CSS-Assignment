@@ -68,13 +68,15 @@
 
 .label-checkbox {
     display:inline-block;
+    float:left;
+    clear:both;
     cursor:pointer;
     width: 32px;
     height: 32px;
     background-color: palette(grey, xx-light);
     border: 3px solid palette(grey, x-dark);
     border-radius: 10%;
-    margin-top: em(20px);
+    //margin-top: em(20px);
     margin-right: em(20px);
     margin-left: em(20px);
 
