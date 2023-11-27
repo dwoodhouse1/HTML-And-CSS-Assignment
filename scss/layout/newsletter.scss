@@ -2,8 +2,10 @@
 // Newsletter Section
 // ==========================================================================
 
+@import "../utilities/config";
+
 .newsletter {
-    background-color: palette(grey, xx-light);
+    background-color: $grey-base;
     padding: 15px;
 }
 

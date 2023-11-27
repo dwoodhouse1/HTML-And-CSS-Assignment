@@ -2,6 +2,32 @@
 // Footers
 // ==========================================================================
 
+footer {
+  background-color: $grey-d;
+  padding: 27px 0 0;
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & li {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+
+  & h4 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 26px;
+  }
+}
+
 
 .footer {
     display: flex;
@@ -22,20 +48,24 @@
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
-      background-color: pallete(grey, x-light);
       color: $white;
   
       @include viewport(x-large) {
         justify-content: flex-start;
       }
+
+      & h4 {
+        margin-top: 24px;
+      }
     }
   
     &-socials {
       display: flex;
-      flex-wrap:wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: em(10px);
       color: $white;
-      margin-left: 8px;
+      margin-bottom: 30px;
   
       @include viewport(medium) {
         flex-direction: row;
@@ -64,6 +94,7 @@
   
     &-logo  {
       vertical-align: middle;
+      width: 250px;
   
       & img {
         width: 100%;
@@ -96,9 +127,16 @@
       }
    }  
     
-  }
+}
+
+
+
+
 .footer-socials a {
   
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   @include viewport(smedium) {
     width: 35%;
   }
@@ -109,29 +147,18 @@ footer h4 {
   text-transform: uppercase;
 }
 
-.about {
-  padding: 0;
-}
-  
-.services {
-  padding: 0;
-}
-  
-.industries {
-  padding: 0;
-}
-  
-.locations {
-  padding: 0;
+
+.footer-menu {
+  margin-bottom: 30px;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 10px;
   width: 100%;
   border: 0;
+  font-size: .8125rem;
 }
 
 .ul {
@@ -155,10 +182,11 @@ footer h4 {
 
 .licence {
   display: flex;
-  justify-content: left;
+  list-style: none;
   font-size: $font-size-s;
   background-color: palette(grey, x-dark);
   color: $white;
+  padding: 5px 0 10px;
 
   @include viewport(small) {
     flex-direction: column;

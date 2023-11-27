@@ -1,16 +1,16 @@
 /* line 9, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .background-color-grey {
-  background-color: palette(grey, base);
+  background-color: #323544;
 }
 
 /* line 13, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .background-color-lightgrey {
-  background-color: palette(grey, xx-light);
+  background-color: #ddd;
 }
 
 /* line 17, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .background-color-darkgrey {
-  background-color: palette(grey, x-dark);
+  background-color: #212330;
 }
 
 /* line 21, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */

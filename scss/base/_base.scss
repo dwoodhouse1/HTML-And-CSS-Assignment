@@ -1,9 +1,15 @@
 // ==========================================================================
 // Base Styles
 // ==========================================================================
-
+@import "../utilities/config";
 * {
- 
+  
+  &::before {
+    box-sizing: border-box;
+  }
+  &:after {
+    box-sizing: border-box;
+  }
   font-family: $font-family--primary;
   font-size: em($base-font-size);
 }
@@ -32,6 +38,7 @@ h3 {
 h4 {
   font-weight: $base-font-weight;
   color: $white;
+  margin: 0 0 15px;
 }
 
 small {
@@ -61,6 +68,13 @@ p {
 li {
   list-style: none;
   justify-content: center;
+}
+
+label {
+  font-weight: 600;
+  color: $grey-label;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .newsletter {

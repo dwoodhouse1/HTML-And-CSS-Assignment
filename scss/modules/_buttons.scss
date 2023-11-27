@@ -24,6 +24,7 @@
     text-decoration: underline;
   }
 }
+
 .btn {
     @include btn-format();
 
@@ -263,7 +264,7 @@
       }
     }
 
-  }
+}
 
   .btn-subscribe {
     margin-left: em(10px);

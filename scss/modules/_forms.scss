@@ -73,12 +73,10 @@
     cursor:pointer;
     width: 32px;
     height: 32px;
-    background-color: palette(grey, xx-light);
-    border: 3px solid palette(grey, x-dark);
+    background-color: $grey-base;
+    border: 3px solid $grey-label;
     border-radius: 10%;
-    //margin-top: em(20px);
     margin-right: em(20px);
-    margin-left: em(20px);
 
     &::before {
         content: "";
@@ -102,8 +100,8 @@
     display: none;
 
     &:checked + .label-checkbox {
-        background-color: palette(grey, base);
-        border: 3px solid palette(grey, base);
+        background-color: $grey-label;
+        border: 3px solid $grey-label;
         
 
         &::before {
@@ -122,7 +120,7 @@
 
   #newsletter-name {
     @include textfield-format();
-
+    
     
   }
 

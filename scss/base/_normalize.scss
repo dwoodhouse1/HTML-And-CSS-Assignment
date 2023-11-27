@@ -1,12 +1,18 @@
 // ==========================================================================
 // Normalize
 // ==========================================================================
+@import "../utilities/config";
 
 html {
     font-family: $font-family--primary;
+    
 }
 
 body {
+    font-family: $font-family--primary;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    letter-spacing: .4px;
     margin: 0;
 }
 

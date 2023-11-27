@@ -1,10 +1,10 @@
-/* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter {
-  background-color: palette(grey, xx-light);
+  background-color: #ddd;
   padding: 15px;
 }
 
-/* line 10, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 12, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .media-body {
   display: table-cell;
   vertical-align: top;

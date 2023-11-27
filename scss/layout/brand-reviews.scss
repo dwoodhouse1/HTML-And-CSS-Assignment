@@ -7,15 +7,15 @@
 // Brand section
 
 .background-color-grey {
-    background-color: palette(grey, base);
-  }
+  background-color: $grey-d;
+}
   
 .background-color-lightgrey {
-    background-color: palette(grey, xx-light);
+  background-color: $grey-base;
 }
   
 .background-color-darkgrey {
-    background-color: palette(grey, x-dark);
+  background-color: $grey-xd;
 }
   
 .brand-bg {

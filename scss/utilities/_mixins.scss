@@ -150,8 +150,8 @@
 @mixin textfield-format() {
     height: 47px;
     padding: 5px 15px;
-    border-color: palette(grey, xxx-light);//#ccc;
-    width: 95%;
+    border-color: #ccc;
+    width: 100%;
     background-color: $white;
     background-image: none;
     border: 1px solid #e5e5e5;

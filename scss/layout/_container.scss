@@ -55,12 +55,12 @@
 }
 
 .container {
-  width: 80%;
-  height: 100%;
+ 
   margin-right: auto;
-  margin-left:auto;
-  margin: auto;
-  background-color: palette(grey, base);
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
 
   &-banner {
     width: 100%;
@@ -74,6 +74,10 @@
   &-header{
     background-color: $white;
   }
+
+  &-footer {
+    background-color: $grey-d;
+  }
   
   &>ul {
     display: flex;
@@ -84,10 +88,7 @@
   }
 }
 
-.container-fullwidth {
-  background-color: palette(grey, x-dark);
-  width: 100%;
-}
+
 
 .logo-container {
   display:table;
