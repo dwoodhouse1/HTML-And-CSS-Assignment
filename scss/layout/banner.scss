@@ -4,6 +4,35 @@
 @import "../utilities/config";
 @import "../utilities/mixins";
 
+#banner {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.25rem;
+    color: $white;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 0.375rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+
+  a {
+    margin-top: 1.938rem;
+    line-height: 50px;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+
+    &:hover {
+      border: transparent;
+      
+    }
+  }
+}
+
 .carousell-content {
     filter: invert(0);
     position: absolute;
@@ -41,8 +70,12 @@
       }
     }
   
-    & p {
-      margin-bottom: 25px;
-      font-weight: $base-font-weight;
-    }
+    
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
 }

@@ -27,9 +27,11 @@
 
 .btn {
     @include btn-format();
+    @include btn-primary();
 
     &:hover {
-      background-color: palette(grey, x-dark);
+      background-color: $black;
+      
     }
 
     &-help {
@@ -66,9 +68,12 @@
       background-color: $green;
       text-transform: uppercase;
       text-decoration: none;
+      font-size: .75rem;
       right: 0;
+      top: 10px;
       padding: 0 10px;
-      line-height: 1rem;
+      line-height: 1.438rem;
+      font-weight: 600;
       z-index: 1;
 
       &-one {
@@ -118,12 +123,18 @@
 
     &-aboutus {
       @include a-format();
-      display: block;
-      background-color: palette(grey, dark);
+      @include btn-format-aboutus();
+      @include btn-primary();
+      background-color: $grey-d-button;
       margin-bottom: 16px;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $grey-d-button-hover;
+      }
       
       &-whychooseus {
-        width: 165px;
+        
 
         @include viewport(large) {
           display: inline-block;
@@ -135,7 +146,7 @@
       }
 
       &-ourculture {
-        width: 140px;
+        
 
         @include viewport(large) {
           display: inline-block;
@@ -153,15 +164,18 @@
     }
 
     &-reviews {
-      display: flex;
+      @include btn-primary();
+      @include btn-format-aboutus();
+      display: block; //flex
+      
       
       @include viewport(small) {
         margin-bottom: none;
       }
 
       &-google {
-        width: 160px;
-        background-color: $blue;
+        background-color: $blue-button;
+        margin-right: 8px;
       
         @include viewport(x-large) {
           margin-bottom: 40px;
@@ -173,12 +187,14 @@
       }
 
       &-trustpilot {
-        width: 180px;
-        background-color: $green;
-        margin-bottom: 40px;
+       // width: 180px;
+        background-color: $green-d;
+        display: inline-flex;
+        white-space: nowrap;
+        
 
         &:hover {
-          background-color: $dark-green;
+          background-color: $green-d-hover;
           text-decoration: none;
           
         }
@@ -266,10 +282,7 @@
 
 }
 
-  .btn-subscribe {
-    margin-left: em(10px);
-  }
-
+ 
 // Social Buttons
 
 .facebook {
@@ -322,8 +335,8 @@
 
   .btn-subscribe {
     flex-direction: row;
-    padding-top: 10px;
-    padding-right: 50%;
+    font-size: 1.063rem;
+    
   }
 
   // Client Slideshow Buttons
@@ -460,6 +473,10 @@
     font-weight: $font-weight-d;
     color: palette(grey, x-light);
     color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
     
   }
 
@@ -478,7 +495,7 @@
 
   .text-align-md a {
     @include a-format();
-    color: palette(grey, x-dark);
+    color: $grey-label;
 
     &:hover {
       text-decoration: underline;

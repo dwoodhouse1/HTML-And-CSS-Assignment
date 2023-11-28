@@ -5,6 +5,7 @@
 // Lastest News
 
 .img-container {
+    background-color: $black;
     position: relative;
     width:100%;
     height: auto;
@@ -23,7 +24,7 @@
 
 .home-img {
     color: $white;
-    display: flex;
+    display: flex; // CHANGE BACK TO FLEX
     justify-content: center;
     align-items: center;
     top: 0;
@@ -32,11 +33,12 @@
     left: 0;
 
     & img {
-        filter: invert(.3);
+        max-height: 550px;
+        filter: brightness(50%);
     }
 
     width: 100%;
-    height: 600px;
+    min-height: 550px;
 }
 
 .logo {

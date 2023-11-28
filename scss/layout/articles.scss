@@ -16,14 +16,15 @@
   .readtime {
     display: inline;
     text-transform: uppercase;
-    color: palette(grey,xx-light);
-    font-weight: $font-weight-xl;
+    color: rgba(51,54,69,.5);
+    font-size: .85rem;
+    vertical-align: middle;
   }
   
   .block-one {
     @include articleblock-format();
     
-    & h3 {
+    & h3 a {
       color: $green;
     }
   
@@ -43,7 +44,7 @@
   .block-two {
     @include articleblock-format();
   
-    & h3 {
+    & h3 a {
       color: $blue;
     }
   
@@ -60,7 +61,7 @@
   .block-three {
     @include articleblock-format();
   
-    & h3 {
+    & h3 a {
       color: $purple;
     }
   
@@ -80,17 +81,22 @@
   
   .block-content {
     display: block;
+    font-size: .8125rem;
     padding: 30px;
-  
+    margin-top: -5px; // TEMP FIX
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
     & p {
       text-wrap: wrap;
+      line-height: 1.375rem;
+      font-size: .8125rem;
     }
   }
   
   .article-content {
     flex-wrap: wrap;
     position: relative;
-    padding: 15px 15px 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
     text-align: left;
     @include viewport(small) {
@@ -107,6 +113,16 @@
   .article-blocks {
   
     display: block;
+
+    & h3 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      & a {
+        text-decoration: none;
+      }
+
+    }
     
     @include viewport(medium) {
       display: flex;
@@ -149,18 +165,22 @@
     display:table;
     margin-top: 30px;
     padding-top: 30px;
+    border-top: 1px solid #ccc;
     
     &>*{
       display:table-cell;
       vertical-align: middle;
     }
+
+    &>.avatar {
+      width: 20%;
+      border-radius: 50%;
+      overflow: hidden;
+    }
    }
   
    .info {
     padding-left: 20px;
+    line-height: 1.375rem;
    }
   
-   .divider {
-    border-top: 1px solid #a3a5b3;
-    margin-top: 50px;
-   }

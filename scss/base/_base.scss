@@ -4,12 +4,7 @@
 @import "../utilities/config";
 * {
   
-  &::before {
-    box-sizing: border-box;
-  }
-  &:after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
   font-family: $font-family--primary;
   font-size: em($base-font-size);
 }
@@ -32,13 +27,26 @@ h2 {
 }
 
 h3 {
-  font-size: em($font-size-l);
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: $grey-label;
+
+  & a {
+    font-weight: 600;
+  }
 }
 
 h4 {
   font-weight: $base-font-weight;
   color: $white;
   margin: 0 0 15px;
+}
+
+.h1 {
+  margin: 0 0 28px;
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 
 small {
@@ -49,6 +57,10 @@ small {
 
 p {
   font-size: em($base-font-size);
+  //line-height: 1.875rem;
+  margin: 0 0 10px;
+  margin-bottom: 25px;
+  
 }
 
 .h2 {
@@ -63,6 +75,14 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  & a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 li {
@@ -77,9 +97,6 @@ label {
   margin-bottom: 5px;
 }
 
-.newsletter {
-    padding-bottom: em(50px);
-}
 
 .text-align-md {
   text-align: center;
@@ -88,6 +105,20 @@ label {
 .float-right {
   float:right;
 }
+
+.space-between {
+  padding-bottom: 30px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+p a {
+  
+  
+}
+
 
 
 

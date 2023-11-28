@@ -1,10 +1,14 @@
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter {
   background-color: #ddd;
-  padding: 15px;
 }
 
-/* line 12, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 11, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+.newsletter-tickboxarea {
+  margin-bottom: 15px;
+}
+
+/* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .media-body {
   display: table-cell;
   vertical-align: top;

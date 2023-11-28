@@ -15,6 +15,7 @@
   
 .service-blocks {
   
+    
     @include viewport(large) {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -202,6 +203,8 @@
   
   .service-block-seven {
     @include serviceblock-format();
+
+   
   
     &:hover {
       background-color: $red-tomato;
@@ -232,3 +235,5 @@
       grid-row: 3;
     }
   }
+
+  

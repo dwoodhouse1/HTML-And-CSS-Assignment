@@ -20,12 +20,6 @@
   
 .brand-bg {
     color: $white;
-    
-  
-    & a {
-        color: $white;
-        text-decoration: none;
-    }
   
     & h2 {
       color: $white;
@@ -47,8 +41,11 @@
   // Review section
   .reviews-bg {
   
-    margin: 15px;
     color: $white;
+
+    & h2 {
+      color: $white;
+    }
   
     @include viewport(large) {
       display: inline-block;
@@ -63,10 +60,18 @@
   
   .client-quote {
     font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .client-quote-author {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: $grey-xl;
   }
   
   .reviews {
-    display: flex;
+    display: block; //flex
     flex-direction: column;
     gap: 15px;
   
@@ -82,7 +87,7 @@
   
   // About us Section
   .aboutus {
-    display: flex;
+    display: block;//flex
     margin-bottom: em(50px);
     flex-direction: column;
   
