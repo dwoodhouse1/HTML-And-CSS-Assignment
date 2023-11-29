@@ -212,6 +212,7 @@
 
 @mixin serviceblock-format() {
     @include articleblock-format();
+    max-width: 720px;
     
 
     .h2 {
@@ -231,6 +232,8 @@
     }
 
     .btn {
+        min-width: 130px;
+        max-width: 130px;
         font-size: 1.063rem;
         margin-bottom: 0;
         line-height: 35px;
@@ -240,6 +243,25 @@
     padding: 30px;
     display: flex;
     border-radius: 15px;
+}
+
+@mixin nav-format() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: auto;
+  margin: 0;
+  margin-top: -15px;
+}
+
+@mixin nav-container() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    margin-top: 15px;
 }
 
 

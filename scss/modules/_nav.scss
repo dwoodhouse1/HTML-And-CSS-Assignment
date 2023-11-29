@@ -8,10 +8,15 @@
     padding-right: 30px;
     padding-bottom: 15px;
     padding-left: 30px;
+
+    &-software {
+        
+    }
 }
 
 .nav-item a {
     @include a-format();
+    width: 100%;
     position: relative;
     padding: 19px 0 19px;
     color: $white;
@@ -26,10 +31,83 @@
 }
 
 .sub-menu {
-    display: flex;
-    flex-wrap: wrap;
+  @include nav-format();
+  
+
+  & ul:before {
+    background-color: red;
+  }
+}
+
+.sub-menu-banner {
+    
+    &-software {
+        @include nav-container();
+        background-color: $blue-banner;
+    }
+
+    &-it {
+        @include nav-container();
+        background-color: $skyblue-banner;
+        display: none;
+    }
+
+    &-dm {
+        @include nav-container();
+        background-color: $green-banner;
+        display: none;
+    }
+    
+    &-ts {
+        @include nav-container();
+        background-color: $red-banner;
+        display: none;
+    }
+
+    &-wd {
+        @include nav-container();
+        background-color: $purple-banner;
+        display: none;
+    }
+
+    &-cs {
+        @include nav-container();
+        background-color: $red-light-banner;
+        display: none;
+    }
+
+    &-dc {
+        @include nav-container();
+        background-color: $tomato-banner;
+        display: block;
+    }
 }
   
 .sub-menu-banner-title {
     width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    text-transform: none;
+    text-align: left;
+}
+
+.sub-menu-banner-item {
+    width: 33%;
+    margin-top: 15px;
+
+    & a {
+        display: flex;
+        padding: 0;
+        margin-top: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        text-align: left;
+        text-transform: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

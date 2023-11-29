@@ -10,6 +10,8 @@
 
 /* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .media-body {
+  color: #333645;
+  font-weight: 600;
   display: table-cell;
   vertical-align: top;
   line-height: 32px;

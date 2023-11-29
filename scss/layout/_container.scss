@@ -142,6 +142,9 @@
 
 .link-icon-container {
   display: flex;
+  justify-content: left;
+  align-items: center;
+  min-width: 25px;
 }
 
 .flex-space-between {

@@ -96,7 +96,7 @@
 /* line 89, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .aboutus {
   display: block;
-  margin-bottom: em(50px);
+  margin-bottom: 20px;
   flex-direction: column;
 }
 

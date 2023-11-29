@@ -16,12 +16,25 @@
 }
 
 .cookie-settings-btn {
-  background: none;
-  border: none;
+  position: fixed;
+  line-height: 22px;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: $grey-cookie;
+  font-weight: 600;
+  border: solid $grey-cookie;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: .8rem;
   color: $white;
   
   &:hover {
-    text-decoration: underline;
+    
   }
 }
 
@@ -179,7 +192,7 @@
 
       &-google {
         background-color: $blue-button;
-        margin-right: 8px;
+        margin-right: 24px;
       
         @include viewport(x-large) {
           margin-bottom: 40px;
@@ -486,7 +499,12 @@
 
   .h2 a {
     @include a-format();
-    color: palette(grey, x-dark);
+    color: $grey-label;
+  }
+
+  .view-work {
+    padding: 0;
+  
   }
 
   .reviews a {
@@ -516,5 +534,5 @@
   }
 
   .link-text {
-    display: flex;
+    margin-left: 10px;
   }

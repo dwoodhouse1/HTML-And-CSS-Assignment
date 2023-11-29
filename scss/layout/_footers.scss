@@ -38,8 +38,6 @@ footer {
       width: 100%;
       justify-content: space-between;
       left: 0;
-      background-color: palette(grey, x-dark);
-     
     }
   
     &-company-info {
@@ -186,7 +184,6 @@ footer h4 {
   display: flex;
   list-style: none;
   font-size: $font-size-s;
-  background-color: palette(grey, x-dark);
   color: $white;
   padding: 5px 0 10px;
 
