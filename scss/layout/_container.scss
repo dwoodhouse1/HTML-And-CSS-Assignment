@@ -86,14 +86,23 @@
 
 
 .logo-container {
-  display:table;
+  display: table;
   table-layout: fixed;
-  padding-right: 20px;
+  
 }
 
 .container-mobile {
   display: table-cell;
   vertical-align: middle;
+
+  & a {
+    text-decoration: none;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: $grey-label;
+  }
 }
 
 .container-hamburger {
@@ -132,5 +141,9 @@
 }
 
 .link-icon-container {
+  display: flex;
+}
+
+.flex-space-between {
   display: flex;
 }

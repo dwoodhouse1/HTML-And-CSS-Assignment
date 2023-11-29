@@ -5,6 +5,7 @@
 @import "../utilities/mixins";
 
 #banner {
+  overflow: hidden;
   h1 {
     font-size: 2.5rem;
     line-height: 3rem;

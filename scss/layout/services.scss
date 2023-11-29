@@ -7,24 +7,25 @@
 .service {
     background-color: $white;
 }
-  
-.service-title {
-    display: flex;
-    justify-content: space-between;
+
+
+.service-title .h1 {
+  font-size: 2.7rem;
+  margin-top: -13px;
+  color: $grey-label;
 }
   
 .service-blocks {
-  
     
-    @include viewport(large) {
-      display: grid;
-      grid-template-columns: auto auto auto;
-    }
+  @include viewport(large) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
   
-    @include viewport(x-large) {
-      display: grid;
-      grid-template-columns: auto auto auto;
-    }
+  @include viewport(x-large) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
   .service-link {
     color: $white;
@@ -59,13 +60,13 @@
         color: $grey-blue;
       }
   
-      .laptop {
-        fill: $grey-blue;
+      .icon-circle-software {
+        color: $grey-blue;
         background-color: $white;
       }
-  
-      .icon-circle-software {
-        fill: $grey-blue;
+
+      .icon-apps1 {
+        color: $grey-blue;
         background-color: $white;
       }
       
@@ -87,16 +88,16 @@
         color: $blue;
       }
   
-      .monitor {
-        fill: $blue;
-        background-color: $white;
-      }
-  
       .icon-circle-it {
         fill: $blue;
         background-color: $white;
       }
-  
+      
+      .icon-monitor1 {
+        color: $blue;
+        background-color: $white;
+      }
+      
       
     }
   
@@ -114,13 +115,13 @@
         color: $green;
       }
   
-      .graph {
+      .icon-circle-dm {
         fill: $green;
         background-color: $white;
       }
-  
-      .icon-circle-dm {
-        fill: $green;
+
+      .icon-bar-graph1 {
+        color: $green;
         background-color: $white;
       }
     }
@@ -139,13 +140,13 @@
         color: $red;
       }
   
-      .telephone-services {
+      .icon-circle-ts {
         fill: $red;
         background-color: $white;
       }
-  
-      .icon-circle-ts {
-        fill: $red;
+
+      .icon-phone_in_talk {
+        color: $red;
         background-color: $white;
       }
     }
@@ -163,13 +164,13 @@
         color: $purple;
       }
   
-      .code {
+      .icon-circle-wd {
         fill: $purple;
         background-color: $white;
       }
-  
-      .icon-circle-wd {
-        fill: $purple;
+
+      .icon-code{
+        color: $purple;
         background-color: $white;
       }
     }
@@ -187,13 +188,13 @@
         color: $red-light;
       }
   
-      .shield {
+      .icon-circle-cs {
         fill: $red-light;
         background-color: $white;
       }
-  
-      .icon-circle-cs {
-        fill: $red-light;
+
+      .icon-security {
+        color: $red-light;
         background-color: $white;
       }
     }
@@ -204,8 +205,6 @@
   .service-block-seven {
     @include serviceblock-format();
 
-   
-  
     &:hover {
       background-color: $red-tomato;
       color: $white;
@@ -215,13 +214,13 @@
         color: $red-tomato;
       }
   
-      .hat {
+      .icon-circle-dt {
         fill: $red-tomato;
         background-color: $white;
       }
-  
-      .icon-circle-dt {
-        fill: $red-tomato;
+      
+      .icon-school {
+        color: $red-tomato;
         background-color: $white;
       }
     }

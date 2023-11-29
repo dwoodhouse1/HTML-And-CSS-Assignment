@@ -63,7 +63,7 @@ footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: em(10px);
+      
       color: $white;
       margin-bottom: 30px;
   
@@ -137,6 +137,8 @@ footer {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 26px;
   @include viewport(smedium) {
     width: 35%;
   }

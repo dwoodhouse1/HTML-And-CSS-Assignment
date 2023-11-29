@@ -1,4 +1,9 @@
-/* line 8, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+#banner {
+  overflow: hidden;
+}
+
+/* line 9, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner h1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -7,7 +12,7 @@
   font-weight: 600;
 }
 
-/* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 17, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner p {
   margin-bottom: 0.375rem;
   font-size: 1.25rem;
@@ -15,7 +20,7 @@
   font-weight: 600;
 }
 
-/* line 23, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner a {
   margin-top: 1.938rem;
   line-height: 50px;
@@ -23,12 +28,12 @@
   font-size: 1.25rem;
 }
 
-/* line 29, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 30, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner a:hover {
   border: transparent;
 }
 
-/* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 37, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .carousell-content {
   filter: invert(0);
   position: absolute;
@@ -37,21 +42,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 37, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     width: 560px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 37, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     text-align: left;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 37, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     width: 1200px;
     text-align: left;
@@ -59,7 +64,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 56, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 57, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 900px;
     font-size: 64px;
@@ -67,7 +72,7 @@
 }
 
 @media (min-width: 1260px) {
-  /* line 56, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 57, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 1200px;
     font-size: 64px;
@@ -75,7 +80,7 @@
   }
 }
 
-/* line 76, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .example {
   display: flex;
   flex-direction: column;

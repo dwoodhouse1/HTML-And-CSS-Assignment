@@ -4,7 +4,9 @@
 
 .header-row {
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    
   
     @include viewport(large) {
       justify-content: center;

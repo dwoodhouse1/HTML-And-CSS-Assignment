@@ -18,11 +18,16 @@
     }
 
     &-btn {
-      @include search-format();
-      width: 80px;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 5px;
+      
       outline: none;
-      margin-right: 5px;
-      background-color: palette(grey,x-light);
+      
+      margin-right: 10px;
+      line-height: 47px;
+      font-size: 20px;
 
       &:hover {
         background-color: palette(grey, light);
@@ -39,6 +44,14 @@
   .search-bar {
     display: inline-block;
     @include textfield-format();
+    padding-right: 40px;
+    background-color: rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.1);
+
+    &:focus {
+      background-color: rgba(0,0,0,.1);
+      border: 2px solid blueviolet;//rgba(0,0,0,.1);
+    }
 
     @include viewport(small) {
       
@@ -60,7 +73,7 @@
   }
 
   .actions {
-    display:flex;
+    float: right;
     
   }
   

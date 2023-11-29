@@ -31,7 +31,6 @@
 
     &:hover {
       background-color: $black;
-      
     }
 
     &-help {
@@ -101,12 +100,17 @@
       }
     }
 
+    &-hamburger {
+      height: 56px;
+    }
+
     
 
     &-news{
       text-align: center;
       
-      width: 100px;
+
+      padding: 5px 15px;
 
       &-one{
         background-color: $green;
@@ -286,9 +290,9 @@
 // Social Buttons
 
 .facebook {
-    //@include img-replace("facebook.png", em(100px), em(100px), flex);
     
-    @include img-sizing(em(50px), em(50px));
+    
+    
     @include btn-format-socials;
     & img {
       
@@ -301,9 +305,9 @@
   }
   
   .linkedin {
-    //@include img-replace("linkedin2.png", em(100px), em(100px), flex);
+    
     @include btn-format-socials;
-    @include img-sizing(em(50px), em(50px));
+    
 
     &:hover {
         background-color: $linkedin-color;
@@ -311,9 +315,9 @@
   }
   
   .twitter {
-   // @include img-replace("twitter.png", em(100px), em(100px), flex);
+   
     @include btn-format-socials;
-    @include img-sizing(em(50px), em(50px));
+    
 
     &:hover {
         background-color: $twitter-color;
@@ -322,7 +326,7 @@
   
   .instagram {
     @include btn-format-socials;
-    @include img-sizing(em(50px), em(50px));
+    
     &:hover {
         background-color: $instagram-color
     }
@@ -368,7 +372,7 @@
     height: 70px;
     width: auto;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
 
   }
 
