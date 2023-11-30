@@ -251,17 +251,38 @@
   align-items: center;
   list-style: none;
   padding: auto;
-  margin: 0;
   margin-top: -15px;
 }
 
 @mixin nav-container() {
+    width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
     position: absolute;
     z-index: 5;
     left: 0;
     margin-top: 15px;
+}
+
+@mixin nav-triangle($color) {
+    &>a::before {
+        content: "";
+        position: absolute;
+        left: -57px;
+        bottom: -32px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 35px 67px 0 67px;
+        border-color: $color transparent transparent transparent; 
+        transform: rotate(0deg);
+        z-index: 1000;
+
+        @include viewport(x-large) {
+            left: -72px;
+            border-width: 35px 84px 0 84px;
+        }
+    }
 }
 
 

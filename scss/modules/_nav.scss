@@ -3,14 +3,125 @@
 // ==========================================================================
 
 .nav-item {
+    flex: 1;
     text-align: center;
     padding-top: 15px;
-    padding-right: 30px;
     padding-bottom: 15px;
-    padding-left: 30px;
+    
 
     &-software {
-        
+
+        &:hover {
+            background-color: $grey-blue;
+
+            .sub-menu-banner-software {
+                display: block;
+            }
+
+            .icon-format-nav-laptop {
+                color: white;
+            }
+
+            @include nav-triangle($grey-blue);
+        }
+
+       
+    }
+
+    &-it {
+        &:hover {
+            background-color: $blue;
+
+            .sub-menu-banner-it {
+                display: block;
+            }
+
+            .icon-format-nav-monitor {
+                color: white;
+            }
+
+            @include nav-triangle($blue);
+        }
+    }
+
+    &-dm {
+        &:hover {
+            background-color: $green;
+
+            .sub-menu-banner-dm {
+                display: block;
+            }
+
+            .icon-format-nav-graph {
+                color: white;
+            }
+            
+            @include nav-triangle($green);
+        }
+    }
+    
+    &-ts {
+        &:hover {
+            background-color: $red;
+
+            .sub-menu-banner-ts {
+                display: block;
+            }
+
+            .icon-format-nav-telephone {
+                color: white;
+            }
+
+            @include nav-triangle($red);
+        }
+    }
+    
+    &-wd {
+        &:hover {
+            background-color: $purple;
+
+            .sub-menu-banner-wd {
+                display: block;
+            }
+
+            .icon-format-nav-code {
+                color: white;
+            }
+
+            @include nav-triangle($purple);
+        }
+    }
+
+    &-cs {
+        &:hover {
+            background-color: $red-light;
+
+            .sub-menu-banner-cs {
+                display: block;
+            }
+
+            .icon-format-nav-security {
+                color: white;
+            }
+
+            @include nav-triangle($red-light);
+        }
+    }
+
+    &-dc {
+        &:hover {
+            background-color: $red-tomato;
+
+            .sub-menu-banner-dc {
+                display: block;
+            }
+
+            .icon-format-nav-school {
+                color: white;
+            }
+
+            @include nav-triangle($red-tomato);
+        }
     }
 }
 
@@ -44,6 +155,7 @@
     &-software {
         @include nav-container();
         background-color: $blue-banner;
+        display: none;
     }
 
     &-it {
@@ -79,7 +191,7 @@
     &-dc {
         @include nav-container();
         background-color: $tomato-banner;
-        display: block;
+        display: none;
     }
 }
   
@@ -103,6 +215,8 @@
         text-decoration: none;
         color: white;
         font-size: 1.2rem;
+        line-height: 1.313rem;
+        padding: 0.625rem 0.938rem 0.625rem 0;
         text-align: left;
         text-transform: none;
 

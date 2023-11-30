@@ -18,7 +18,7 @@
 .cookie-settings-btn {
   position: fixed;
   line-height: 22px;
-  z-index: 5;
+  z-index: 100;
   bottom: 0;
   left: 0;
   display: flex;
@@ -34,7 +34,9 @@
   color: $white;
   
   &:hover {
-    
+    background-color: $grey-cookie-light;
+    border-color: $grey-cookie-light;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
   }
 }
 
@@ -359,14 +361,51 @@
   // Client Slideshow Buttons
 
   .clients {
+    display: flex;
     padding-top: 10%;
     padding-bottom: 50px;
     padding-right: 20px;
     background-color: $white;
-    display: flex;
     justify-content: flex-start;
    // flex-wrap: wrap;
     overflow-x: hidden;
+
+    &-searless {
+      display: flex;
+    }
+
+    &-searless:hover {
+      background-color: orange;
+      .description-searless {
+        display: block;
+        position: absolute;
+        // bottom: 17.5%;
+        // left: -200px;
+        // right: -200px;
+      }
+    }
+
+    &-busseys {
+      .description-searless {
+        display: block;
+      }
+    }
+
+    &-crane {
+
+    }
+
+    &-swan {
+
+    }
+
+    &-xupes {
+
+    }
+
+    &-beat {
+
+    }
 
     & img {
 
@@ -379,8 +418,71 @@
 
   }
 
+ .description {
+  
+  &-searless {
+    display: none;
+  }
+
+  &-busseys {
+    display: none;
+  }
+
+  &-crane {
+    display: none;
+  }
+
+  &-swan {
+    display: none;
+  }
+
+  &-xupes {
+    display: none;
+  }
+
+  &-beat {
+    display: none;
+  }
+
+  &-surveysolutions {
+    display: none;
+  }
+
+  &-girlsguidinganglia {
+    display: none;
+  }
+
+  &-sweetzy {
+    display: none;
+  }
+  
+  &-howespercival {
+    display: none;
+  }
+
+  &-gdst {
+    display: none;
+  }
+
+  &-ashcroft {
+    display: none;
+  }
+
+  &-onetraveller {
+    display: none;
+  }
+ }
+
+ .box {
+  background-color: maroon;//$grey-label;
+  padding: 20px;
+  font-size: .875rem;
+  max-width: 280px;
+  margin: 0 auto 50px;
+ }
+ 
   .item {
-    display: flex;
+    
     max-height: 70px;
     height: 70px;
     width: auto;

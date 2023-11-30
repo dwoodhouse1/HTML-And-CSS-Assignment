@@ -233,7 +233,6 @@ a.article-link:hover {
 
 /* line 164, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user {
-  display: table;
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #ccc;

@@ -12,7 +12,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 100;
 
   .speechbubble {
     position: absolute;
@@ -51,6 +51,11 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  &::before {
+    content:" ";
+    display: table;
+  }
+
 
   &-banner {
     width: 100%;
@@ -71,7 +76,6 @@
   
   &>ul {
     display: flex;
-    justify-content: center;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -80,6 +84,18 @@
   &-section {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  @include viewport(medium) {
+    width: 750px;
+  }
+
+   @include viewport(large) {
+    width: 970px;
+   }
+
+  @include viewport(x-large) {
+    width: 1200px;
   }
 }
 
