@@ -1,0 +1,277 @@
+.clients {
+    display: flex;
+    background-color: $white;
+    justify-content: flex-start;
+   // flex-wrap: wrap;
+    //overflow-x: hidden;
+
+    & h3 {
+      position: relative;
+      font-size: 1.125rem;
+      color: $white;
+      padding-bottom: 17px;
+      margin: 0;
+      text-align: center;
+    }
+
+    & p {
+      color: $white;
+      font-size: .8125rem;
+      line-height: 1.375rem;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    & img {
+      filter:grayscale(1);
+    
+      &:hover {
+        filter:grayscale(0);
+      }
+
+      
+    }
+
+    &-searless {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-searless {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-busseys {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-busseys {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-crane {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-crane {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-swan {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-swan {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-xupes {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-xupes {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-beat {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-beat {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-surveysolutions {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-surveysolutions {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-girlsguidinganglia {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-girlsguidinganglia{
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-sweetzy {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-sweetzy {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-howespercival {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-howespercival {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-gdst {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-gdst {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-ashcroft {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-ashcroft {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+    &-onetraveller {
+      display: flex;
+      @include clients-box-format();
+
+      &:hover {
+        .description-onetraveller {
+          @include clients-box-hover-format();
+        }
+      }
+    }
+
+  }
+
+ .description {
+  
+  &-searless {
+    display: none;
+  }
+
+  &-busseys {
+    display: none;
+  }
+
+  &-crane {
+    display: none;
+  }
+
+  &-swan {
+    display: none;
+  }
+
+  &-xupes {
+    display: none;
+  }
+
+  &-beat {
+    display: none;
+  }
+
+  &-surveysolutions {
+    display: none;
+  }
+
+  &-girlsguidinganglia {
+    display: none;
+  }
+
+  &-sweetzy {
+    display: none;
+  }
+  
+  &-howespercival {
+    display: none;
+  }
+
+  &-gdst {
+    display: none;
+  }
+
+  &-ashcroft {
+    display: none;
+  }
+
+  &-onetraveller {
+    display: none;
+  }
+ }
+
+ .box {
+  background-color: $grey-label;
+  padding: 20px;
+  font-size: .875rem;
+  max-width: 280px;
+  margin: 0 auto 50px;
+
+  & p a {
+    font-weight: 600;
+  }
+ }
+
+ .box-no-description h3 {
+    padding: 0;
+ }
+ 
+  .item {
+    
+    max-height: 70px;
+    height: 70px;
+    width: auto;
+    align-items: center;
+    padding: 0 20px;
+
+    
+
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -36px;
+
+    &::after {
+      content: "";
+      margin: auto;
+      display: inline-block;
+      border-color: $grey-label transparent transparent;
+      border-style: solid;
+      border-width: 35px 36px 0;
+    }
+  }

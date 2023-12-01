@@ -50,20 +50,32 @@
 
     &-help {
       display: none;
+      height: 56px;
+      line-height: 46px;
+      font-size: 1.125rem;
       padding: 10px 10px;
-      margin-right: 5px;
+      width: 151px;
+
+      @include viewport(large) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       @include viewport(x-large) {
         display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       &-support {
         background-color: $blue;
         border-color: $blue;
-
+        
         &:hover {
           background-color: $dark-blue;
         }
+
       }
 
       &-contact {
@@ -74,6 +86,41 @@
           background-color: palette(grey, light);
         }
       }
+    }
+
+    &-searless {
+      display: flex;
+      @include clients-button-format($green, $green, $green-hover, $green-hover-border);
+    }
+
+    &-swan {
+      display: flex;
+      @include clients-button-format($grey-blue, $grey-blue, $grey-blue-hover, $grey-blue-hover-border);
+    }
+
+    &-girlsguidinganglia {
+      display: flex;
+      @include clients-button-format($blue, $blue, $blue-hover, $blue-hover-border);
+    }
+
+    &-sweetzy {
+      display: flex;
+      @include clients-button-format($green, $green, $green-hover, $green-hover-border);
+    }
+
+    &-gdst {
+      display: flex;
+      @include clients-button-format($green, $green, $green-hover, $green-hover-border);
+    }
+
+    &-ashcroft {
+      display: flex;
+      @include clients-button-format($purple, $purple, $purple-hover, $purple-hover-border);
+    }
+
+    &-onetraveller {
+      display: flex;
+      @include clients-button-format($purple, $purple, $purple-hover, $purple-hover-border);
     }
 
     &-tooltip {
@@ -145,7 +192,7 @@
       @include btn-format-aboutus();
       @include btn-primary();
       background-color: $grey-d-button;
-      margin-bottom: 16px;
+      
 
       &:hover {
         text-decoration: none;
@@ -154,13 +201,19 @@
       
       &-whychooseus {
         
+        @include viewport(medium) {
+          display: inline-block;
+          margin-bottom: 50px;
+        }
 
         @include viewport(large) {
           display: inline-block;
+          margin-top: 0;
         }
   
         @include viewport(x-large) {
           display: inline-block;
+          margin-top: 0;
         }
       }
 
@@ -193,11 +246,13 @@
       }
 
       &-google {
+        display: inline-block;
         background-color: $blue-button;
-        margin-right: 24px;
+        margin-right: 8px;
+        
       
         @include viewport(x-large) {
-          margin-bottom: 40px;
+         
         }
 
         &:hover {
@@ -206,9 +261,9 @@
       }
 
       &-trustpilot {
-       // width: 180px;
         background-color: $green-d;
-        display: inline-flex;
+        display: inline-block;
+        align-items: baseline;
         white-space: nowrap;
         
 
@@ -360,164 +415,11 @@
 
   // Client Slideshow Buttons
 
-  .clients {
-    display: flex;
-    background-color: $white;
-    justify-content: flex-start;
-   // flex-wrap: wrap;
-    overflow-x: hidden;
-
-    & h3 {
-      position: relative;
-      font-size: 1.125rem;
-      color: $white;
-      padding-bottom: 17px;
-      margin: 0;
-    }
-
-    & p {
-      font-size: .8125rem;
-      line-height: 1.375rem;
-      margin-bottom: 0;
-    }
-
-    &-searless {
-      display: flex;
-      @include clients-box-format();
-
-      &:hover {
-        background-color: orange;
-        .description-searless {
-          display: block;
-          position: absolute;
-          z-index: 100;
-          bottom: 100%;
-          left: -200px;
-          right: -200px;
-        }
-      }
-    }
-
-    &-busseys {
-      .description-searless {
-        display: block;
-      }
-    }
-
-    &-crane {
-
-    }
-
-    &-swan {
-
-    }
-
-    &-xupes {
-
-    }
-
-    &-beat {
-
-    }
-
-    & img {
-
-        filter:grayscale(1);
-    
-        &:hover {
-            filter:grayscale(0);
-        }
-      }
-
-  }
-
- .description {
-  
-  &-searless {
-    display: none;
-  }
-
-  &-busseys {
-    display: none;
-  }
-
-  &-crane {
-    display: none;
-  }
-
-  &-swan {
-    display: none;
-  }
-
-  &-xupes {
-    display: none;
-  }
-
-  &-beat {
-    display: none;
-  }
-
-  &-surveysolutions {
-    display: none;
-  }
-
-  &-girlsguidinganglia {
-    display: none;
-  }
-
-  &-sweetzy {
-    display: none;
-  }
-  
-  &-howespercival {
-    display: none;
-  }
-
-  &-gdst {
-    display: none;
-  }
-
-  &-ashcroft {
-    display: none;
-  }
-
-  &-onetraveller {
-    display: none;
-  }
- }
-
- .box {
-  background-color: maroon;//$grey-label;
-  padding: 20px;
-  font-size: .875rem;
-  max-width: 280px;
-  margin: 0 auto 50px;
- }
  
-  .item {
-    
-    max-height: 70px;
-    height: 70px;
-    width: auto;
-    align-items: center;
-    padding: 0 20px;
 
-  }
-
-  .arrow {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -36px;
-
-    &::after {
-      content: "";
-      margin: auto;
-      display: inline-block;
-      border-color: $grey-label transparent transparent;
-      border-style: solid;
-      border-width: 35px 36px 0;
-    }
+  .pull-right {
+    margin-right: -4px;
+    margin-left: 12px;
   }
 
   // Hamburger button
@@ -589,7 +491,7 @@
   // Search bar Submit button
 
   #search-submit {
-   @extend .search-bar;
+   @extend .search-bar-mobile;
   
     position: absolute;
     right: 0;

@@ -13,11 +13,6 @@
     }
 
     &-mobile-btn {
-      @include search-format();
-      //background-color: orange;
-    }
-
-    &-btn {
       background: none;
       border: none;
       position: absolute;
@@ -28,29 +23,41 @@
       margin-right: 10px;
       line-height: 47px;
       font-size: 20px;
+    }
 
-      &:hover {
-        background-color: palette(grey, light);
-      }
+    &-tablet-btn {
+      width: 63px;
+      border-radius: 0 3px 3px 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
+      background-color: $grey-cookie-light;
+      border: none;
 
+      
+      
     }
     
   }
+
   .form-control {
     height: 47px;
     width: 100%;
     
   }
-  .search-bar {
+
+  .search-bar-mobile {
     display: inline-block;
-    @include textfield-format();
+   
+    @include textfield-format(47px);
     padding-right: 40px;
     background-color: rgba(0,0,0,.1);
     border: 2px solid rgba(0,0,0,.1);
 
     &:focus {
       background-color: rgba(0,0,0,.1);
-      border: 2px solid blueviolet;//rgba(0,0,0,.1);
+      border: 2px solid rgba(0,0,0,.1);
     }
 
     @include viewport(small) {
@@ -69,7 +76,28 @@
     //   display: none;
     // }
 
+  }
+
+  .search-bar-tablet {
+    display: inline-block;
    
+    @include textfield-format(56px);
+    border-radius: 0;
+    width: 174px;
+    padding-right: 40px;
+    
+
+    &:focus {
+      @include textfield-focus();
+    }
+
+    @include viewport(large) {
+      display: none;
+    }
+
+    @include viewport(x-large) {
+      width: 240px;
+    }
   }
 
   .actions {
@@ -133,7 +161,7 @@
   // Email Newsletter Search Form
 
   #newsletter-name {
-    @include textfield-format();
+    @include textfield-format(47px);
     
     &:focus {
       @include textfield-focus();
@@ -142,7 +170,7 @@
   }
 
   #newsletter-email {
-    @include textfield-format();
+    @include textfield-format(47px);
 
     &:focus {
       @include textfield-focus();

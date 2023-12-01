@@ -190,6 +190,7 @@
   /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
+    gap: 30px;
   }
 }
 
@@ -197,6 +198,7 @@
   /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
+    gap: 30px;
   }
 }
 
@@ -204,10 +206,11 @@
   /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
+    gap: 30px;
   }
 }
 
-/* line 140, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 a.article-link {
   position: absolute;
   top: 0;
@@ -221,37 +224,37 @@ a.article-link {
   color: palette(grey, xx-light);
 }
 
-/* line 154, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 157, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 a.article-link:hover {
   text-decoration: none;
 }
 
-/* line 160, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 163, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .latest-articles {
   padding-left: 0;
 }
 
-/* line 164, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 167, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #ccc;
 }
 
-/* line 170, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 175, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 178, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user > .avatar {
   width: 20%;
   border-radius: 50%;
   overflow: hidden;
 }
 
-/* line 182, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 185, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .info {
   padding-left: 20px;
   line-height: 1.375rem;

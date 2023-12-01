@@ -164,9 +164,9 @@
 
 // Textfields
 
-@mixin textfield-format() {
+@mixin textfield-format($height) {
     box-sizing:  border-box;
-    height: 47px;
+    height: $height;
     padding: 5px 15px;
     border-color: #ccc;
     width: 100%;
@@ -286,10 +286,44 @@
 }
 
 @mixin clients-box-format() {
-    //display: flex;
     vertical-align: middle;
     padding: 0 20px;
     position: relative;
+}
+
+@mixin clients-box-hover-format() {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 100%;
+    left: -200px;
+    right: -200px;
+}
+
+@mixin clients-button-format($color, $color-border, $color-hover, $color-hover-border) {
+    align-items: center;
+    margin-top: 11px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: $color;
+    border-color: $color-border;
+
+    &:hover {
+      background-color: $color-hover; 
+      border-color: $color-hover-border;
+    }
+}
+
+@mixin searchbar-format() {
+    display: inline-block;
+    padding-right: 40px;
+    background-color: rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.1);
+
+    &:focus {
+      background-color: rgba(0,0,0,.1);
+      border: 2px solid rgba(0,0,0,.1);
+    }
 }
 
 

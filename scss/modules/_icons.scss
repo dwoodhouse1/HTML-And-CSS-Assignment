@@ -480,10 +480,16 @@
 
   .mouse {
     fill: $white;
+    font-size: 1.438rem;
+    line-height: 45px;
+    margin-right: 5px;
   }
 
   .plane {
     fill: $white;
+    font-size: 1.438rem;
+    line-height: 45px;
+    margin-right: 5px;
   }
 
   .icon-format-nav {
@@ -520,6 +526,22 @@
 
   .icon-format-search {
     font-size: 30px;
+
+    @include viewport(medium) {
+      color: $white;
+    }
+
+    @include viewport(large) {
+      color: $white;
+    }
+
+    @include viewport(x-large) {
+      color: $white;
+    }
+  }
+
+  .arrow-forward {
+    margin-left: 5px;
   }
 
   // Social Icons

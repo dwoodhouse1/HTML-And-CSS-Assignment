@@ -20,18 +20,22 @@
   
 .brand-bg {
     color: $white;
-  
+    
+    
     & h2 {
       color: $white;
+      font-size: 2.25rem;
     }
   
     @include viewport(large) {
-      display: inline-block;
+      float: left;
+      padding-right: 15px;
       width: 50%;
     }
   
     @include viewport(x-large) {
-      display: inline-block;
+      float: left;
+      padding-right: 15px;
       width: 50%;
     }
 }
@@ -42,19 +46,24 @@
   .reviews-bg {
   
     color: $white;
+    
+    
 
     & h2 {
       color: $white;
+      font-size: 2rem;
     }
   
     @include viewport(large) {
       display: inline-block;
       width: 45%;
+      padding-left: 15px;
     }
   
     @include viewport(x-large) {
       display: inline-block;
       width: 45%;
+      padding-left: 15px;
     }
   }
   
@@ -67,11 +76,12 @@
   .client-quote-author {
     font-weight: 600;
     font-size: 1.1rem;
+    letter-spacing: .4px;
     color: $grey-xl;
   }
   
   .reviews {
-    display: block; //flex
+    display: block;
     flex-direction: column;
     gap: 15px;
   
@@ -88,7 +98,7 @@
   // About us Section
   .aboutus {
     display: block;//flex
-    margin-bottom: 20px;
+   
     flex-direction: column;
   
     

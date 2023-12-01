@@ -126,14 +126,17 @@
     
     @include viewport(medium) {
       display: flex;
+      gap: 30px;
     }
   
     @include viewport(large) {
       display: flex;
+      gap: 30px;
     }
   
     @include viewport(x-large) {
       display: flex;
+      gap: 30px;
     }
   }
   

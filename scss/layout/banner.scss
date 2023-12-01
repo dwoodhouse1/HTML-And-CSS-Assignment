@@ -12,6 +12,16 @@
     margin: 0 0 1.25rem;
     color: $white;
     font-weight: 600;
+
+    @include viewport(large) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @include viewport(x-large) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
   }
 
   p {
