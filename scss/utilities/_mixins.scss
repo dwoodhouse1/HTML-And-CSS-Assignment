@@ -285,4 +285,11 @@
     }
 }
 
+@mixin clients-box-format() {
+    //display: flex;
+    vertical-align: middle;
+    padding: 0 20px;
+    position: relative;
+}
+
 
