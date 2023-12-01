@@ -2704,6 +2704,7 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   display: block;
   position: absolute;
   z-index: 100;
+  bottom: 100%;
   left: -200px;
   right: -200px;
 }
