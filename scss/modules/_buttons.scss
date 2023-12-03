@@ -583,4 +583,10 @@
 
   .link-text {
     margin-left: 10px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    
   }

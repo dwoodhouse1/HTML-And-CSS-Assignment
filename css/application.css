@@ -3723,6 +3723,12 @@ footer ul li a:hover {
 /* line 584, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .link-text {
   margin-left: 10px;
+  text-decoration: none;
+}
+
+/* line 588, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.link-text:hover {
+  text-decoration: underline;
 }
 
 /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_nav.scss */
@@ -4155,11 +4161,6 @@ footer ul li a:hover {
   padding: 0.625rem 0.938rem 0.625rem 0;
   text-align: left;
   text-transform: none;
-}
-
-/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_nav.scss */
-.sub-menu-banner-item a:hover {
-  text-decoration: underline;
 }
 
 @font-face {
