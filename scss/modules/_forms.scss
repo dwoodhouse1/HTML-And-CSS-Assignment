@@ -16,25 +16,24 @@
       background: none;
       border: none;
       position: absolute;
-      right: 5px;
-      
+      right: 10px;
       outline: none;
-      
       margin-right: 10px;
       line-height: 47px;
       font-size: 20px;
+      cursor: pointer;
     }
 
     &-tablet-btn {
       width: 63px;
       border-radius: 0 3px 3px 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       padding-left: 12px;
       padding-right: 12px;
       background-color: $grey-cookie-light;
       border: none;
-
+      cursor: pointer;
       
       
     }
@@ -141,22 +140,17 @@
   input[type="checkbox"] {
     display: none;
 
-    &:checked + .label-checkbox {
-        background-color: $grey-label;
-        border: 3px solid $grey-label;
-        
-
-        &::before {
-            scale: 2;
-            width: 10px;
-            height: 10px;
-            position: center;
-            content: "\2713";
-        }
-        
-        
+    &:checked + .label-checkbox::before {
+      display: block;
+      color: $grey-label;
+      height: 8px;
+      scale: 1.7;
+      content: "\ea52";  
+      font-family: 'icomoon';
     }
   }
+
+  
 
   // Email Newsletter Search Form
 

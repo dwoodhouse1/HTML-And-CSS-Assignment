@@ -100,6 +100,10 @@
     padding: 10px 30px;
     margin-top: 20px;
     font-size: 20px;
+
+    @include viewport(x-large) {
+        margin-top: 0;
+    }
 }
 
 @mixin search-format() {
@@ -110,6 +114,7 @@
 
 @mixin btn-format-servies() {
     text-transform: uppercase;
+    border-radius: 3px;
     width: 50%;
     align-self: center;
     color: $white;
@@ -194,7 +199,7 @@
 @mixin articleblock-format() {
     top:0;
     border: 1px solid #ccc;
-    border-radius: 0 0 2% 2%;
+    border-radius: 0 0 3px 3px;
     flex-direction: column;
     
     margin-bottom: 30px;

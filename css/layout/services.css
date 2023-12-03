@@ -78,7 +78,7 @@
 .service-block-one {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -91,13 +91,13 @@
   text-align: center;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -106,7 +106,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -115,7 +115,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .btn {
   min-width: 130px;
   max-width: 130px;
@@ -139,35 +139,35 @@
   }
 }
 
-/* line 85, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 84, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-one:hover {
   background-color: #67809f;
   color: #fff;
 }
 
-/* line 89, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-one:hover .btn-software {
   background-color: #fff;
   color: #67809f;
 }
 
-/* line 94, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 93, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-one:hover .icon-circle-software {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 99, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-one:hover .icon-apps1 {
+/* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-one:hover .icon-laptop {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 110, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 109, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-two {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -179,13 +179,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -194,7 +194,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -203,7 +203,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .btn {
   min-width: 130px;
   max-width: 130px;
@@ -214,48 +214,48 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 110, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 109, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-two {
     margin-right: 30px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 110, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 109, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-two {
     margin-right: 30px;
   }
 }
 
-/* line 121, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 120, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-two:hover {
   background-color: #4183d7;
   color: #fff;
 }
 
-/* line 125, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 124, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-two:hover .btn-it {
   background-color: #fff;
   color: #4183d7;
 }
 
-/* line 130, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-two:hover .icon-circle-it {
   fill: #4183d7;
   background-color: #fff;
 }
 
-/* line 135, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-two:hover .icon-monitor1 {
+/* line 134, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-two:hover .icon-display {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 145, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 144, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-three {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -267,13 +267,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -282,7 +282,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -291,7 +291,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .btn {
   min-width: 130px;
   max-width: 130px;
@@ -301,42 +301,42 @@
   align-self: center;
 }
 
-@media (min-width: 992px) and (max-width: 1259px) {
-  /* line 145, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-  .service-block-three {
-    margin-right: 30px;
+@media (min-width: 1260px) {
+  /* line 148, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  .service-block-three .p {
+    margin-bottom: 40px;
   }
 }
 
-/* line 151, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-three:hover {
   background-color: #2ecc71;
   color: #fff;
 }
 
-/* line 155, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 156, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-three:hover .btn-dm {
   background-color: #fff;
   color: #2ecc71;
 }
 
-/* line 160, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 161, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-three:hover .icon-circle-dm {
   fill: #2ecc71;
   background-color: #fff;
 }
 
-/* line 165, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-three:hover .icon-bar-graph1 {
+/* line 166, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-three:hover .icon-bar-graph {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 174, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-four {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -348,13 +348,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -363,7 +363,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -372,7 +372,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .btn {
   min-width: 130px;
   max-width: 130px;
@@ -383,48 +383,48 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 174, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-four {
     margin-right: 15px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 174, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-four {
     margin-right: 15px;
   }
 }
 
-/* line 184, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 185, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-four:hover {
   background-color: #d64541;
   color: #fff;
 }
 
-/* line 188, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 189, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-four:hover .btn-ts {
   background-color: #fff;
   color: #d64541;
 }
 
-/* line 193, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 194, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-four:hover .icon-circle-ts {
   fill: #d64541;
   background-color: #fff;
 }
 
-/* line 198, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-four:hover .icon-phone_in_talk {
+/* line 199, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-four:hover .icon-phone-call {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 205, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-five {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -436,13 +436,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -451,7 +451,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -460,7 +460,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .btn {
   min-width: 130px;
   max-width: 130px;
@@ -471,49 +471,49 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 205, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-five {
     margin-left: 15px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 205, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-five {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
-/* line 217, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-five:hover {
   background-color: #926fb1;
   color: #fff;
 }
 
-/* line 221, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 222, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-five:hover .btn-wd {
   background-color: #fff;
   color: #926fb1;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 227, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-five:hover .icon-circle-wd {
   fill: #926fb1;
   background-color: #fff;
 }
 
-/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-five:hover .icon-code {
+/* line 232, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-five:hover .icon-embed {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-six {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -525,13 +525,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -540,7 +540,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -549,7 +549,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .btn {
   min-width: 130px;
   max-width: 130px;
@@ -560,49 +560,49 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-six {
     margin-right: 15px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-six {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
-/* line 250, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 251, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-six:hover {
   background-color: #f62459;
   color: #fff;
 }
 
-/* line 254, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 255, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-six:hover .btn-cs {
   background-color: #fff;
   color: #f62459;
 }
 
-/* line 259, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 260, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-six:hover .icon-circle-cs {
   fill: #f62459;
   background-color: #fff;
 }
 
-/* line 264, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 265, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-six:hover .icon-security {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 273, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 274, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-seven {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -614,13 +614,13 @@
   border-radius: 15px;
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 223, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -629,7 +629,7 @@
   margin: 0 0 11px;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 231, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -638,7 +638,7 @@
   line-height: 1.375rem;
 }
 
-/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 239, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .btn {
   min-width: 130px;
   max-width: 130px;
@@ -649,39 +649,39 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 273, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 274, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-seven {
     margin-left: 15px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 273, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  /* line 274, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
   .service-block-seven {
     margin-left: 15px;
   }
 }
 
-/* line 284, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 285, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-seven:hover {
   background-color: #ce4125;
   color: #fff;
 }
 
-/* line 288, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 289, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-seven:hover .btn-dt {
   background-color: #fff;
   color: #ce4125;
 }
 
-/* line 293, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+/* line 294, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
 .service-block-seven:hover .icon-circle-dt {
   fill: #ce4125;
   background-color: #fff;
 }
 
-/* line 298, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-seven:hover .icon-school {
+/* line 299, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+.service-block-seven:hover .icon-mortar-board {
   color: #ce4125;
   background-color: #fff;
 }

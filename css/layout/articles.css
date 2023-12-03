@@ -23,7 +23,7 @@
 .block-one {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -31,7 +31,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-one:hover {
   top: -10px;
   transition: .5s ease;
@@ -59,7 +59,7 @@
 .block-two {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -67,7 +67,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-two:hover {
   top: -10px;
   transition: .5s ease;
@@ -90,7 +90,7 @@
 .block-three {
   top: 0;
   border: 1px solid #ccc;
-  border-radius: 0 0 2% 2%;
+  border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -98,7 +98,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 204, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-three:hover {
   top: -10px;
   transition: .5s ease;
@@ -136,7 +136,6 @@
   font-size: .8125rem;
   padding: 30px;
   margin-top: -5px;
-  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
 /* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */

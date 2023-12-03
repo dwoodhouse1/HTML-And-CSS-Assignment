@@ -55,6 +55,7 @@
       font-size: 1.125rem;
       padding: 10px 10px;
       width: 151px;
+      border-radius: 3px;
 
       @include viewport(large) {
         display: flex;
@@ -164,6 +165,7 @@
 
     &-hamburger {
       height: 56px;
+      border-radius: 3px;
     }
 
     
@@ -245,11 +247,16 @@
         margin-bottom: none;
       }
 
+      @include viewport(x-large) {
+        height: 56px;
+        margin-top: 35px;
+      }
+
       &-google {
         display: inline-block;
         background-color: $blue-button;
-        margin-right: 8px;
         
+        align-items: baseline;
       
         @include viewport(x-large) {
          
@@ -279,7 +286,7 @@
       }
 
       @include viewport(x-large) {
-        display: inline-block;
+        display: inline-flex;
       }
     }
 
@@ -288,18 +295,16 @@
       @include btn-format-servies();
       @extend .service-block-one;
       
+      margin-right: 0;
       background-color: $grey-blue;
-      // &:hover { // SEE .service-block-one class
-      //   background-color: $white;
-      //   color: $grey-blue;
-      // }
     }
 
     &-it {
       @include btn-format();
       @include btn-format-servies();
       @extend .service-block-two;
-      
+
+      margin-right: 0;
       background-color: $blue;
     }
 
@@ -307,7 +312,8 @@
       @include btn-format();
       @include btn-format-servies();
       @extend .service-block-three;
-      
+
+      margin-right: 0;
       background-color: $green;
     }
 
@@ -316,6 +322,7 @@
       @include btn-format-servies();
       @extend .service-block-four;
       
+      margin-right: 0;
       background-color: $red;
     }
 
@@ -324,6 +331,8 @@
       @include btn-format-servies();
       @extend .service-block-five;
       
+      margin-left: 0;
+      margin-right: 0;
       background-color: $purple;
     }
 
@@ -332,6 +341,7 @@
       @include btn-format-servies();
       @extend .service-block-six;
     
+      margin-right: 0;
       background-color: $red-light;
     }
 
@@ -340,6 +350,8 @@
       @include btn-format-servies();
       @extend .service-block-seven;
 
+      margin-left: 0;
+      margin-right: 0;
       background-color: $red-tomato;
     }
 
@@ -410,7 +422,10 @@
   .btn-subscribe {
     flex-direction: row;
     font-size: 1.063rem;
-    
+    line-height: 35px;
+    border-radius: 3px;
+    white-space: normal;
+    padding: 5px 15px;
   }
 
   // Client Slideshow Buttons

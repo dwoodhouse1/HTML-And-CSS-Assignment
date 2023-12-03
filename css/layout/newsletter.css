@@ -6,6 +6,7 @@
 /* line 11, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter-tickboxarea {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 /* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
