@@ -5,6 +5,14 @@
    // flex-wrap: wrap;
     //overflow-x: hidden;
 
+    @include viewport(large) {
+      scale: 0.8;
+    }
+
+    @include viewport(x-large) {
+      scale: 0.8;
+    }
+
     & h3 {
       position: relative;
       font-size: 1.125rem;

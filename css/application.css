@@ -1477,7 +1477,21 @@ strong {
   justify-content: flex-start;
 }
 
-/* line 8, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 1, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+  .clients, .partners {
+    scale: 0.8;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 1, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+  .clients, .partners {
+    scale: 0.8;
+  }
+}
+
+/* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients h3, .partners h3 {
   position: relative;
   font-size: 1.125rem;
@@ -1487,7 +1501,7 @@ strong {
   text-align: center;
 }
 
-/* line 17, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 25, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients p, .partners p {
   color: #fff;
   font-size: .8125rem;
@@ -1496,17 +1510,17 @@ strong {
   text-align: center;
 }
 
-/* line 25, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 33, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients img, .partners img {
   filter: grayscale(1);
 }
 
-/* line 28, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 36, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients img:hover, .partners img:hover {
   filter: grayscale(0);
 }
 
-/* line 35, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-searless {
   display: flex;
   vertical-align: middle;
@@ -1514,7 +1528,7 @@ strong {
   position: relative;
 }
 
-/* line 40, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 48, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-searless:hover .description-searless {
   display: block;
   position: absolute;
@@ -1524,7 +1538,7 @@ strong {
   right: -200px;
 }
 
-/* line 46, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 54, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-busseys {
   display: flex;
   vertical-align: middle;
@@ -1532,7 +1546,7 @@ strong {
   position: relative;
 }
 
-/* line 51, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 59, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-busseys:hover .description-busseys {
   display: block;
   position: absolute;
@@ -1542,7 +1556,7 @@ strong {
   right: -200px;
 }
 
-/* line 57, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 65, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-crane {
   display: flex;
   vertical-align: middle;
@@ -1550,7 +1564,7 @@ strong {
   position: relative;
 }
 
-/* line 62, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 70, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-crane:hover .description-crane {
   display: block;
   position: absolute;
@@ -1560,7 +1574,7 @@ strong {
   right: -200px;
 }
 
-/* line 68, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 76, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-swan {
   display: flex;
   vertical-align: middle;
@@ -1568,7 +1582,7 @@ strong {
   position: relative;
 }
 
-/* line 73, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 81, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-swan:hover .description-swan {
   display: block;
   position: absolute;
@@ -1578,7 +1592,7 @@ strong {
   right: -200px;
 }
 
-/* line 79, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 87, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-xupes {
   display: flex;
   vertical-align: middle;
@@ -1586,7 +1600,7 @@ strong {
   position: relative;
 }
 
-/* line 84, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-xupes:hover .description-xupes {
   display: block;
   position: absolute;
@@ -1596,7 +1610,7 @@ strong {
   right: -200px;
 }
 
-/* line 90, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-beat {
   display: flex;
   vertical-align: middle;
@@ -1604,7 +1618,7 @@ strong {
   position: relative;
 }
 
-/* line 95, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 103, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-beat:hover .description-beat {
   display: block;
   position: absolute;
@@ -1614,7 +1628,7 @@ strong {
   right: -200px;
 }
 
-/* line 101, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 109, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-surveysolutions {
   display: flex;
   vertical-align: middle;
@@ -1622,7 +1636,7 @@ strong {
   position: relative;
 }
 
-/* line 106, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 114, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-surveysolutions:hover .description-surveysolutions {
   display: block;
   position: absolute;
@@ -1632,7 +1646,7 @@ strong {
   right: -200px;
 }
 
-/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 120, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-girlsguidinganglia {
   display: flex;
   vertical-align: middle;
@@ -1640,7 +1654,7 @@ strong {
   position: relative;
 }
 
-/* line 117, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 125, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-girlsguidinganglia:hover .description-girlsguidinganglia {
   display: block;
   position: absolute;
@@ -1650,7 +1664,7 @@ strong {
   right: -200px;
 }
 
-/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 131, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-sweetzy {
   display: flex;
   vertical-align: middle;
@@ -1658,7 +1672,7 @@ strong {
   position: relative;
 }
 
-/* line 128, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-sweetzy:hover .description-sweetzy {
   display: block;
   position: absolute;
@@ -1668,7 +1682,7 @@ strong {
   right: -200px;
 }
 
-/* line 134, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 142, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-howespercival {
   display: flex;
   vertical-align: middle;
@@ -1676,7 +1690,7 @@ strong {
   position: relative;
 }
 
-/* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 147, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-howespercival:hover .description-howespercival {
   display: block;
   position: absolute;
@@ -1686,7 +1700,7 @@ strong {
   right: -200px;
 }
 
-/* line 145, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-gdst {
   display: flex;
   vertical-align: middle;
@@ -1694,7 +1708,7 @@ strong {
   position: relative;
 }
 
-/* line 150, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 158, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-gdst:hover .description-gdst {
   display: block;
   position: absolute;
@@ -1704,7 +1718,7 @@ strong {
   right: -200px;
 }
 
-/* line 156, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 164, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-ashcroft {
   display: flex;
   vertical-align: middle;
@@ -1712,7 +1726,7 @@ strong {
   position: relative;
 }
 
-/* line 161, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 169, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-ashcroft:hover .description-ashcroft {
   display: block;
   position: absolute;
@@ -1722,7 +1736,7 @@ strong {
   right: -200px;
 }
 
-/* line 167, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 175, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-onetraveller {
   display: flex;
   vertical-align: middle;
@@ -1730,7 +1744,7 @@ strong {
   position: relative;
 }
 
-/* line 172, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 180, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .clients-onetraveller:hover .description-onetraveller {
   display: block;
   position: absolute;
@@ -1740,72 +1754,72 @@ strong {
   right: -200px;
 }
 
-/* line 182, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 190, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-searless {
   display: none;
 }
 
-/* line 186, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 194, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-busseys {
   display: none;
 }
 
-/* line 190, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 198, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-crane {
   display: none;
 }
 
-/* line 194, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 202, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-swan {
   display: none;
 }
 
-/* line 198, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-xupes {
   display: none;
 }
 
-/* line 202, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 210, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-beat {
   display: none;
 }
 
-/* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 214, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-surveysolutions {
   display: none;
 }
 
-/* line 210, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-girlsguidinganglia {
   display: none;
 }
 
-/* line 214, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 222, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-sweetzy {
   display: none;
 }
 
-/* line 218, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-howespercival {
   display: none;
 }
 
-/* line 222, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-gdst {
   display: none;
 }
 
-/* line 226, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 234, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-ashcroft {
   display: none;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .description-onetraveller {
   display: none;
 }
 
-/* line 235, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 243, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .box {
   background-color: #333645;
   padding: 20px;
@@ -1814,17 +1828,17 @@ strong {
   margin: 0 auto 50px;
 }
 
-/* line 242, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 250, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .box p a {
   font-weight: 600;
 }
 
-/* line 247, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 255, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .box-no-description h3 {
   padding: 0;
 }
 
-/* line 251, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 259, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .item {
   max-height: 70px;
   height: 70px;
@@ -1833,7 +1847,7 @@ strong {
   padding: 0 20px;
 }
 
-/* line 263, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 271, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .arrow {
   position: absolute;
   bottom: 10px;
@@ -1841,7 +1855,7 @@ strong {
   margin-left: -36px;
 }
 
-/* line 269, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
+/* line 277, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_clients.scss */
 .arrow::after {
   content: "";
   margin: auto;
