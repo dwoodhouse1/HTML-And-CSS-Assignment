@@ -1,18 +1,15 @@
 # HTML-And-CSS-Assignment
 
-Missing content:
-
-- Banner Hovers
-- Client Hovers
-
-Content that needs to be altered at some point:
-
-- Services block buttons at different viewports.
-
 Bugs: 
 
-- reviews-bg class doesn't allign with its neighbour brand-bg correctly.
-- newsletter checkbox mis-aligned when checked and not checked.
-- newsletter subscribe button mis-aligned
-- footer social buttons somewhat mis-aligned
-- article buttons labled "NEWS" hard to click on
+- 'Why Choose Us?' button moves the text above it when hovered.
+- News Card Image sizes not the same size.
+- 'Google Reviews' & 'TrustPilot Reviews' buttons missing a gap (inline-flex is a bit fiddly here).
+
+Improvements:
+
+- Some extra icons need to be implemented.
+- Some current icons should be replaced with ones closer to the original webpage (e.g. laptop should be laptop with cogs).
+
+
+
