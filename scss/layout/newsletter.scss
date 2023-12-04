@@ -6,6 +6,10 @@
 
 .newsletter {
     background-color: $grey-base;
+
+    & h2 {
+        margin: 0 0 15px;
+    }
 }
 
 .newsletter-tickboxarea {

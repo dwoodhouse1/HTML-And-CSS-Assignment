@@ -211,7 +211,6 @@
     & a {
         display: flex;
         padding: 0;
-        margin-top: 15px;
         text-decoration: none;
         color: white;
         font-size: 1.2rem;
@@ -219,5 +218,7 @@
         padding: 0.625rem 0.938rem 0.625rem 0;
         text-align: left;
         text-transform: none;
+
+        
     }
 }

@@ -42,14 +42,10 @@
   line-height: 50px;
   padding: 5px 20px;
   font-size: 1.25rem;
+  border-radius: 3px;
 }
 
-/* line 40, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
-#banner a:hover {
-  border: transparent;
-}
-
-/* line 47, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .carousell-content {
   filter: invert(0);
   position: absolute;
@@ -58,21 +54,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 47, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     width: 560px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 47, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     text-align: left;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 47, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
     width: 1200px;
     text-align: left;
@@ -80,7 +76,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 67, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 63, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 900px;
     font-size: 64px;
@@ -88,7 +84,7 @@
 }
 
 @media (min-width: 1260px) {
-  /* line 67, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 63, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 1200px;
     font-size: 64px;
@@ -96,7 +92,7 @@
   }
 }
 
-/* line 87, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .example {
   display: flex;
   flex-direction: column;
