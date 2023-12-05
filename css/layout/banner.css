@@ -48,15 +48,18 @@
 /* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .carousell-content {
   filter: invert(0);
+  filter: brightness(100%);
   position: absolute;
+  align-items: center;
   text-align: center;
   font-weight: 200;
+  padding: 3.75rem 15px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 43, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content {
-    width: 560px;
+    width: 640px;
   }
 }
 
@@ -76,7 +79,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 63, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 66, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 900px;
     font-size: 64px;
@@ -84,7 +87,7 @@
 }
 
 @media (min-width: 1260px) {
-  /* line 63, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 66, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   .carousell-content h1 {
     width: 1200px;
     font-size: 64px;
@@ -92,7 +95,7 @@
   }
 }
 
-/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 86, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 .example {
   display: flex;
   flex-direction: column;

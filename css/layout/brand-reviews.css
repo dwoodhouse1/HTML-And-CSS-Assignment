@@ -86,18 +86,17 @@
     display: inline-block;
     width: 50%;
     padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
-/* line 84, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .client-quote {
   font-style: italic;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-/* line 90, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+/* line 89, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .client-quote-author {
   font-weight: 600;
   font-size: 1.1rem;
@@ -105,24 +104,25 @@
   color: #a3a8ac;
 }
 
-/* line 97, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+/* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
 .reviews {
   display: block;
   flex-direction: column;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 97, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  /* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
   .reviews {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 97, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
+  /* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/brand-reviews.scss */
   .reviews {
     display: flex;
     flex-direction: row;
+    gap: 15px;
   }
 }
 

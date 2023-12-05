@@ -38,6 +38,11 @@
   }
 
   &-bottom {
+
+    @include viewport(medium) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
     @include viewport(large) {
       display: grid;
       grid-template-columns: auto auto;
@@ -173,6 +178,10 @@
   
   .service-block-four {
     @include serviceblock-format();
+
+    @include viewport(medium) {
+      margin-right: 15px;
+    }
     
     @include viewport(large) {
       margin-right: 15px;
@@ -206,6 +215,10 @@
   .service-block-five {
     @include serviceblock-format();
    
+    @include viewport(medium) {
+      margin-left: 15px;
+    }
+
     @include viewport(large) {
       margin-left: 15px;
     }
@@ -239,6 +252,10 @@
   .service-block-six {
     @include serviceblock-format();
 
+    @include viewport(medium) {
+      margin-right: 15px;
+    }
+
     @include viewport(large) {
       margin-right: 15px;
     }
@@ -246,6 +263,10 @@
     @include viewport(x-large) {
       margin-left: 15px;
       margin-right: 15px;
+
+      .btn-cs {
+        margin-left: 0;
+      }
     }
   
     &:hover {
@@ -273,6 +294,10 @@
   
   .service-block-seven {
     @include serviceblock-format();
+
+    @include viewport(medium) {
+      margin-left: 15px;
+    }
 
     @include viewport(large) {
       margin-left: 15px;

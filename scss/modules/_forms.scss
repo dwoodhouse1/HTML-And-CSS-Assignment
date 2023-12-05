@@ -12,6 +12,18 @@
       padding-top: 10px;
     }
 
+    &-header {
+      margin-top: 7px;
+      @include viewport(large) {
+        margin-right: -65px;
+      }
+
+      @include viewport(x-large) {
+        margin-right: -55px;
+      }
+      
+    }
+
     &-mobile-btn {
       background: none;
       border: none;

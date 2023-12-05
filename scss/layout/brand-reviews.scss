@@ -77,7 +77,6 @@
       display: inline-block;
       width: 50%;
       padding-left: 15px;
-      padding-right: 15px;
     }
   }
   
@@ -106,6 +105,7 @@
     @include viewport(x-large) {
       display: flex;
       flex-direction: row;
+      gap: 15px;
     }
   }
   

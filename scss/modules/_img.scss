@@ -10,6 +10,30 @@
     width:100%;
     height: auto;
     z-index: 0;
+    //filter: brightness(50%);
+    
+    &::before {
+        content: "";
+        @include viewport(large) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(270deg, transparent 25%, #000);
+        }
+
+        @include viewport(x-large) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(270deg, transparent 25%, #000);
+        }
+        
+        
+    }
 }
 
 .img-responsive {
@@ -25,26 +49,24 @@
 .home-img {
     color: $white;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
 
     & img {
         
         min-height: 550px;
         max-height: 550px;
-        filter: brightness(50%);
+        //filter: brightness(50%);
 
         @include viewport(large) {
-            filter: brightness(100%);
+            //filter: brightness(100%);
         }
 
         @include viewport(x-large) {
             width: 100%;
-            filter: brightness(100%);
+            //filter: brightness(100%);
         }
     }
 
@@ -56,8 +78,33 @@
     display: table-cell;
     vertical-align: middle;
     max-width: 100%;
+
+    @include viewport(medium) {
+        height: 60px;
+    }
+
+    @include viewport(large) {
+        height: 64px;
+    }
+
+    @include viewport(x-large) {
+        height: 64px;
+    }
 }
 
-.clients-xupes-logo {
+.clients {
+
+    &-xupes-logo {
+        height: 38px;
+    }
+
+    &-surveysolutions-logo {
+        height: 48px;
+    }
+
+    &-crane-logo {
+       height: 48px;
+    }
  
 }
+

@@ -42,13 +42,16 @@
 
 .carousell-content {
     filter: invert(0);
+    filter: brightness(100%);
     position: absolute;
+    align-items: center;
     text-align: center;
     font-weight: $font-weight-l;
+    padding: 3.75rem 15px;
     
   
     @include viewport(medium) { // 768px
-      width: 560px;
+      width: 640px;
     }
   
     @include viewport(large) {

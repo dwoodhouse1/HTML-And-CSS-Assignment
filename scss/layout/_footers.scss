@@ -122,8 +122,8 @@ footer {
       
       
       @include viewport(medium) {
-        flex-direction: column;
-        flex-wrap:wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
       }
   
@@ -176,7 +176,7 @@ footer h4 {
     margin-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
-    width: 193px;
+    width: 25%;
   }
 
   @include viewport(x-large) {

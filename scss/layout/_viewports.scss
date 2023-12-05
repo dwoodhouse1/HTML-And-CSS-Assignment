@@ -116,7 +116,6 @@
 
     &-xlg {
         @include viewport(x-large) {
-            background-color: orange;
             display: none;
         }
     }

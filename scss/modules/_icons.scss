@@ -96,6 +96,7 @@
 }
 .icon-arrow-right:before {
   content: "\ea3c";
+  padding-left: 4px;
 }
 .icon-checkbox-checked:before {
   content: "\ea52";
@@ -377,10 +378,6 @@
     @include viewport(x-large) {
       color: $white;
     }
-  }
-
-  .arrow-forward {
-    margin-left: 4px;
   }
 
   // Social Icons
