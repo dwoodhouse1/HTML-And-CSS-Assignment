@@ -72,6 +72,9 @@
     background-color: rgba(0,0,0,.1);
     border: 2px solid rgba(0,0,0,.1);
 
+    &:focus {
+      outline: none;
+    }
 
     @include viewport(small) {
       
@@ -117,6 +120,8 @@
     float: right;
     
   }
+
+  
   
 // Form Checkbox
 

@@ -6,34 +6,46 @@
 
 .img-container {
     
-    position: relative;
-    width:100%;
-    height: auto;
-    z-index: 0;
+   @include img-format();
     //filter: brightness(50%);
     
-    &::before {
-        content: "";
-        @include viewport(large) {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: linear-gradient(270deg, transparent 25%, #000);
+    &-header {
+
+        & img {
+            opacity: .5;
+
+            @include viewport(large) {
+                opacity: 1;
+            }
+
+            @include viewport(x-large) {
+                opacity: 1;
+            }
         }
 
-        @include viewport(x-large) {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: linear-gradient(270deg, transparent 25%, #000);
+
+        &::before {
+            content: "";
+            @include viewport(large) {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: linear-gradient(270deg, transparent 25%, #000);
+            }
+    
+            @include viewport(x-large) {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: linear-gradient(270deg, transparent 25%, #000);
+            }
         }
-        
-        
     }
+    
 }
 
 .img-responsive {
@@ -53,7 +65,7 @@
     justify-content: center;
     align-items: center;
     left: 0;
-    opacity: .5;
+    
 
     @include viewport(large) {
         //filter: brightness(100%);
@@ -79,7 +91,8 @@
         }
 
         @include viewport(x-large) {
-           // width: 100%;
+           width: 100%;
+           object-fit: cover;
             //filter: brightness(100%);
             
         }

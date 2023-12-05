@@ -55,6 +55,13 @@
     display: $disp;
 }
 
+@mixin img-format() {
+    position: relative;
+    width:100%;
+    height: auto;
+    z-index: 0;
+}
+
 
 // Button
 
@@ -266,15 +273,14 @@
     position: absolute;
     z-index: 5;
     left: 0;
-    margin-top: 15px;
 }
 
 @mixin nav-triangle($color) {
     &>a::before {
         content: "";
         position: absolute;
-        left: -57px;
-        bottom: -32px;
+        left: 0;
+        top: 100%;
         width: 0px;
         height: 0px;
         border-style: solid;
@@ -284,7 +290,6 @@
         z-index: 1000;
 
         @include viewport(x-large) {
-            left: -72px;
             border-width: 35px 84px 0 84px;
         }
     }

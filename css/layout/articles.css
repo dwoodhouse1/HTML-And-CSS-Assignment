@@ -31,7 +31,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-one:hover {
   top: -10px;
   transition: .5s ease;
@@ -67,7 +67,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-two:hover {
   top: -10px;
   transition: .5s ease;
@@ -98,7 +98,7 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 209, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-three:hover {
   top: -10px;
   transition: .5s ease;
