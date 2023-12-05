@@ -230,25 +230,26 @@ strong {
 /* line 78, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-banner {
   width: 100%;
+  background-color: #0b0b0b;
 }
 
-/* line 82, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container img {
   height: 100%;
   width: 100%;
 }
 
-/* line 87, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-header {
   background-color: #fff;
 }
 
-/* line 91, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-footer {
   background-color: #323544;
 }
 
-/* line 95, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container > ul {
   display: flex;
   padding: 0;
@@ -256,7 +257,7 @@ strong {
   list-style: none;
 }
 
-/* line 102, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 103, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -283,27 +284,27 @@ strong {
   }
 }
 
-/* line 122, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .logo-container {
   display: table;
   table-layout: fixed;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 122, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .logo-container {
     height: 10px;
   }
 }
 
-/* line 131, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 132, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-mobile {
   display: table-cell;
   vertical-align: middle;
   padding-top: 5px;
 }
 
-/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-mobile a {
   text-decoration: none;
   font-size: 32px;
@@ -313,49 +314,49 @@ strong {
   color: #333645;
 }
 
-/* line 146, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 147, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-hamburger {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .row {
   width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: column;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 153, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: row;
   }
 }
 
-/* line 169, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 170, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .main {
   position: relative;
 }
 
-/* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 174, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .inner {
   padding: 20px 0;
 }
 
-/* line 181, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 182, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .link-icon-container {
   display: flex;
   justify-content: left;
@@ -363,7 +364,7 @@ strong {
   min-width: 25px;
 }
 
-/* line 188, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 189, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .flex-space-between {
   display: flex;
   margin-top: 7px;
@@ -2526,24 +2527,33 @@ footer h4 {
   justify-content: center;
   align-items: center;
   left: 0;
+  opacity: .5;
   width: 100%;
   min-height: 550px;
 }
 
-/* line 57, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 49, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  .home-img {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 49, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  .home-img {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* line 70, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .home-img img {
   min-height: 550px;
   max-height: 550px;
 }
 
-@media (min-width: 1260px) {
-  /* line 57, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-  .home-img img {
-    width: 100%;
-  }
-}
-
-/* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .logo {
   display: table-cell;
   vertical-align: middle;
@@ -2551,37 +2561,37 @@ footer h4 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 60px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 64px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 64px;
   }
 }
 
-/* line 97, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-xupes-logo {
   height: 38px;
 }
 
-/* line 101, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 116, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-surveysolutions-logo {
   height: 48px;
 }
 
-/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 120, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-crane-logo {
   height: 48px;
 }

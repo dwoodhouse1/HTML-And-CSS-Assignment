@@ -53,6 +53,19 @@
     justify-content: center;
     align-items: center;
     left: 0;
+    opacity: .5;
+
+    @include viewport(large) {
+        //filter: brightness(100%);
+        opacity: 1;
+    }
+
+    @include viewport(x-large) {
+        width: 100%;
+        //filter: brightness(100%);
+        opacity: 1;
+        
+    }
 
     & img {
         
@@ -62,11 +75,13 @@
 
         @include viewport(large) {
             //filter: brightness(100%);
+            
         }
 
         @include viewport(x-large) {
-            width: 100%;
+           // width: 100%;
             //filter: brightness(100%);
+            
         }
     }
 
