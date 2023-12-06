@@ -12,7 +12,7 @@
         }
     }
     @else if $break == "smedium" {
-        @media (max-width: $brkpoint-smd) {
+        @media (max-width: $brkpoint-smd) { // between 650px and 767px
             @content;
         }
     }
