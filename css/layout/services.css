@@ -99,13 +99,13 @@
   text-align: center;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -114,7 +114,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -123,7 +123,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .btn {
   min-width: 130px;
   max-width: 130px;
@@ -187,13 +187,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -202,7 +202,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -211,7 +211,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .btn {
   min-width: 130px;
   max-width: 130px;
@@ -275,13 +275,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -290,7 +290,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -299,7 +299,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .btn {
   min-width: 130px;
   max-width: 130px;
@@ -356,13 +356,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -371,7 +371,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -380,7 +380,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .btn {
   min-width: 130px;
   max-width: 130px;
@@ -451,13 +451,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -466,7 +466,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -475,7 +475,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .btn {
   min-width: 130px;
   max-width: 130px;
@@ -547,13 +547,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -562,7 +562,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -571,7 +571,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .btn {
   min-width: 130px;
   max-width: 130px;
@@ -647,13 +647,13 @@
   border-radius: 15px;
 }
 
-/* line 216, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 230, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 229, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -662,7 +662,7 @@
   margin: 0 0 11px;
 }
 
-/* line 238, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 237, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -671,7 +671,7 @@
   line-height: 1.375rem;
 }
 
-/* line 246, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .btn {
   min-width: 130px;
   max-width: 130px;

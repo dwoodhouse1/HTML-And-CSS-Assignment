@@ -132,7 +132,6 @@
 .container-mobile {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 5px;
 
   & a {
     text-decoration: none;
@@ -189,7 +188,5 @@
 
 .flex-space-between {
   display: flex;
-  margin-top: 7px;
- 
-  
+  align-items: center;
 }

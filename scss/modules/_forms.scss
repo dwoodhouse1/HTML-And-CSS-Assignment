@@ -13,7 +13,6 @@
     }
 
     &-header {
-      margin-top: 7px;
       @include viewport(large) {
         margin-right: -65px;
       }
