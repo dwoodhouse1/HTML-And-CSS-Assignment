@@ -96,7 +96,6 @@
 }
 .icon-arrow-right:before {
   content: "\ea3c";
-  padding-left: 4px;
 }
 .icon-checkbox-checked:before {
   content: "\ea52";
@@ -302,7 +301,9 @@
     }
 
     &-speechbubble {
-      background-color: palette(grey, x-dark);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),
+                  0 6px 20px 0 rgba(0,0,0,.10);
+      background-color: $grey-d;
       margin: 0;
     }
   }
