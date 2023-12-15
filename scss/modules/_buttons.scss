@@ -627,3 +627,32 @@
     }
     
   }
+
+  // Cookie Buttons
+
+  .btn-cookie {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.063rem;
+  }
+
+  .btn-changesettings {
+    background-color: $grey-cookie-light;
+    border-color: $grey-cookie-light;
+
+    &:hover {
+      background-color: $grey-contact-hover-bg;
+      border-color: $grey-contact-hover-border; 
+    }
+  }
+
+  .btn-acceptcookies {
+    background-color: $purple;
+    border-color: $purple;
+
+    &:hover {
+      background-color: $purple-hover;
+      border-color: $purple-hover-border;
+    }
+  }

@@ -2689,6 +2689,98 @@ footer h4 {
   font-size: .875rem;
 }
 
+/* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+#cookie-consent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-dialog {
+  margin: auto;
+  transform: translate(0);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-dialog {
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-dialog {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-dialog {
+    width: 600px;
+  }
+}
+
+/* line 41, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+
+/* line 51, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 55, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-header h3 {
+  margin-bottom: 0;
+}
+
+/* line 60, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+
+/* line 64, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-body a {
+  color: #121318;
+}
+
+/* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.modal-footer {
+  padding: 19px 20px 19px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 75, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+.cookie-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .img-container {
   position: relative;
@@ -4159,6 +4251,38 @@ footer ul li a:hover {
 /* line 625, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .link-text:hover {
   text-decoration: underline;
+}
+
+/* line 633, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.btn-cookie {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.063rem;
+}
+
+/* line 640, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.btn-changesettings {
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+
+/* line 644, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.btn-changesettings:hover {
+  background-color: #84858f;
+  border-color: #797a85;
+}
+
+/* line 650, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.btn-acceptcookies {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+/* line 654, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+.btn-acceptcookies:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
 }
 
 /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_nav.scss */
