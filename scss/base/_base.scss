@@ -107,9 +107,25 @@ label {
   margin-bottom: 5px;
 }
 
+.no-padding {
+  
+  & ul {
+    
+    padding: 0;
+    
+    & a {
+      text-align: left;
+    }
+  }
+}
+
 
 .text-align-md {
   text-align: center;
+}
+
+.text-align-left a {
+  text-align: left;
 }
 
 .float-right {

@@ -74,6 +74,22 @@
     display: table;
   }
 
+  &-sidebar {
+    padding: 21px;
+
+    @include viewport(medium) {
+      display: none;
+    }
+
+    @include viewport(large) {
+      display: none;
+    }
+
+    @include viewport(x-large) {
+      display: none;
+    }
+  }
+
 
   &-banner {
     width: 100%;

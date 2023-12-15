@@ -78,6 +78,14 @@
         @include viewport(medium) {
             display: none;
         }
+
+        @include viewport(large) {
+            display: none;
+        }
+
+        @include viewport(x-large) {
+            display: none;
+        }
     }
     
     &-md {
@@ -97,6 +105,11 @@
 
 .hidden {
 
+    &-xs {
+        @include viewport(small) {
+            display: none;
+        }
+    }
     &-sm {
         @include viewport(small) {
             display: none;

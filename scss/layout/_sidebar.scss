@@ -1,0 +1,155 @@
+// ==========================================================================
+// Sidebar
+// ==========================================================================
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    height: 100%;
+    width: 350px;
+    background: $grey-label;
+    overflow: auto;
+
+    @include viewport(small){
+        width: 275px;
+    }
+
+    @include viewport(medium)
+    {
+        overflow-x: hidden;
+    }
+
+    @include viewport(large) {
+       overflow-x: hidden;
+    }
+    
+    @include viewport(x-large) {
+        overflow-x: hidden;
+    }
+    & ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    // & li {
+    //     border-top: 1px solid hsla(0,0%, 100%,.1);
+    //     border-bottom: 1px solid rgba(0,0,0,.25);
+    //     color: white;
+    // }
+
+    & a {
+        color: white;
+        font-size: 1.125rem;
+        text-decoration: none;
+        padding: 19px 0 18px;
+        display: block;
+        border-radius: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        outline: 1px solid rgba(0,0,0,.25);
+        border: 1px solid hsla(0,0%, 100%,.1);
+    }
+}
+
+.menu-banner {
+    & ul {
+        padding-top: 20px;
+        padding-left: 0;
+        width: auto;
+    }
+
+    &-title {
+        display: none;
+    }
+
+    &-item-title {
+        padding-top: 0;
+        & a {
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 1rem;
+            background-color: $grey-label;
+        }
+    }
+
+    & a {
+        display: block;
+        font-size: 1rem;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,.25);
+        padding: 10px;
+        text-decoration: none;
+        
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+        
+    }
+
+    &-item {
+        border-top: 1px solid rgba(0,0,0,.45);
+        
+        & a {
+            border-top: 1px solid hsla(0,0%, 100%,.05);
+        }
+    }
+}
+
+.software {
+    padding: 20px 0 0;
+}
+
+.it {
+    @extend .software;
+}
+
+.digital {
+    @extend .software;
+}
+
+.telecoms {
+    @extend .software;
+}
+
+.web {
+    @extend .software;
+}
+
+.security {
+    @extend .software;
+}
+
+.developer-course {
+    @extend .software;
+}
+
+
+.menu {
+    padding-top: 0;
+    & a {
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    &-title {
+        background-color: $grey-label;
+    }
+}
+
+
+.our-work-menu {
+    background-color: $grey-label;
+}
+.menu-link-text {
+    text-align: left;
+    font-size: .875rem;
+}

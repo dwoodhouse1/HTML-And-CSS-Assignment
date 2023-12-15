@@ -136,38 +136,53 @@ label {
   margin-bottom: 5px;
 }
 
-/* line 111, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.no-padding ul {
+  padding: 0;
+}
+
+/* line 116, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.no-padding ul a {
+  text-align: left;
+}
+
+/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .text-align-md {
   text-align: center;
 }
 
-/* line 115, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 127, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.text-align-left a {
+  text-align: left;
+}
+
+/* line 131, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .float-right {
   float: right;
 }
 
-/* line 119, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 135, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .float-left {
   float: left;
 }
 
-/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .space-between {
   padding-bottom: 30px;
 }
 
-/* line 127, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 131, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 147, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .segment {
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
-/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
 .padding-arrow {
   padding-left: 4px;
 }
@@ -232,29 +247,55 @@ strong {
   display: table;
 }
 
-/* line 78, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.container-sidebar {
+  padding: 21px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .container-sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .container-sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  .container-sidebar {
+    display: none;
+  }
+}
+
+/* line 94, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-banner {
   width: 100%;
   background-color: #0b0b0b;
 }
 
-/* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 99, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container img {
   height: 100%;
   width: 100%;
 }
 
-/* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-header {
   background-color: #fff;
 }
 
-/* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 108, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-footer {
   background-color: #323544;
 }
 
-/* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container > ul {
   display: flex;
   padding: 0;
@@ -262,7 +303,7 @@ strong {
   list-style: none;
 }
 
-/* line 103, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 119, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -289,26 +330,26 @@ strong {
   }
 }
 
-/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .logo-container {
   display: table;
   table-layout: fixed;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 139, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .logo-container {
     height: 10px;
   }
 }
 
-/* line 132, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 148, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-mobile {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-mobile a {
   text-decoration: none;
   font-size: 32px;
@@ -318,54 +359,54 @@ strong {
   color: #333645;
 }
 
-/* line 146, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 162, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-hamburger {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .row {
   width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: column;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+  /* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
   .row {
     flex-direction: row;
   }
 }
 
-/* line 169, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 185, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .main {
   position: relative;
 }
 
-/* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 189, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .inner {
   padding: 20px 0;
 }
 
-/* line 177, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 193, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .partners {
   margin-bottom: 50px;
 }
 
-/* line 182, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 198, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .link-icon-container {
   display: flex;
   justify-content: left;
@@ -373,7 +414,7 @@ strong {
   min-width: 25px;
 }
 
-/* line 189, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 205, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .flex-space-between {
   display: flex;
   align-items: center;
@@ -461,78 +502,99 @@ strong {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 73, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  .visible-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 73, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  .visible-xs {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 83, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 91, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .visible-md {
     display: auto;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 90, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .visible-lg {
     display: auto;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 100, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 108, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden-sm {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 118, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden-md {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 111, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 124, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden-lg {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 117, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 130, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden-xlg {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 106, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 106, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .hidden {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 150, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .mobile-viewport {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 150, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .mobile-viewport {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 137, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  /* line 150, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
   .mobile-viewport {
     display: none;
   }
@@ -2478,6 +2540,153 @@ footer h4 {
 .li-hypthen {
   margin-left: 0.625em;
   margin-right: 0.625em;
+}
+
+/* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  height: 100%;
+  width: 350px;
+  background: #333645;
+  overflow: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .sidebar {
+    width: 275px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .sidebar {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .sidebar {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .sidebar {
+    overflow-x: hidden;
+  }
+}
+
+/* line 31, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.sidebar ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 44, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.sidebar a {
+  color: white;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 19px 0 18px;
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 59, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner ul {
+  padding-top: 20px;
+  padding-left: 0;
+  width: auto;
+}
+
+/* line 65, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner-title {
+  display: none;
+}
+
+/* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner-item-title {
+  padding-top: 0;
+}
+
+/* line 71, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner-item-title a {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: #333645;
+}
+
+/* line 79, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner a {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+}
+
+/* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 99, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-banner-item a {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.software, .it, .digital, .telecoms, .web, .security, .developer-course {
+  padding: 20px 0 0;
+}
+
+/* line 134, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu {
+  padding-top: 0;
+}
+
+/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu a {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-title {
+  background-color: #333645;
+}
+
+/* line 149, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.our-work-menu {
+  background-color: #333645;
+}
+
+/* line 152, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.menu-link-text {
+  text-align: left;
+  font-size: .875rem;
 }
 
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
