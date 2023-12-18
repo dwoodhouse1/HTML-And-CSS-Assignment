@@ -2698,7 +2698,7 @@ footer h4 {
   right: 0;
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -2775,7 +2775,31 @@ footer h4 {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 75, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-footer {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-footer {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
+  .modal-footer {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+/* line 90, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_cookies.scss */
 .cookie-row {
   margin-left: -15px;
   margin-right: -15px;

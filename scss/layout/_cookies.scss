@@ -10,7 +10,7 @@
     right: 0;
     z-index: 10000;
     background-color: rgba(0,0,0,.7);
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -70,6 +70,21 @@
     padding: 19px 20px 19px;
     text-align: right;
     border-top: 1px solid $grey-cookie-line;
+
+    @include viewport(medium) {
+        display: flex;
+        gap: 15px;
+    }
+
+    @include viewport(large) {
+        display: flex;
+        gap: 15px;
+    }
+
+    @include viewport(x-large) {
+        display: flex;
+        gap: 15px;
+    }
 }
 
 .cookie-row {
