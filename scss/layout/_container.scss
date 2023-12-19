@@ -77,10 +77,6 @@
   &-sidebar {
     padding: 21px;
 
-    @include viewport(medium) {
-      display: none;
-    }
-
     @include viewport(large) {
       display: none;
     }
@@ -183,7 +179,19 @@
 }
 
 .main {
- position: relative;
+  background-color: $white;
+  position: relative;
+  transition: all .5s;
+  z-index: 10;
+  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 10;
+  }
 }
 
 .inner {

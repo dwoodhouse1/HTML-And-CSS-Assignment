@@ -499,7 +499,7 @@
     }
   }
   
-  .hamburger-spin:hover {
+  .hamburger-spin {
     .hamburger-inner {
   
       @include hamburger();
@@ -533,6 +533,45 @@
           ease-out, transform .22s
           cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
       }
+    }
+  }
+
+  .hamburger-spin-backwards {
+    cursor: pointer;
+    
+    .hamburger-inner {
+    
+      @include hamburger();
+      
+        transform: rotate(-180deg);
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        transition: .5s ease;
+      
+        &::before {
+          @include hamburger();
+          top: 10px;
+          opacity: 1;
+          transform: rotate(180deg);
+          transition: top .1s ease-out
+          ,opacity .1s ease-out .12s;
+      
+          //transform: rotate(45deg);
+      
+          &:hover {
+            top: 10px;
+          }
+        }
+      
+        &::after {
+          @include hamburger();
+          bottom: 0;
+          top: -10px;
+          transform: rotate(180deg);
+          transition: bottom .1s
+            ease-out, transform .22s
+            cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+        }
     }
   }
 

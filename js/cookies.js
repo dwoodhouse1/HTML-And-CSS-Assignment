@@ -10,6 +10,7 @@ btnAcceptCookies.click(() => {
     cookieSection.hide();
     setCookie("cookie", false, .001);
     webPage.css("overflow", "auto");
+    console.log("cookie should be stored now");
     
 })
 
@@ -43,7 +44,7 @@ function getCookie(name) {
 function cookieMessage() {
     if(!getCookie("cookie"))
     {
-        alert("cookie not here");
+        console.log("cookie not here");
         cookieSection.show();
         cookieSection.css("display", "flex");
         cookieSection.css("justifyContent", "center");

@@ -18,7 +18,7 @@
 
     @include viewport(medium)
     {
-        overflow-x: hidden;
+        width: 275px;
     }
 
     @include viewport(large) {
@@ -152,4 +152,21 @@
 .menu-link-text {
     text-align: left;
     font-size: .875rem;
+}
+
+.sidebar-active {
+    left: -275px;
+    transition: .5s;
+    cursor: pointer;
+
+    @include viewport(large) {
+        left: -350px;
+        transition: .5s;
+    }
+
+    @include viewport(x-large) {
+        transition: .5s;
+        left: -350px;
+        
+    }
 }
