@@ -201,6 +201,12 @@
 .partners {
   @extend .clients;
   margin-bottom: 50px;
+
+  filter:grayscale(1);
+    
+      &:hover {
+        filter:grayscale(0);
+      }
 }
 
 .link-icon-container {

@@ -411,9 +411,15 @@ strong {
 /* line 201, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .partners {
   margin-bottom: 50px;
+  filter: grayscale(1);
 }
 
-/* line 206, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 207, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.partners:hover {
+  filter: grayscale(0);
+}
+
+/* line 212, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .link-icon-container {
   display: flex;
   justify-content: left;
@@ -421,7 +427,7 @@ strong {
   min-width: 25px;
 }
 
-/* line 213, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+/* line 219, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .flex-space-between {
   display: flex;
   align-items: center;
