@@ -8,8 +8,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         variableWidth: true,
-        //prevArrow: false,
-        //nextArrow: false,
+        prevArrow: false,
+        nextArrow: false,
         draggable: false
     });
 });
