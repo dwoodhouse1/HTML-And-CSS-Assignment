@@ -187,6 +187,25 @@ strong {
   padding-left: 4px;
 }
 
+/* line 156, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  opacity: 0%;
+  z-index: -1;
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+/* line 168, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.dark-overlay-active {
+  opacity: 50%;
+  z-index: 15;
+}
+
 /* line 5, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 #container {
   position: relative;
@@ -2771,6 +2790,44 @@ footer h4 {
 @media (min-width: 1260px) {
   /* line 157, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
   .sidebar-active {
+    transition: .5s;
+    left: -350px;
+  }
+}
+
+/* line 174, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  opacity: 0%;
+  z-index: -1;
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+/* line 186, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+.dark-overlay-active {
+  opacity: 50%;
+  z-index: 15;
+  left: -275px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 186, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .dark-overlay-active {
+    left: -350px;
+    transition: .5s;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 186, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_sidebar.scss */
+  .dark-overlay-active {
     transition: .5s;
     left: -350px;
   }

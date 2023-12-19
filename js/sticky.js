@@ -7,11 +7,11 @@ const stickyEleHeight = stickyEle.offsetHeight;
 
 let prevScrollPos = window.pageYOffset;
 
-window.onscroll = function() {stickyHeader()};
+window.onscroll = function() {stickyHeaderScroll()};
 
-function stickyHeader() {
+function stickyHeaderScroll() {
     let currentScrollPos = window.pageYOffset;
-    
+
     if (currentScrollPos > prevScrollPos && currentScrollPos > stickyEleHeight) // user is scrolling down and is past the default header at the top of page
     {
         stickyEle.classList.add("sticky-hide");
