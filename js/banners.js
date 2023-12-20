@@ -6,15 +6,9 @@
 $(document).ready(function() {
     // Header Banner Slider using Slick
     // $('.container-banner').slick({
-    //     slidesToShow: 7,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     variableWidth: true,
-    //     prevArrow: false,
-    //     nextArrow: false,
-    //     draggable: false,
-    //     swipe: false
+    //     arrows: false,
+    //     autoplay: false,
+    //     dots: true
     // });
     
     

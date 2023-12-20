@@ -58,13 +58,11 @@
     height: auto;
 }
 
-.home-img-primary {
+.home-img{
     @include banner-img-format();
 }
 
-.home-img-secondary {
-    @include banner-img-format();
-}
+
 
 .logo {
     

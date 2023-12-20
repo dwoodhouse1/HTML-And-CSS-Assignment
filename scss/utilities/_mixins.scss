@@ -357,7 +357,8 @@
     }
 
     & img {
-        
+        width: 100vw;
+        object-fit: cover;
         min-height: 550px;
         max-height: 550px;
         //filter: brightness(50%);
