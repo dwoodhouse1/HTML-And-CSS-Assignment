@@ -24,7 +24,7 @@ btnHamburgerSticky.addEventListener("click", () => { // Hamburger button on the 
     main.classList.add("sidebar-active");
     stickyHeader.classList.add("sidebar-active");
     btnHamburger.classList.add("hamburger-spin");
-    btnHamburger.classList.remove("hamburger-spin-backwards");
+    btnHamburger.classList.remove("hamburger-spin-backwards"); // Hello
     body.style.overflow = "hidden";
 })
 

@@ -7,8 +7,8 @@ $(document).ready(function() {
     // Header Banner Slider using Slick
     $('.container-banner').slick({
         // arrows: false,
-        //autoplay: true,
-        // dots: true
+        autoplay: true,
+        dots: true,
         nextArrow: false,
         prevArrow: false
     });

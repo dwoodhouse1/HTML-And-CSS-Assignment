@@ -436,7 +436,8 @@ strong {
 /* line 224, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-banner {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
@@ -807,10 +808,26 @@ strong {
   background-color: black;
 }
 
-/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 107, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-slide {
   margin: 0;
   overflow-y: hidden;
+}
+
+/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+#banner .slick-dots {
+  bottom: 25px;
+}
+
+/* line 117, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+#banner .slick-dots li button::before {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 122, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+#banner.slick-dots li button .slick-active button::before {
+  color: orange;
 }
 
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */

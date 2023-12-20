@@ -102,7 +102,26 @@
   background-color: black;
 }
 
-#banner .slick-slide {
-  margin: 0;
-  overflow-y: hidden;
+#banner {
+
+  & .slick-slide {
+    margin: 0;
+    overflow-y: hidden;
+  }
+
+  & .slick-dots {
+    bottom: 25px;
+    //background-color: black;
+  }
+
+  & .slick-dots li button::before {
+    font-size: 5rem;
+    color: hsla(0,0%,100%,.5);
+  }
+
+  &.slick-dots li button .slick-active button::before {
+    color: orange;
+  }
 }
+  
+

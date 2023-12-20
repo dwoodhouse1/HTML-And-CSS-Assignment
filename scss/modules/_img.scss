@@ -10,8 +10,8 @@
     //filter: brightness(50%);
     
     &-header {
-
-        & img {
+    
+    & img {
             opacity: .5;
 
             @include viewport(large) {
@@ -26,7 +26,7 @@
 
         &::before {
             content: "";
-            
+
             @include viewport(large) {
                 position: absolute;
                 left: 0;

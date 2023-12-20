@@ -223,5 +223,6 @@
 
 .container-banner {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden; // change to auto if you need to scroll through all slides
+  overflow-y: hidden;
 }
