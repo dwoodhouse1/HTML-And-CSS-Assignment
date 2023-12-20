@@ -433,6 +433,12 @@ strong {
   align-items: center;
 }
 
+/* line 224, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
+.container-banner {
+  display: flex;
+  overflow-x: auto;
+}
+
 /* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
 .col-xs {
   width: 100%;
@@ -3004,7 +3010,7 @@ footer h4 {
 }
 
 /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-.home-img {
+.home-img-primary {
   color: #fff;
   display: flex;
   position: relative;
@@ -3017,80 +3023,117 @@ footer h4 {
 
 @media (min-width: 992px) and (max-width: 1259px) {
   /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-  .home-img {
+  .home-img-primary {
     opacity: 1;
   }
 }
 
 @media (min-width: 1260px) {
   /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-  .home-img {
-    width: 100%;
+  .home-img-primary {
     opacity: 1;
   }
 }
 
-/* line 82, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-.home-img img {
+/* line 359, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+.home-img-primary img {
   min-height: 550px;
   max-height: 550px;
 }
 
 @media (min-width: 1260px) {
-  /* line 82, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
-  .home-img img {
-    width: 100%;
+  /* line 359, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  .home-img-primary img {
     object-fit: cover;
   }
 }
 
-/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 65, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+.home-img-secondary {
+  color: #fff;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  min-height: 550px;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 65, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  .home-img-secondary {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 65, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  .home-img-secondary {
+    opacity: 1;
+  }
+}
+
+/* line 359, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+.home-img-secondary img {
+  min-height: 550px;
+  max-height: 550px;
+}
+
+@media (min-width: 1260px) {
+  /* line 359, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  .home-img-secondary img {
+    object-fit: cover;
+  }
+}
+
+/* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .logo {
   max-width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 60px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 64px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+  /* line 69, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
   .logo {
     height: 64px;
   }
 }
 
-/* line 122, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 86, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .logo img {
   display: block;
 }
 
-/* line 128, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 92, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-xupes-logo {
   height: 38px;
 }
 
-/* line 132, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 96, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-surveysolutions-logo {
   height: 48px;
 }
 
-/* line 136, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 100, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-crane-logo {
   height: 48px;
 }
 
-/* line 140, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
+/* line 104, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .clients-ashcroft-logo {
   height: 42px;
 }
