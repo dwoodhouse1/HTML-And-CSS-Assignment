@@ -387,10 +387,71 @@
       @include a-format();
       padding: 15px;
       background-color: $purple;
+      border-color: $purple;
       font-weight: $base-font-weight;
 
       &:hover {
-        background-color: $dark-purple;
+        background-color: $purple-hover;
+        border-color: $purple-hover-border;
+      }
+    }
+
+    &-bespokesoftware {
+      @extend .btn-whyus;
+      background-color: $grey-blue;
+      border-color: $grey-blue;
+
+      &:hover {
+        background-color: $grey-blue-hover;
+        border-color: $grey-blue-hover-border;
+      }
+    }
+
+    &-itsupport {
+      @extend .btn-whyus;
+      background-color: $blue;
+      border-color: $blue;
+
+      &:hover {
+        background-color: $blue-hover;
+        border-color: $blue-hover-border;
+      }
+    }
+
+    &-digitalmarketing {
+      @extend .btn-whyus;
+      background-color: $green;
+      border-color: $green;
+
+      &:hover {
+        background-color: $green-hover; 
+        border-color: $green-hover-border; 
+      }
+    }
+
+    &-telecomsservices {
+      @extend .btn-whyus;
+      background-color: $red;
+      border-color: $red;
+
+      &:hover {
+        background-color: $red-hover;
+        border-color: $red-hover-border; 
+      }
+    }
+
+    &-webdesign {
+      @extend .btn-whyus;
+    }
+
+    &-cybersecurity {
+      @extend .btn-whyus;
+      background-color: $red-light;
+      border-color: $red-light;
+
+      &:hover {
+        background-color: $red-light-hover;
+        border-color: $red-light-hover-border; 
       }
     }
 

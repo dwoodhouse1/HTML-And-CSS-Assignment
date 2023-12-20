@@ -29,6 +29,16 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
+
+    @include viewport(large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
+
+    @include viewport(x-large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
   }
 
   a {
