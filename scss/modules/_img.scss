@@ -26,6 +26,7 @@
 
         &::before {
             content: "";
+            
             @include viewport(large) {
                 position: absolute;
                 left: 0;

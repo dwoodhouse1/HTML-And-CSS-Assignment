@@ -121,4 +121,10 @@
   background-color: black;
 }
 
+/* line 105, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+#banner .slick-slide {
+  margin: 0;
+  overflow-y: hidden;
+}
+
 /*# sourceMappingURL=banner.css.map */
