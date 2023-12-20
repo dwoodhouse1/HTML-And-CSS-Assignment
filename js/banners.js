@@ -5,11 +5,13 @@
 
 $(document).ready(function() {
     // Header Banner Slider using Slick
-    $('.container-banner').slick({
-        // arrows: false,
-        // autoplay: false,
-        // dots: true
-    });
+    // $('.container-banner').slick({
+    //     // arrows: false,
+    //     //autoplay: true,
+    //     // dots: true
+    //     nextArrow: false,
+    //     prevArrow: false
+    // });
     
     
     
