@@ -5,10 +5,11 @@ const btnAcceptCookies = $(".btn-acceptcookies");
 const btnManageConsent = $(".cookie-settings-btn");
 const cookieSection = $("#cookie-consent");
 const webPage = $("body");
-
+let testDate = new Date();
+console.log(testDate);
 btnAcceptCookies.click(() => {
     cookieSection.hide();
-    setCookie("cookie", false, .001);
+    setCookie("cookie", true, 1); // number is minutes
     webPage.css("overflow", "auto");
     console.log("cookie should be stored now");
     
@@ -22,8 +23,8 @@ btnManageConsent.click(() => {
 
 function setCookie(name, value, duration) {
     let date = new Date();
-    date.setTime(date.getTime() + (duration * 24 * 60 * 60 * 1000)); // sets the numeric value inputted into 'duration' in days
-
+    //date.setTime(date.getTime() + (duration * 24 * 60 * 60 * 1000)); // sets the numeric value inputted into 'duration' in days
+    date.setTime(date.getTime() + (duration * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     document.cookie = name + "=" + value + ";" + expires + "; path=/"
 }

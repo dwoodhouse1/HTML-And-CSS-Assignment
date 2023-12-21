@@ -10,7 +10,8 @@
     height: 100%;
     width: 350px;
     background: $grey-label;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     @include viewport(small){
         width: 275px;
@@ -90,6 +91,10 @@
         border-left: 0;
         border-right: 0;
         outline: none;
+
+        // &:hover {
+        //     background-color: hsla(0,0%, 100%,.05);
+        // }
         
     }
 
@@ -201,4 +206,63 @@
         left: -350px;
         
     }
+}
+.services-menu .hidden-xs {
+    display: none;
+}
+// Desktop Side Bar Hovers
+.services-menu:hover {
+    .menu-banner-item-title a {
+        background-color: hsla(0,0%, 100%,.05);
+    }
+}
+
+.our-work-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.our-knowledge-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.training-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.our-company-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.contact-us-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.covid-menu:hover {
+    @extend .services-menu:hover;
+}
+
+
+// Mobile Side Bar Hovers
+.software:hover {
+    .mobile-title a {
+        background-color: hsla(0,0%, 100%,.05);
+    }
+}
+.it:hover {
+    @extend .software:hover;
+}
+.digital:hover {
+    @extend .software:hover;
+}
+.telecoms:hover {
+    @extend .software:hover;
+}
+.web:hover {
+    @extend .software:hover;
+}
+.security:hover {
+    @extend .software:hover;
+}
+.developer-course:hover {
+    @extend .software:hover;
 }
