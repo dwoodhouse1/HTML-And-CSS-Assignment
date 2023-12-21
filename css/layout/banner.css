@@ -129,18 +129,32 @@
 
 /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-dots {
-  bottom: 25px;
+  bottom: 60px;
 }
 
-/* line 117, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  #banner .slick-dots {
+    bottom: 15px;
+  }
+}
+
+/* line 119, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-dots li button::before {
-  font-size: 5rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  color: #fff;
 }
 
-/* line 122, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
-#banner.slick-dots li button .slick-active button::before {
-  color: orange;
+/* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+.slick-active::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: -2px;
+  left: -2px;
 }
 
 /*# sourceMappingURL=banner.css.map */

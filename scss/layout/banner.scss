@@ -110,18 +110,34 @@
   }
 
   & .slick-dots {
-    bottom: 25px;
-    //background-color: black;
+    bottom: 60px;
+    @include viewport(small) {
+      bottom: 15px;
+    }
   }
 
   & .slick-dots li button::before {
-    font-size: 5rem;
-    color: hsla(0,0%,100%,.5);
+    font-size: 3rem;
+    //color: hsla(0,0%,100%,.5);
+    color: $white;
+
+    
   }
 
-  &.slick-dots li button .slick-active button::before {
-    color: orange;
-  }
 }
+
+.slick-active::after {
+ content: "";
+ position: absolute;
+ width: 20px;
+ height: 20px;
+ border: 2px solid $white;
+ border-radius: 50%;
+ bottom: -2px;
+ left: -2px;
+
+}
+
+
   
 

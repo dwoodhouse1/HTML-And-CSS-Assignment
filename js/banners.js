@@ -10,16 +10,8 @@ $(document).ready(function() {
         autoplay: true,
         dots: true,
         nextArrow: false,
-        prevArrow: false
+        prevArrow: false,
     });
-    
-    
-    
-    
-    
-    
-    
-    
     
     // Partner Banner Slider using Slick
     $('.carousell-partners-content').slick({
