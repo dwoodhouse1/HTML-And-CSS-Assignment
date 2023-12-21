@@ -24,7 +24,7 @@ btnManageConsent.click(() => {
 function setCookie(name, value, duration) {
     let date = new Date();
     //date.setTime(date.getTime() + (duration * 24 * 60 * 60 * 1000)); // sets the numeric value inputted into 'duration' in days
-    date.setTime(date.getTime() + (duration * 60 * 1000));
+    date.setTime(date.getTime() + (duration * 60 * 1000)); // sets the numeric value inputted into 'duration' in minutes
     const expires = "expires=" + date.toUTCString();
     document.cookie = name + "=" + value + ";" + expires + "; path=/"
 }

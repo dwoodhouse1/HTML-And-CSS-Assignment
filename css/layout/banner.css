@@ -124,7 +124,7 @@
 /* line 107, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-slide {
   margin: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
@@ -146,7 +146,7 @@
 }
 
 /* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
-.slick-active::after {
+#banner .slick-active::after {
   content: "";
   position: absolute;
   width: 20px;

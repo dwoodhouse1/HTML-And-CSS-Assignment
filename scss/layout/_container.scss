@@ -76,7 +76,7 @@
 
   &-sidebar {
     padding: 21px;
-    overflow-x: hidden;
+
     @include viewport(large) {
       display: none;
     }

@@ -106,7 +106,7 @@
 
   & .slick-slide {
     margin: 0;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   & .slick-dots {
@@ -126,7 +126,7 @@
 
 }
 
-.slick-active::after {
+#banner .slick-active::after {
  content: "";
  position: absolute;
  width: 20px;

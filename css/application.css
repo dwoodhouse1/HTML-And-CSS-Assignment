@@ -250,7 +250,6 @@ strong {
 /* line 77, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 .container-sidebar {
   padding: 21px;
-  overflow-x: hidden;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
@@ -812,7 +811,7 @@ strong {
 /* line 107, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-slide {
   margin: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
@@ -834,7 +833,7 @@ strong {
 }
 
 /* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
-.slick-active::after {
+#banner .slick-active::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -1277,7 +1276,7 @@ strong {
 }
 
 /* line 208, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-four:hover .icon-phone-call, .btn-ts:hover .icon-phone-call {
+.service-block-four:hover .icon-phone_in_talk, .btn-ts:hover .icon-phone_in_talk {
   color: #d64541;
   background-color: #fff;
 }
@@ -1373,7 +1372,7 @@ strong {
 }
 
 /* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-five:hover .icon-embed, .btn-wd:hover .icon-embed {
+.service-block-five:hover .icon-embed2, .btn-wd:hover .icon-embed2 {
   color: #926fb1;
   background-color: #fff;
 }
@@ -1568,7 +1567,7 @@ strong {
 }
 
 /* line 324, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-seven:hover .icon-mortar-board, .btn-dt:hover .icon-mortar-board {
+.service-block-seven:hover .icon-graduation-cap, .btn-dt:hover .icon-graduation-cap {
   color: #ce4125;
   background-color: #fff;
 }
