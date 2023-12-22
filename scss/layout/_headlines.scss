@@ -3,10 +3,56 @@
 // ==========================================================================
 
 .header-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   
     
+}
+
+.sticky-show {
+  position: fixed;
+  top: -218px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  box-shadow: 0 5px 35px rgba(0,0,0,.1);
+  animation-duration: .25s;
+  transform: translateY(100%);
+  transition: .5s;
+  width: 100%;
+
+  @include viewport(medium) {
+    top: -110px;
   }
+
+  @include viewport(small) {
+    top: -167px;
+  }
+}
+
+.sticky-hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  box-shadow: 0 5px 35px rgba(0,0,0,.1);
+  animation-duration: .25s;
+  transform: translateY(-100%);
+  transition: .5s;
+  width: 100%;
+}
+
+.sticky-remove {
+  display: none;
+}
+
+.sticky-add {
+  display: block;
+}
+
+.inner {
+  background-color: $white;
+}

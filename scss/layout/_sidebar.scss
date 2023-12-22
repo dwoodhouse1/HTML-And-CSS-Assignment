@@ -1,0 +1,268 @@
+// ==========================================================================
+// Sidebar
+// ==========================================================================
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    height: 100%;
+    width: 350px;
+    background: $grey-label;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @include viewport(small){
+        width: 275px;
+    }
+
+    @include viewport(medium)
+    {
+        width: 275px;
+    }
+
+    @include viewport(large) {
+       overflow-x: hidden;
+    }
+    
+    @include viewport(x-large) {
+        overflow-x: hidden;
+    }
+    & ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    // & li {
+    //     border-top: 1px solid hsla(0,0%, 100%,.1);
+    //     border-bottom: 1px solid rgba(0,0,0,.25);
+    //     color: white;
+    // }
+
+    & a {
+        color: white;
+        font-size: 1.125rem;
+        text-decoration: none;
+        padding: 19px 0 18px;
+        display: block;
+        border-radius: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        outline: 1px solid rgba(0,0,0,.25);
+        border: 1px solid hsla(0,0%, 100%,.1);
+    }
+}
+
+.menu-banner {
+    & ul {
+        padding-top: 20px;
+        padding-left: 0;
+        width: auto;
+    }
+
+    &-title {
+        display: none;
+    }
+
+    &-item-title {
+        padding-top: 0;
+        & a {
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 1rem;
+            background-color: $grey-label;
+        }
+    }
+
+    & a {
+        display: block;
+        font-size: 1rem;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,.25);
+        padding: 10px;
+        text-decoration: none;
+        
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+
+        // &:hover {
+        //     background-color: hsla(0,0%, 100%,.05);
+        // }
+        
+    }
+
+    &-item {
+        border-top: 1px solid rgba(0,0,0,.45);
+        
+        & a {
+            border-top: 1px solid hsla(0,0%, 100%,.05);
+        }
+    }
+}
+
+.software {
+    padding: 20px 0 0;
+}
+
+.it {
+    @extend .software;
+}
+
+.digital {
+    @extend .software;
+}
+
+.telecoms {
+    @extend .software;
+}
+
+.web {
+    @extend .software;
+}
+
+.security {
+    @extend .software;
+}
+
+.developer-course {
+    @extend .software;
+}
+
+
+.menu {
+    padding-top: 0;
+    & a {
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    &-title {
+        background-color: $grey-label;
+    }
+}
+
+
+.our-work-menu {
+    background-color: $grey-label;
+}
+.menu-link-text {
+    text-align: left;
+    font-size: .875rem;
+}
+
+.sidebar-active {
+    left: -275px;
+    transition: .5s;
+    cursor: pointer;
+
+    @include viewport(large) {
+        left: -350px;
+        transition: .5s;
+    }
+
+    @include viewport(x-large) {
+        transition: .5s;
+        left: -350px;
+        
+    }
+}
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0%;
+    z-index: -1;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.dark-overlay-active {
+    opacity: 50%;
+    z-index: 15;
+
+    left: -275px;
+    transition: .5s;
+    cursor: pointer;
+
+    @include viewport(large) {
+        left: -350px;
+        transition: .5s;
+    }
+
+    @include viewport(x-large) {
+        transition: .5s;
+        left: -350px;
+        
+    }
+}
+.services-menu .hidden-xs {
+    display: none;
+}
+// Desktop Side Bar Hovers
+.services-menu:hover {
+    .menu-banner-item-title a {
+        background-color: hsla(0,0%, 100%,.05);
+    }
+}
+
+.our-work-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.our-knowledge-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.training-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.our-company-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.contact-us-menu:hover {
+    @extend .services-menu:hover;
+}
+
+.covid-menu:hover {
+    @extend .services-menu:hover;
+}
+
+
+// Mobile Side Bar Hovers
+.software:hover {
+    .mobile-title a {
+        background-color: hsla(0,0%, 100%,.05);
+    }
+}
+.it:hover {
+    @extend .software:hover;
+}
+.digital:hover {
+    @extend .software:hover;
+}
+.telecoms:hover {
+    @extend .software:hover;
+}
+.web:hover {
+    @extend .software:hover;
+}
+.security:hover {
+    @extend .software:hover;
+}
+.developer-course:hover {
+    @extend .software:hover;
+}

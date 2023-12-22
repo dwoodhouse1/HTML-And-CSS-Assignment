@@ -74,6 +74,18 @@
     display: table;
   }
 
+  &-sidebar {
+    padding: 21px;
+
+    @include viewport(large) {
+      display: none;
+    }
+
+    @include viewport(x-large) {
+      display: none;
+    }
+  }
+
 
   &-banner {
     width: 100%;
@@ -167,7 +179,19 @@
 }
 
 .main {
- position: relative;
+  background-color: $white;
+  position: relative;
+  transition: all .5s;
+  z-index: 10;
+  left: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 10;
+  }
 }
 
 .inner {
@@ -177,6 +201,12 @@
 .partners {
   @extend .clients;
   margin-bottom: 50px;
+
+  filter:grayscale(1);
+    
+      &:hover {
+        filter:grayscale(0);
+      }
 }
 
 .link-icon-container {
@@ -189,4 +219,10 @@
 .flex-space-between {
   display: flex;
   align-items: center;
+}
+
+.container-banner {
+  display: flex;
+  overflow-x: hidden; // change to auto if you need to scroll through all slides
+  overflow-y: hidden;
 }

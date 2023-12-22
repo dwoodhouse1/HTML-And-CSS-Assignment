@@ -387,10 +387,71 @@
       @include a-format();
       padding: 15px;
       background-color: $purple;
+      border-color: $purple;
       font-weight: $base-font-weight;
 
       &:hover {
-        background-color: $dark-purple;
+        background-color: $purple-hover;
+        border-color: $purple-hover-border;
+      }
+    }
+
+    &-bespokesoftware {
+      @extend .btn-whyus;
+      background-color: $grey-blue;
+      border-color: $grey-blue;
+
+      &:hover {
+        background-color: $grey-blue-hover;
+        border-color: $grey-blue-hover-border;
+      }
+    }
+
+    &-itsupport {
+      @extend .btn-whyus;
+      background-color: $blue;
+      border-color: $blue;
+
+      &:hover {
+        background-color: $blue-hover;
+        border-color: $blue-hover-border;
+      }
+    }
+
+    &-digitalmarketing {
+      @extend .btn-whyus;
+      background-color: $green;
+      border-color: $green;
+
+      &:hover {
+        background-color: $green-hover; 
+        border-color: $green-hover-border; 
+      }
+    }
+
+    &-telecomsservices {
+      @extend .btn-whyus;
+      background-color: $red;
+      border-color: $red;
+
+      &:hover {
+        background-color: $red-hover;
+        border-color: $red-hover-border; 
+      }
+    }
+
+    &-webdesign {
+      @extend .btn-whyus;
+    }
+
+    &-cybersecurity {
+      @extend .btn-whyus;
+      background-color: $red-light;
+      border-color: $red-light;
+
+      &:hover {
+        background-color: $red-light-hover;
+        border-color: $red-light-hover-border; 
       }
     }
 
@@ -499,7 +560,7 @@
     }
   }
   
-  .hamburger-spin:hover {
+  .hamburger-spin {
     .hamburger-inner {
   
       @include hamburger();
@@ -533,6 +594,45 @@
           ease-out, transform .22s
           cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
       }
+    }
+  }
+
+  .hamburger-spin-backwards {
+    cursor: pointer;
+    
+    .hamburger-inner {
+    
+      @include hamburger();
+      
+        transform: rotate(-180deg);
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        transition: .5s ease;
+      
+        &::before {
+          @include hamburger();
+          top: 10px;
+          opacity: 1;
+          transform: rotate(180deg);
+          transition: top .1s ease-out
+          ,opacity .1s ease-out .12s;
+      
+          //transform: rotate(45deg);
+      
+          &:hover {
+            top: 10px;
+          }
+        }
+      
+        &::after {
+          @include hamburger();
+          bottom: 0;
+          top: -10px;
+          transform: rotate(180deg);
+          transition: bottom .1s
+            ease-out, transform .22s
+            cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+        }
     }
   }
 
@@ -626,4 +726,33 @@
       text-decoration: underline;
     }
     
+  }
+
+  // Cookie Buttons
+
+  .btn-cookie {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.063rem;
+  }
+
+  .btn-changesettings {
+    background-color: $grey-cookie-light;
+    border-color: $grey-cookie-light;
+
+    &:hover {
+      background-color: $grey-contact-hover-bg;
+      border-color: $grey-contact-hover-border; 
+    }
+  }
+
+  .btn-acceptcookies {
+    background-color: $purple;
+    border-color: $purple;
+
+    &:hover {
+      background-color: $purple-hover;
+      border-color: $purple-hover-border;
+    }
   }

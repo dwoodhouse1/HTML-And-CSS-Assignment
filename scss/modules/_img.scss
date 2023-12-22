@@ -10,8 +10,8 @@
     //filter: brightness(50%);
     
     &-header {
-
-        & img {
+    
+    & img {
             opacity: .5;
 
             @include viewport(large) {
@@ -26,6 +26,7 @@
 
         &::before {
             content: "";
+
             @include viewport(large) {
                 position: absolute;
                 left: 0;
@@ -58,49 +59,11 @@
     height: auto;
 }
 
-.home-img {
-    color: $white;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    
-
-    @include viewport(large) {
-        //filter: brightness(100%);
-        opacity: 1;
-    }
-
-    @include viewport(x-large) {
-        width: 100%;
-        //filter: brightness(100%);
-        opacity: 1;
-        
-    }
-
-    & img {
-        
-        min-height: 550px;
-        max-height: 550px;
-        //filter: brightness(50%);
-
-        @include viewport(large) {
-            //filter: brightness(100%);
-            
-        }
-
-        @include viewport(x-large) {
-           width: 100%;
-           object-fit: cover;
-            //filter: brightness(100%);
-            
-        }
-    }
-
-    width: 100%;
-    min-height: 550px;
+.home-img{
+    @include banner-img-format();
 }
+
+
 
 .logo {
     
@@ -136,6 +99,9 @@
     &-crane-logo {
        height: 48px;
     }
- 
+    
+    &-ashcroft-logo {
+        height: 42px;
+    }
 }
 

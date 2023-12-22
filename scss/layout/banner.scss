@@ -29,6 +29,16 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
+
+    @include viewport(large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
+
+    @include viewport(x-large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
   }
 
   a {
@@ -43,6 +53,8 @@
 .carousell-content {
     filter: invert(0);
     filter: brightness(100%);
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     align-items: center;
     text-align: center;
@@ -83,9 +95,46 @@
     
 }
 
-.example {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
+
+#banner {
+
+  & .slick-slide {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  & .slick-dots {
+    bottom: 60px;
+    @include viewport(small) {
+      bottom: 15px;
+    }
+  }
+
+  & .slick-dots li button::before {
+    font-size: 3rem;
+    //color: hsla(0,0%,100%,.5);
+    color: $white;
+
+    
+  }
+
 }
+
+#banner .slick-active::after {
+ content: "";
+ position: absolute;
+ width: 20px;
+ height: 20px;
+ border: 2px solid $white;
+ border-radius: 50%;
+ bottom: -2px;
+ left: -2px;
+
+}
+
+.slick-slider {
+  overflow-x: clip;
+}
+
+  
+

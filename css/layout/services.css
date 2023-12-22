@@ -430,7 +430,7 @@
 }
 
 /* line 208, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-four:hover .icon-phone-call {
+.service-block-four:hover .icon-phone_in_talk {
   color: #d64541;
   background-color: #fff;
 }
@@ -526,7 +526,7 @@
 }
 
 /* line 245, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-five:hover .icon-embed {
+.service-block-five:hover .icon-embed2 {
   color: #926fb1;
   background-color: #fff;
 }
@@ -721,7 +721,7 @@
 }
 
 /* line 324, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
-.service-block-seven:hover .icon-mortar-board {
+.service-block-seven:hover .icon-graduation-cap {
   color: #ce4125;
   background-color: #fff;
 }
