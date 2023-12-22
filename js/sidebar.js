@@ -25,8 +25,8 @@ btnHamburgerSticky.addEventListener("click", () => { // Hamburger button on the 
     darkOverlay.classList.add("dark-overlay-active");
     main.classList.add("sidebar-active");
     stickyHeader.classList.add("sidebar-active");
-    btnHamburger.classList.add("hamburger-spin");
-    btnHamburger.classList.remove("hamburger-spin-backwards"); // Hello
+    btnHamburgerSticky.classList.add("hamburger-spin");
+    btnHamburgerSticky.classList.remove("hamburger-spin-backwards"); // Hello
     body.style.overflow = "hidden";
 })
 
@@ -36,5 +36,7 @@ darkOverlay.addEventListener("click", () => { // Click anywhere on the dark over
     stickyHeader.classList.remove("sidebar-active");
     btnHamburger.classList.add("hamburger-spin-backwards");
     btnHamburger.classList.remove("hamburger-spin");
+    btnHamburgerSticky.classList.add("hamburger-spin-backwards");
+    btnHamburgerSticky.classList.remove("hamburger-spin");
     body.style.overflow = "auto";
 })

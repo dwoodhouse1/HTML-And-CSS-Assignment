@@ -113,39 +113,31 @@
   }
 }
 
-/* line 98, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
-.example {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
-}
-
-/* line 107, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 101, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-slide {
   margin: 0;
   overflow: hidden;
 }
 
-/* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 106, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-dots {
   bottom: 60px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 112, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+  /* line 106, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
   #banner .slick-dots {
     bottom: 15px;
   }
 }
 
-/* line 119, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-dots li button::before {
   font-size: 3rem;
   color: #fff;
 }
 
-/* line 129, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+/* line 123, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
 #banner .slick-active::after {
   content: "";
   position: absolute;
@@ -155,6 +147,11 @@
   border-radius: 50%;
   bottom: -2px;
   left: -2px;
+}
+
+/* line 135, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/banner.scss */
+.slick-slider {
+  overflow-x: clip;
 }
 
 /*# sourceMappingURL=banner.css.map */

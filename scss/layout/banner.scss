@@ -95,12 +95,6 @@
     
 }
 
-.example {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
-}
 
 #banner {
 
@@ -138,6 +132,9 @@
 
 }
 
+.slick-slider {
+  overflow-x: clip;
+}
 
   
 
