@@ -28,6 +28,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check_box:before {
+  content: "\e91d";
+  display: none;
+}
 .icon-bar-graph:before {
   content: "\e900";
 }
