@@ -1,16 +1,16 @@
-/* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 7, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .headings-bar {
   display: flex;
   background-color: #fff;
   justify-content: space-between;
 }
 
-/* line 12, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 12, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .latest-articles {
   background-color: #fff;
 }
 
-/* line 16, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 16, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .readtime {
   display: inline;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
   vertical-align: middle;
 }
 
-/* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 24, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-one {
   top: 0;
   border: 1px solid #ccc;
@@ -31,31 +31,31 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-one:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 27, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 27, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-one h3 a {
   color: #2ecc71;
 }
 
-/* line 31, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 31, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-one img {
   width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 24, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 24, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .block-one {
     width: 50%;
     float: left;
   }
 }
 
-/* line 44, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 44, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-two {
   top: 0;
   border: 1px solid #ccc;
@@ -67,26 +67,26 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-two:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 47, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 47, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-two h3 a {
   color: #4183d7;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 44, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 44, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .block-two {
     width: 50%;
     float: right;
   }
 }
 
-/* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-three {
   top: 0;
   border: 1px solid #ccc;
@@ -98,39 +98,39 @@
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-three:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 64, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 64, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-three h3 a {
   color: #926fb1;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .block-three {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .block-three {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 61, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .block-three {
     display: block;
   }
 }
 
-/* line 82, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 82, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-content {
   display: block;
   font-size: .8125rem;
@@ -138,14 +138,14 @@
   margin-top: -5px;
 }
 
-/* line 88, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 88, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .block-content p {
   text-wrap: wrap;
   line-height: 1.375rem;
   font-size: .8125rem;
 }
 
-/* line 95, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 95, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-content {
   flex-wrap: wrap;
   position: relative;
@@ -155,38 +155,38 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 95, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 95, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-content {
     flex-direction: column;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 95, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 95, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-content {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-/* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 113, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-blocks {
   display: block;
 }
 
-/* line 117, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 117, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-blocks h3 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-/* line 121, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 121, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-blocks h3 a {
   text-decoration: none;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 113, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
     gap: 30px;
@@ -194,7 +194,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 113, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
     gap: 30px;
@@ -202,14 +202,14 @@
 }
 
 @media (min-width: 1260px) {
-  /* line 113, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+  /* line 113, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
   .article-blocks {
     display: flex;
     gap: 30px;
   }
 }
 
-/* line 143, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 143, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-link {
   position: absolute;
   top: 0;
@@ -223,37 +223,37 @@
   color: palette(grey, xx-light);
 }
 
-/* line 157, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 157, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .article-link:hover {
   text-decoration: none;
 }
 
-/* line 163, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 163, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .latest-articles {
   padding-left: 0;
 }
 
-/* line 167, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 167, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #ccc;
 }
 
-/* line 173, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 173, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 178, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 178, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .user > .avatar {
   width: 20%;
   border-radius: 50%;
   overflow: hidden;
 }
 
-/* line 185, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/articles.scss */
+/* line 185, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/articles.scss */
 .info {
   padding-left: 20px;
   line-height: 1.375rem;

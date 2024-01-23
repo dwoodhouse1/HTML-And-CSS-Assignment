@@ -57,11 +57,7 @@
     
   }
 
-  .form-control {
-    height: 47px;
-    width: 100%;
-    
-  }
+  
 
   .search-bar-mobile {
     display: inline-block;
@@ -228,3 +224,75 @@
     padding-left: 15px;
     margin-bottom: 15px;
   }
+
+  // contact-us.php contact form
+  #contact-form {
+    background-color: $grey-form-bg;
+    border-radius: 10px;
+    padding: 30px;
+
+    & small {
+      margin-bottom: 10px;
+      font-size: 85%;
+      text-transform: none;
+    }
+
+  }
+
+  .form-control {
+
+    height: 47px;
+    width: 100%;
+
+    @include textfield-format(47px);
+    
+    &:focus {
+      @include textfield-focus();
+    }
+    
+    & output {
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .recaptcha-terms {
+    color: $grey-label;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .action-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .text-danger {
+    color: $red-danger;
+  }
+
+  textarea#message {
+    min-height: 100px;
+    height: 100px;
+  }
+
+  .netmatters-info p a {
+    color: black;
+  }
+
+  .dropdown-content {
+
+    & h4 a {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+

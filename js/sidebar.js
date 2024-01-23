@@ -10,12 +10,14 @@ const main = document.querySelector(".main");
 const body = document.querySelector("body");
 const sideBarActive = document.querySelector(".sidebar-active");
 const darkOverlay = document.querySelector(".dark-overlay");
-const clients = document.querySelector(".clients");
+const clients = document.querySelector(".clients"); 
+
+// COMMENT SHOULD APPEAR ON BROWSER
 
 btnHamburger.addEventListener("click", () => { // Default hamburger button on the main header
     darkOverlay.classList.add("dark-overlay-active");
     main.classList.add("sidebar-active");
-    clients.classList.add("sidebar-active");
+    //clients.classList.add("sidebar-active");
     btnHamburger.classList.add("hamburger-spin");
     btnHamburger.classList.remove("hamburger-spin-backwards");
     body.style.overflow = "hidden";
@@ -26,7 +28,7 @@ btnHamburgerSticky.addEventListener("click", () => { // Hamburger button on the 
     main.classList.add("sidebar-active");
     stickyHeader.classList.add("sidebar-active");
     btnHamburgerSticky.classList.add("hamburger-spin");
-    btnHamburgerSticky.classList.remove("hamburger-spin-backwards"); // Hello
+    btnHamburgerSticky.classList.remove("hamburger-spin-backwards");
     body.style.overflow = "hidden";
 })
 

@@ -1,20 +1,20 @@
-/* line 7, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 7, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter {
   background-color: #ddd;
 }
 
-/* line 10, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 10, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter h2 {
   margin: 0 0 15px;
 }
 
-/* line 15, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 15, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .newsletter-tickboxarea {
   margin-bottom: 15px;
   cursor: pointer;
 }
 
-/* line 20, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
+/* line 20, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/newsletter.scss */
 .media-body {
   color: #333645;
   font-weight: 600;
