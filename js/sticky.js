@@ -1,7 +1,7 @@
 // ==========================================================================
 // JavaScript Sticky Header
 // ==========================================================================
-const stickyEle = document.getElementById("sticky");
+const stickyEle = document.querySelector("#sticky");
 const stickyEleHeight = stickyEle.offsetHeight;
 
 
