@@ -66,6 +66,7 @@
     padding-right: 40px;
     background-color: rgba(0,0,0,.1);
     border: 2px solid rgba(0,0,0,.1);
+    color: $grey-text;
 
     &:focus {
       outline: none;
@@ -285,6 +286,7 @@
 
   .netmatters-info p a {
     color: black;
+    cursor: pointer;
   }
 
   .dropdown-content {
@@ -293,6 +295,22 @@
       color: black;
       text-decoration: underline;
     }
+
+    & span {
+      color: black;
+    }
   }
 
+  .text-web {
+    color: $purple!important;
+  }
+
+  .tel a {
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    
+  }
 

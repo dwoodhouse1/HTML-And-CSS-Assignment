@@ -1,0 +1,64 @@
+// ==========================================================================
+// Office (for contact-us.php)
+// ==========================================================================
+
+.page-head {
+    background-color: $grey-label;
+    padding: 24px 0;
+    margin-bottom: 70px;
+
+    & h1 {
+        font-size: 2.25rem;
+        margin: 0;
+        color: $white;
+    }
+}
+.block {
+    border-radius: 20px;
+    overflow: hidden;
+    // border-bottom-left-radius: 0;
+    // border-bottom-right-radius: 0;
+    border: 1px solid $grey-block-border;
+    margin-bottom: 30px;
+}
+
+.address {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+
+    & p {
+        padding: 0;
+        margin: 0 0 15px;
+    }
+
+    & .h2 {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    & .p {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
+
+.img-office {
+    vertical-align: middle;
+
+    &-location {
+        object-fit: cover;
+        height: 250px!important;
+        margin-bottom: -7px;
+    }
+}
