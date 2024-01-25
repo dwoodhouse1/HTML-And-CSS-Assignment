@@ -198,9 +198,43 @@ strong {
   padding-bottom: 50px;
 }
 
-/* line 165, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+/* line 164, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.section-top {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
 u {
   color: #333645;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 174, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+  .margin-left {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 174, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+  .margin-left {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 185, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+  .margin-right {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 185, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+  .margin-right {
+    margin-right: 15px;
+  }
 }
 
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_container.scss */
@@ -958,13 +992,13 @@ u {
   text-align: center;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one:hover, .btn-software:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .h2, .btn-software .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -973,7 +1007,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .p, .btn-software .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -982,7 +1016,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-one .btn, .btn-software .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1046,13 +1080,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two:hover, .btn-it:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .h2, .btn-it .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1061,7 +1095,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .p, .btn-it .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1070,7 +1104,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-two .btn, .btn-it .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1134,13 +1168,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three:hover, .btn-dm:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .h2, .btn-dm .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1149,7 +1183,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .p, .btn-dm .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1158,7 +1192,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-three .btn, .btn-dm .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1215,13 +1249,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four:hover, .btn-ts:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .h2, .btn-ts .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1230,7 +1264,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .p, .btn-ts .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1239,7 +1273,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-four .btn, .btn-ts .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1310,13 +1344,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five:hover, .btn-wd:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .h2, .btn-wd .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1325,7 +1359,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .p, .btn-wd .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1334,7 +1368,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-five .btn, .btn-wd .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1406,13 +1440,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six:hover, .btn-cs:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .h2, .btn-cs .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1421,7 +1455,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .p, .btn-cs .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1430,7 +1464,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-six .btn, .btn-cs .btn {
   min-width: 130px;
   max-width: 130px;
@@ -1506,13 +1540,13 @@ u {
   border-radius: 15px;
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven:hover, .btn-dt:hover {
   top: -10px;
   transition: .5s ease;
 }
 
-/* line 229, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .h2, .btn-dt .h2 {
   font-size: 1.3rem;
   position: relative;
@@ -1521,7 +1555,7 @@ u {
   margin: 0 0 11px;
 }
 
-/* line 237, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 242, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .p, .btn-dt .p {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1530,7 +1564,7 @@ u {
   line-height: 1.375rem;
 }
 
-/* line 245, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 250, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .service-block-seven .btn, .btn-dt .btn {
   min-width: 130px;
   max-width: 130px;
@@ -2148,7 +2182,7 @@ u {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-one:hover {
   top: -10px;
   transition: .5s ease;
@@ -2184,7 +2218,7 @@ u {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-two:hover {
   top: -10px;
   transition: .5s ease;
@@ -2215,7 +2249,7 @@ u {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 220, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .block-three:hover {
   top: -10px;
   transition: .5s ease;
@@ -3027,37 +3061,112 @@ footer h4 {
   margin-right: -15px;
 }
 
-/* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 6, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+.breadcrumb {
+  font-size: .8125rem;
+}
+
+/* line 9, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+.breadcrumb-container {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 9, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .breadcrumb-container {
+    border-top: 1px solid #333645;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 9, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .breadcrumb-container {
+    border-top: 1px solid #333645;
+  }
+}
+
+/* line 21, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+.breadcrumb > li + li::before {
+  content: "/\A0";
+  padding: 0 5px;
+}
+
+/* line 26, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+.breadcrumb a {
+  font-weight: 700;
+}
+
+/* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .page-head {
   background-color: #333645;
   padding: 24px 0;
   margin-bottom: 70px;
 }
 
-/* line 10, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .page-head {
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .page-head {
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+}
+
+/* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .page-head h1 {
   font-size: 2.25rem;
   margin: 0;
   color: #fff;
 }
 
-/* line 16, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .page-head h1 {
+    color: #333645;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .page-head h1 {
+    color: #333645;
+  }
+}
+
+/* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .block {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #ccc;
   margin-bottom: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 25, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
-.address {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .block {
+    width: 48%;
+    float: left;
+  }
 }
 
-/* line 32, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+@media (min-width: 1260px) {
+  /* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .block {
+    width: 48%;
+    float: left;
+  }
+}
+
+/* line 81, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content {
   display: flex;
   flex-direction: column;
@@ -3065,19 +3174,19 @@ footer h4 {
   text-align: left;
 }
 
-/* line 38, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 87, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content p {
   padding: 0;
   margin: 0 0 15px;
 }
 
-/* line 43, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content .h2 {
   font-size: 1.25rem;
   text-align: left;
 }
 
-/* line 48, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content .p {
   font-size: .8125rem;
   line-height: 1.375rem;
@@ -3085,12 +3194,12 @@ footer h4 {
   margin-bottom: 15px;
 }
 
-/* line 56, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 105, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .img-office {
   vertical-align: middle;
 }
 
-/* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 108, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .img-office-location {
   object-fit: cover;
   height: 250px !important;
@@ -3190,7 +3299,7 @@ footer h4 {
   }
 }
 
-/* line 359, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 364, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .home-img img {
   width: 100vw;
   object-fit: cover;
@@ -3199,7 +3308,7 @@ footer h4 {
 }
 
 @media (min-width: 1260px) {
-  /* line 359, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 364, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .home-img img {
     object-fit: cover;
   }
@@ -3585,63 +3694,106 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   margin-bottom: 15px;
 }
 
-/* line 265, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 265, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-group-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 265, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-group-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 281, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-group-space-between {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 281, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-group-space-between {
+    width: 48%;
+  }
+}
+
+/* line 291, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .recaptcha-terms {
   color: #333645;
   font-size: 11px;
   font-weight: 600;
 }
 
-/* line 271, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 297, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .action-block {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  flex-direction: column-reverse;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+@media (max-width: 375px) {
+  /* line 297, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .action-block {
+    flex-direction: column-reverse;
+  }
+}
+
+/* line 308, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .text-danger {
   color: #a94442;
 }
 
-/* line 282, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 312, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 textarea#message {
   min-height: 100px;
   height: 100px;
 }
 
-/* line 287, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 317, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .netmatters-info p a {
   color: black;
   cursor: pointer;
 }
 
-/* line 294, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 324, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .dropdown-content h4 a {
   color: black;
   text-decoration: underline;
 }
 
-/* line 299, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 329, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .dropdown-content span {
   color: black;
 }
 
-/* line 304, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 334, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .text-web {
   color: #926fb1 !important;
 }
 
-/* line 308, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 338, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a {
   font-weight: 700;
 }
 
-/* line 310, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 340, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* line 347, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#form-message {
+  height: 100px;
 }
 
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
@@ -3705,7 +3857,7 @@ textarea#message {
   background-color: #333645;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn:hover {
   cursor: pointer;
 }
@@ -3814,7 +3966,7 @@ textarea#message {
   border-color: #2ecc71;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-searless:hover {
   background-color: #26ab5f;
   border-color: #239a55;
@@ -3831,7 +3983,7 @@ textarea#message {
   border-color: #67809f;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-swan:hover {
   background-color: #566c88;
   border-color: #4e627b;
@@ -3848,7 +4000,7 @@ textarea#message {
   border-color: #4183d7;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-girlsguidinganglia:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
@@ -3865,7 +4017,7 @@ textarea#message {
   border-color: #2ecc71;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-sweetzy:hover {
   background-color: #26ab5f;
   border-color: #239a55;
@@ -3882,7 +4034,7 @@ textarea#message {
   border-color: #2ecc71;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-gdst:hover {
   background-color: #26ab5f;
   border-color: #239a55;
@@ -3899,7 +4051,7 @@ textarea#message {
   border-color: #926fb1;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-ashcroft:hover {
   background-color: #7e57a0;
   border-color: #735093;
@@ -3916,7 +4068,7 @@ textarea#message {
   border-color: #926fb1;
 }
 
-/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-onetraveller:hover {
   background-color: #7e57a0;
   border-color: #735093;
@@ -4009,7 +4161,7 @@ textarea#message {
   background-color: #272936;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-aboutus:hover {
   cursor: pointer;
 }
@@ -4176,7 +4328,7 @@ textarea#message {
   background-color: #67809f;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-software:hover {
   cursor: pointer;
 }
@@ -4204,7 +4356,7 @@ textarea#message {
   background-color: #4183d7;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-it:hover {
   cursor: pointer;
 }
@@ -4232,7 +4384,7 @@ textarea#message {
   background-color: #2ecc71;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-dm:hover {
   cursor: pointer;
 }
@@ -4260,7 +4412,7 @@ textarea#message {
   background-color: #d64541;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-ts:hover {
   cursor: pointer;
 }
@@ -4289,7 +4441,7 @@ textarea#message {
   background-color: #926fb1;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-wd:hover {
   cursor: pointer;
 }
@@ -4317,7 +4469,7 @@ textarea#message {
   background-color: #f62459;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-cs:hover {
   cursor: pointer;
 }
@@ -4346,7 +4498,7 @@ textarea#message {
   background-color: #ce4125;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-dt:hover {
   cursor: pointer;
 }
@@ -4360,7 +4512,7 @@ textarea#message {
   font-weight: 400;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .btn-whyus:hover, .btn-web:hover, .btn-bespokesoftware:hover, .btn-itsupport:hover, .btn-digitalmarketing:hover, .btn-telecomsservices:hover, .btn-webdesign:hover, .btn-cybersecurity:hover {
   cursor: pointer;
 }
@@ -4684,7 +4836,7 @@ textarea#message {
   color: #373943;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .privacy-policy:hover {
   cursor: pointer;
 }
@@ -4695,7 +4847,7 @@ footer ul li a {
   color: #fff;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 footer ul li a:hover {
   cursor: pointer;
 }
@@ -4706,7 +4858,7 @@ footer ul li a:hover {
   color: #fff;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .li-sitemap a:hover {
   cursor: pointer;
 }
@@ -4719,7 +4871,7 @@ footer ul li a:hover {
   color: #fff;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .client-quote-author a:hover {
   cursor: pointer;
 }
@@ -4735,7 +4887,7 @@ footer ul li a:hover {
   color: #333645;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .h2 a:hover {
   cursor: pointer;
 }
@@ -4755,7 +4907,7 @@ footer ul li a:hover {
   text-decoration: none;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .reviews a:hover {
   cursor: pointer;
 }
@@ -4771,7 +4923,7 @@ footer ul li a:hover {
   color: #333645;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .text-align-md a:hover {
   cursor: pointer;
 }
@@ -4787,7 +4939,7 @@ footer ul li a:hover {
   color: #25262c;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .headings-bar a:hover {
   cursor: pointer;
 }
@@ -4872,7 +5024,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-software:hover > a::before {
   content: "";
   position: absolute;
@@ -4888,7 +5040,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-software:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -4909,7 +5061,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-it:hover > a::before {
   content: "";
   position: absolute;
@@ -4925,7 +5077,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-it:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -4946,7 +5098,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-dm:hover > a::before {
   content: "";
   position: absolute;
@@ -4962,7 +5114,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-dm:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -4983,7 +5135,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-ts:hover > a::before {
   content: "";
   position: absolute;
@@ -4999,7 +5151,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-ts:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -5020,7 +5172,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-wd:hover > a::before {
   content: "";
   position: absolute;
@@ -5036,7 +5188,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-wd:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -5057,7 +5209,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-cs:hover > a::before {
   content: "";
   position: absolute;
@@ -5073,7 +5225,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-cs:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -5094,7 +5246,7 @@ footer ul li a:hover {
   color: white;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item-dc:hover > a::before {
   content: "";
   position: absolute;
@@ -5110,7 +5262,7 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1260px) {
-  /* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+  /* line 283, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
   .nav-item-dc:hover > a::before {
     border-width: 35px 84px 0 84px;
   }
@@ -5127,7 +5279,7 @@ footer ul li a:hover {
   font-size: 1.125rem;
 }
 
-/* line 170, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/utilities/_mixins.scss */
 .nav-item a:hover {
   cursor: pointer;
 }

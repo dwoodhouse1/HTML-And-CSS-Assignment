@@ -29,133 +29,136 @@
                         </div>
 
                     </div>
-                    <div class="page-head">
-                        <div class="container">
-                            <h1>Our Offices</h1>
-                        </div>
-                        
-                    </div>
-
-                    <div class="office-addresses">
-                        <div class="container">
-
-                            <div class="block address address-london">
-                                <div class="location-image">
-                                    <a><img src="img/london.jpg" alt="London Office" class="img-office"></a>
-                                </div>
-                                <div class="location-content">
-                                    <p class="h2"><a>London Office</a></p>
-                                    <p class="p">Unit G6,
-                                        <br>
-                                        Pixel Business Centre
-                                        <br>
-                                        110 Brooker Road, Waltham Abbey,
-                                        <br>
-                                        London
-                                        <br>
-                                        EN9 1JH
-                                    </p>
-                                    <div class="tel">
-                                        <a class="h3 text-web">02045 397354</a>
-                                    </div>
-                                    <div class="view-more">
-                                        <a class="btn btn-web">View More</a>
-                                    </div>
-                                </div>
-                                <div class="map">
-                                    <img src="img/london-loc.jpeg" class="img-office-location">
-                                </div>
-                            </div>
-
-                            <div class="block address address-cambridge">
-                                <div class="location-image">
-                                    <a><img src="img/london.jpg" alt="Cambridge Office" class="img-office"></a>
-                                </div>
-                                <div class="location-content">
-                                    <p class="h2"><a>Cambridge Office</a></p>
-                                    <p class="p">Unit 1.31,
-                                        <br>
-                                        St John's Innovation Centre,
-                                        <br>
-                                        Cowley Road, Milton,
-                                        <br>
-                                        Cambridge
-                                        <br>
-                                        EN9 1JH
-                                    </p>
-                                    <div class="tel">
-                                        <a class="h3 text-web">01223 37 57 72</a>
-                                    </div>
-                                    <div class="view-more">
-                                        <a class="btn btn-web">View More</a>
-                                    </div>
-                                </div>
-                                <div class="map">
-                                    <img src="img/cambridge-loc.jpeg" class="img-office-location">
-                                </div>
-                            </div>
-
-                            <div class="block address address-wymondham">
-                                <div class="location-image">
-                                    <a><img src="img/wymondham.jpg" alt="Wymondham Office" class="img-office"></a>
-                                </div>
-                                <div class="location-content">
-                                    <p class="h2"><a>Wymondham Office</a></p>
-                                    <p class="p">Unit 15,
-                                        <br>
-                                        Penfold Drive,
-                                        <br>
-                                        Gateway 11 Business Park,
-                                        <br>
-                                        Wymondham, Norfolk,
-                                        <br>
-                                        NR18 0WZ
-                                    </p>
-                                    <div class="tel">
-                                        <a class="h3 text-web">01603 70 40 20</a>
-                                    </div>
-                                    <div class="view-more">
-                                        <a class="btn btn-web">View More</a>
-                                    </div>
-                                </div>
-                                <div class="map">
-                                    <img src="img/wymondham-loc.jpeg" class="img-office-location">
-                                </div>
-                            </div>
-
-                            <div class="block address address-yarmouth">
-                                <div class="location-image">
-                                    <a><img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office" class="img-office"></a>
-                                </div>
-                                <div class="location-content">
-                                    <p class="h2"><a>Great Yarmouth Office</a></p>
-                                    <p class="p">Suite F23,
-                                        <br>
-                                        Beacon Innovation Centre,
-                                        <br>
-                                        Beacon Park, Gorleston,
-                                        <br>
-                                        Great Yarmouth, Norfolk,
-                                        <br>
-                                        NR31 7RA
-                                    </p>
-                                    <div class="tel">
-                                        <a class="h3 text-web">01493 60 32 04</a>
-                                    </div>
-                                    <div class="view-more">
-                                        <a class="btn btn-web">View More</a>
-                                    </div>
-                                </div>
-                                <div class="map">
-                                    <img src="img/yarmouth-loc.jpeg" class="img-office-location">
-                                </div>
+                    <div class="section-top">
+                        <div class="page-head">
+                            <div class="container">
+                                <h1>Our Offices</h1>
                             </div>
                             
                         </div>
-                       
                     </div>
+                    
+
+                    
+                        <div class="container">
+                            <div class="office-addresses">
+                                <div class="block address address-london margin-right">
+                                    <div class="location-image">
+                                        <a><img src="img/london.jpg" alt="London Office" class="img-office"></a>
+                                    </div>
+                                    <div class="location-content">
+                                        <p class="h2"><a>London Office</a></p>
+                                        <p class="p">Unit G6,
+                                            <br>
+                                            Pixel Business Centre
+                                            <br>
+                                            110 Brooker Road, Waltham Abbey,
+                                            <br>
+                                            London
+                                            <br>
+                                            EN9 1JH
+                                        </p>
+                                        <div class="tel">
+                                            <a class="h3 text-web">02045 397354</a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a class="btn btn-web">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <img src="img/london-loc.jpeg" class="img-office-location">
+                                    </div>
+                                </div>
+
+                                <div class="block address address-cambridge margin-left">
+                                    <div class="location-image">
+                                        <a><img src="img/cambridge.jpg" alt="Cambridge Office" class="img-office"></a>
+                                    </div>
+                                    <div class="location-content">
+                                        <p class="h2"><a>Cambridge Office</a></p>
+                                        <p class="p">Unit 1.31,
+                                            <br>
+                                            St John's Innovation Centre,
+                                            <br>
+                                            Cowley Road, Milton,
+                                            <br>
+                                            Cambridge
+                                            <br>
+                                            EN9 1JH
+                                        </p>
+                                        <div class="tel">
+                                            <a class="h3 text-web">01223 37 57 72</a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a class="btn btn-web">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <img src="img/cambridge-loc.jpeg" class="img-office-location">
+                                    </div>
+                                </div>
+
+                                <div class="block address address-wymondham margin-right">
+                                    <div class="location-image">
+                                        <a><img src="img/wymondham.jpg" alt="Wymondham Office" class="img-office"></a>
+                                    </div>
+                                    <div class="location-content">
+                                        <p class="h2"><a>Wymondham Office</a></p>
+                                        <p class="p">Unit 15,
+                                            <br>
+                                            Penfold Drive,
+                                            <br>
+                                            Gateway 11 Business Park,
+                                            <br>
+                                            Wymondham, Norfolk,
+                                            <br>
+                                            NR18 0WZ
+                                        </p>
+                                        <div class="tel">
+                                            <a class="h3 text-web">01603 70 40 20</a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a class="btn btn-web">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <img src="img/wymondham-loc.jpeg" class="img-office-location">
+                                    </div>
+                                </div>
+
+                                <div class="block address address-yarmouth margin-left">
+                                    <div class="location-image">
+                                        <a><img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office" class="img-office"></a>
+                                    </div>
+                                    <div class="location-content">
+                                        <p class="h2"><a>Great Yarmouth Office</a></p>
+                                        <p class="p">Suite F23,
+                                            <br>
+                                            Beacon Innovation Centre,
+                                            <br>
+                                            Beacon Park, Gorleston,
+                                            <br>
+                                            Great Yarmouth, Norfolk,
+                                            <br>
+                                            NR31 7RA
+                                        </p>
+                                        <div class="tel">
+                                            <a class="h3 text-web">01493 60 32 04</a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a class="btn btn-web">View More</a>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <img src="img/yarmouth-loc.jpeg" class="img-office-location">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                       
+                    
                     <div class="container section">
-                        <div class="row">
+                        <div class="form-section">
                             <div class="netmatters-info">
                                 <p>Email us on:</p>
                                 <p><a class="h3 text-web">sales@netmatters.com</a></p> <!-- May need to use mailto:sales@netters.com attribute -->
@@ -178,30 +181,32 @@
                             </div>
                             <div class="form-enquiry">
                                 <form method="POST" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">
+                                    <div class="form-group-flex">
+                                        <div class="form-group form-group-space-between">
+                                            <label for="name" class="required">Your Name</label>
+                                            <input class="form-control" name="name" type="text" id="form-name">
+                                        </div>
+
+                                        <div class="form-group form-group-space-between">
+                                            <label for="company">Company Name</label>
+                                            <input class="form-control" name="company" type="text" id="form-company">
+                                        </div>
+
+                                        <div class="form-group form-group-space-between">
+                                            <label for="email" class="required">Your Email</label>
+                                            <input class="form-control" name="email" type="text" id="form-email">
+                                        </div>
+
+                                        <div class="form-group form-group-space-between">
+                                            <label for="telephone" class="required">Your Telephone Number</label>
+                                            <input class="form-control" name="telephone" type="text" id="form-telephone">
+                                        </div>
+                                    </div>
                                     
-                                    <div class="form-group">
-                                        <label for="name" class="required">Your Name</label>
-                                        <input class="form-control" name="name" type="text" id="form-name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="company">Company Name</label>
-                                        <input class="form-control" name="company" type="text" id="form-company">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email" class="required">Your Email</label>
-                                        <input class="form-control" name="email" type="text" id="form-email">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="telephone" class="required">Your Telephone Number</label>
-                                        <input class="form-control" name="telephone" type="text" id="form-telephone">
-                                    </div>
 
                                     <div class="form-group">
                                         <label for="message" class="required">Message</label>
-                                        <textarea class="form-control" name="message" cols="50" rows="10" id="form-message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                        <textarea class="form-control" name="message" id="form-message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                             
                                         
                                     </div>

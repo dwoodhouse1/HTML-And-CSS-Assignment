@@ -2,15 +2,58 @@
 // Office (for contact-us.php)
 // ==========================================================================
 
+
+.breadcrumb {
+    font-size: .8125rem;
+
+    &-container {
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        padding: 14px 0 13px;
+        @include viewport(medium) {
+            border-top: 1px solid $grey-label;
+        }
+    
+        @include viewport(large) {
+            border-top: 1px solid $grey-label;
+        }
+    }
+
+    &>li+li::before{
+        content: "/\A0";
+        padding: 0 5px;
+    }
+
+    & a {
+        font-weight: 700;
+    }
+}
 .page-head {
     background-color: $grey-label;
     padding: 24px 0;
     margin-bottom: 70px;
 
+    @include viewport(large) {
+        background-color: transparent;
+        margin-bottom: 50px;
+    }
+
+    @include viewport(x-large) {
+        background-color: transparent;
+        margin-bottom: 50px;
+    }
+
     & h1 {
         font-size: 2.25rem;
         margin: 0;
         color: $white;
+
+        @include viewport(large) {
+            color: $grey-label;
+        }
+
+        @include viewport(x-large) {
+            color: $grey-label;
+        }
     }
 }
 .block {
@@ -20,14 +63,20 @@
     // border-bottom-right-radius: 0;
     border: 1px solid $grey-block-border;
     margin-bottom: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+
+    @include viewport(large) {
+        width: 48%;
+        float: left;
+    }
+
+    @include viewport(x-large) {
+        width: 48%;
+        float: left;
+    }
 }
 
-.address {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+
 
 .location-content {
     display: flex;
@@ -62,3 +111,8 @@
         margin-bottom: -7px;
     }
 }
+
+.netmatters-info {
+    
+}
+

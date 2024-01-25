@@ -262,6 +262,32 @@
     margin-bottom: 15px;
   }
 
+  .form-group-flex {
+    
+    @include viewport(large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include viewport(x-large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+  }
+
+  .form-group-space-between {
+    @include viewport(large) {
+      width: 48%;
+    }
+
+    @include viewport(x-large) {
+      width: 48%;
+    }
+  }
+
   .recaptcha-terms {
     color: $grey-label;
     font-size: 11px;
@@ -270,9 +296,13 @@
 
   .action-block {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    flex-direction: column-reverse;
+    
+
+    @include viewport(375){
+      flex-direction: column-reverse;
+    }
   }
 
   .text-danger {
@@ -314,3 +344,14 @@
     
   }
 
+  #form-message {
+    height: 100px;
+  }
+
+  .form-enquiry {
+    
+  }
+
+  .form-section {
+    
+  }

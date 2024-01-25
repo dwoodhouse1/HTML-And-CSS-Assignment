@@ -37,7 +37,7 @@
                 <div class="hidden-sm visible-md">
                   <form method="GET"  class="search-form search-form-header">
                     <!-- <label for="search-input" class="hidden">Search:</label> -->
-                    <input class="form-control search-bar-tablet hidden-lg hidden-xlg" placeholder="Search..."  name="keyword" type="text" value>
+                    <input class="search-bar-tablet hidden-lg hidden-xlg" placeholder="Search..."  name="keyword" type="text" value>
                     <button type="submit" class="search-form-tablet-btn">
                       <span class="icon-search icon-format-search"></span>
                     </button>
@@ -77,7 +77,7 @@
             <div class="mobile-viewport">
               <form method="GET"  class="search-form">
                 <!-- <label for="search-input" class="hidden">Search:</label> -->
-                <input class="form-control search-bar-mobile" placeholder="Search..."  name="keyword" type="text" value>
+                <input class="search-bar-mobile" placeholder="Search..."  name="keyword" type="text" value>
                 <button type="submit" class="search-form-mobile-btn">
                   <span class="icon-search icon-format-search"></span>
                 </button>
