@@ -37,6 +37,11 @@ h3 {
   }
 }
 
+.h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
 h4 {
   font-weight: $base-font-weight;
   color: $white;
@@ -153,8 +158,40 @@ strong {
   padding-left: 4px;
 }
 
+.section {
+  padding-bottom: 50px;
 
+  &-top {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
 
+u {
+  color: $grey-label;
+}
+
+.margin-left {
+
+  @include viewport(large) {
+    margin-left: 15px
+  }
+  
+  @include viewport(x-large) {
+    margin-left: 15px
+  }
+}
+
+.margin-right {
+  @include viewport(large) {
+    margin-right: 15px;
+  }
+
+  @include viewport(x-large) {
+    margin-right: 15px
+  }
+  
+}
 
 
 
