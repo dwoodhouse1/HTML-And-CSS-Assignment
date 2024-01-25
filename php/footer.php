@@ -48,7 +48,7 @@
                     <a href="#">Our Team</a>
                   </li>
                   <li>
-                    <a href="#">Contact Us</a>
+                    <a href="contact-us.php">Contact Us</a>
                   </li>
                   <li>
                     <a href="#">Privacy Policy</a>
