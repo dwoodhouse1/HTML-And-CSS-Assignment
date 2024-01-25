@@ -160,14 +160,15 @@
                     <div class="container section">
                         <div class="form-section">
                             <div class="netmatters-info">
-                                <p>Email us on:</p>
+                                <p><strong>Email us on:</strong></p>
                                 <p><a class="h3 text-web">sales@netmatters.com</a></p> <!-- May need to use mailto:sales@netters.com attribute -->
                                 <p><strong>Business Hours:</strong></p>
                                 <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
                                <!-- container class for dropdown-content class will go here -->
-                                <div class="dropdown-content">
-                                    <h4><a>Out of Hours IT Support&nbsp;</a><span class="icon-angle-double-right"></h4> <!-- Need a new icon here -->
-                                    <div class="dropdown-expand"> <!-- Section needs JS to expand / collapse -->
+                                <div id="dropdown-accordian">
+                                    <h4><strong><a>Out of Hours IT Support&nbsp;</a><span class="icon-chevron-down"></strong></h4>
+                                </div> <!-- Need a new icon here -->
+                                    <div id="dropdown-expand"> <!-- Section needs JS to expand / collapse -->
                                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                         <p>
                                             <strong>Monday - Friday 18:00 - 22:00</strong>
@@ -177,7 +178,7 @@
                                         </p>
                                         <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                     </div>
-                                </div>
+                                
                             </div>
                             <div class="form-enquiry">
                                 <form method="POST" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">

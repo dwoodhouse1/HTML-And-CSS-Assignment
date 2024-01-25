@@ -678,7 +678,17 @@ u {
   align-items: center;
 }
 
-/* line 14, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+/* line 11, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+.header-row a {
+  text-decoration: none;
+}
+
+/* line 15, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+.header-row a:hover {
+  text-decoration: none;
+}
+
+/* line 21, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
 .sticky-show {
   position: fixed;
   top: -218px;
@@ -693,20 +703,20 @@ u {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 14, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+  /* line 21, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
   .sticky-show {
     top: -110px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 14, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+  /* line 21, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
   .sticky-show {
     top: -167px;
   }
 }
 
-/* line 35, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+/* line 42, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
 .sticky-hide {
   position: fixed;
   top: 0;
@@ -720,17 +730,17 @@ u {
   width: 100%;
 }
 
-/* line 48, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+/* line 55, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
 .sticky-remove {
   display: none;
 }
 
-/* line 52, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+/* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
 .sticky-add {
   display: block;
 }
 
-/* line 56, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
+/* line 63, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_headlines.scss */
 .inner {
   background-color: #fff;
 }
@@ -3097,7 +3107,7 @@ footer h4 {
   font-weight: 700;
 }
 
-/* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 32, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .page-head {
   background-color: #333645;
   padding: 24px 0;
@@ -3105,7 +3115,7 @@ footer h4 {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 32, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .page-head {
     background-color: transparent;
     margin-bottom: 50px;
@@ -3113,14 +3123,14 @@ footer h4 {
 }
 
 @media (min-width: 1260px) {
-  /* line 30, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 32, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .page-head {
     background-color: transparent;
     margin-bottom: 50px;
   }
 }
 
-/* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 47, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .page-head h1 {
   font-size: 2.25rem;
   margin: 0;
@@ -3128,20 +3138,20 @@ footer h4 {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 47, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .page-head h1 {
     color: #333645;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 45, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 47, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .page-head h1 {
     color: #333645;
   }
 }
 
-/* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .block {
   border-radius: 20px;
   overflow: hidden;
@@ -3151,7 +3161,7 @@ footer h4 {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .block {
     width: 48%;
     float: left;
@@ -3159,14 +3169,14 @@ footer h4 {
 }
 
 @media (min-width: 1260px) {
-  /* line 59, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 61, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .block {
     width: 48%;
     float: left;
   }
 }
 
-/* line 81, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 83, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content {
   display: flex;
   flex-direction: column;
@@ -3174,19 +3184,19 @@ footer h4 {
   text-align: left;
 }
 
-/* line 87, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 90, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content p {
   padding: 0;
   margin: 0 0 15px;
 }
 
-/* line 92, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 95, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content .h2 {
   font-size: 1.25rem;
   text-align: left;
 }
 
-/* line 97, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 100, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .location-content .p {
   font-size: .8125rem;
   line-height: 1.375rem;
@@ -3194,12 +3204,12 @@ footer h4 {
   margin-bottom: 15px;
 }
 
-/* line 105, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 108, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .img-office {
   vertical-align: middle;
 }
 
-/* line 108, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 111, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .img-office-location {
   object-fit: cover;
   height: 250px !important;
@@ -3207,14 +3217,14 @@ footer h4 {
 }
 
 @media (min-width: 1260px) {
-  /* line 115, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  /* line 118, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
   .netmatters-info {
     width: 33.33%;
     padding-left: 30px;
   }
 }
 
-/* line 122, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+/* line 125, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
 .office-addresses {
   overflow: hidden;
 }
@@ -3773,57 +3783,73 @@ textarea#message {
 
 /* line 317, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .netmatters-info p a {
-  color: black;
+  color: #333645;
+  cursor: pointer;
+}
+
+/* line 322, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#dropdown-accordian {
   cursor: pointer;
 }
 
 /* line 324, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
-.dropdown-content h4 a {
-  color: black;
+#dropdown-accordian h4 a {
+  color: #333645;
+}
+
+/* line 327, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#dropdown-accordian h4 a:hover {
   text-decoration: underline;
 }
 
-/* line 329, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
-.dropdown-content span {
-  color: black;
+/* line 333, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#dropdown-accordian span {
+  color: #333645;
 }
 
-/* line 334, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 338, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+#dropdown-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* line 344, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .text-web {
   color: #926fb1 !important;
 }
 
-/* line 338, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 348, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a {
   font-weight: 700;
 }
 
-/* line 340, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 350, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 347, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #form-message {
   height: 100px;
 }
 
 @media (min-width: 1260px) {
-  /* line 351, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 361, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-enquiry {
     width: 66.66%;
   }
 }
 
-/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 367, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .form-section {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 1260px) {
-  /* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 367, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-section {
     flex-direction: row-reverse;
   }
@@ -3959,6 +3985,7 @@ textarea#message {
 .btn-help-contact {
   background-color: #999aa2;
   border-color: #999aa2;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
@@ -3975,20 +4002,20 @@ textarea#message {
   }
 }
 
-/* line 110, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 111, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-help-contact:hover {
   background-color: #84858f;
   border-color: #797a85;
 }
 
-/* line 117, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 118, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-web {
   margin-top: 15px;
   font-size: .9em;
   padding: 5px 30px !important;
 }
 
-/* line 125, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 126, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-searless {
   display: flex;
   align-items: center;
@@ -4005,7 +4032,7 @@ textarea#message {
   border-color: #239a55;
 }
 
-/* line 130, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 131, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-swan {
   display: flex;
   align-items: center;
@@ -4022,7 +4049,7 @@ textarea#message {
   border-color: #4e627b;
 }
 
-/* line 135, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 136, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-girlsguidinganglia {
   display: flex;
   align-items: center;
@@ -4039,7 +4066,7 @@ textarea#message {
   border-color: #2665b5;
 }
 
-/* line 140, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 141, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-sweetzy {
   display: flex;
   align-items: center;
@@ -4056,7 +4083,7 @@ textarea#message {
   border-color: #239a55;
 }
 
-/* line 145, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 146, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-gdst {
   display: flex;
   align-items: center;
@@ -4073,7 +4100,7 @@ textarea#message {
   border-color: #239a55;
 }
 
-/* line 150, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 151, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-ashcroft {
   display: flex;
   align-items: center;
@@ -4090,7 +4117,7 @@ textarea#message {
   border-color: #735093;
 }
 
-/* line 155, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 156, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-onetraveller {
   display: flex;
   align-items: center;
@@ -4107,7 +4134,7 @@ textarea#message {
   border-color: #735093;
 }
 
-/* line 160, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 161, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip {
   position: absolute;
   color: #fff;
@@ -4123,43 +4150,43 @@ textarea#message {
   z-index: 1;
 }
 
-/* line 174, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 175, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-one {
   background-color: #2ecc71;
 }
 
-/* line 177, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 178, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-one:hover {
   text-decoration: underline;
 }
 
-/* line 182, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 183, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-two {
   background-color: #4183d7;
 }
 
-/* line 185, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 186, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-two:hover {
   text-decoration: underline;
 }
 
-/* line 190, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 191, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-three {
   background-color: #926fb1;
 }
 
-/* line 193, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 194, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-tooltip-three:hover {
   text-decoration: underline;
 }
 
-/* line 199, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 200, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-hamburger {
   height: 56px;
   border-radius: 3px;
 }
 
-/* line 206, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 207, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-news {
   text-align: center;
   font-size: 1.063rem;
@@ -4167,22 +4194,22 @@ textarea#message {
   padding: 5px 15px;
 }
 
-/* line 213, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 214, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-news-one {
   background-color: #2ecc71;
 }
 
-/* line 217, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 218, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-news-two {
   background-color: #4183d7;
 }
 
-/* line 221, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 222, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-news-three {
   background-color: #926fb1;
 }
 
-/* line 226, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 227, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-aboutus {
   text-decoration: none;
   border-radius: 6px;
@@ -4200,20 +4227,20 @@ textarea#message {
 }
 
 @media (min-width: 1260px) {
-  /* line 226, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 227, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus {
     margin-top: 0;
   }
 }
 
-/* line 233, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 234, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-aboutus:hover {
   text-decoration: none;
   background-color: #121318;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 238, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 239, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus-whychooseus {
     display: inline-block;
     margin-bottom: 50px;
@@ -4222,7 +4249,7 @@ textarea#message {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 238, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 239, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus-whychooseus {
     display: inline-block;
     margin-top: 0;
@@ -4230,7 +4257,7 @@ textarea#message {
 }
 
 @media (min-width: 1260px) {
-  /* line 238, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 239, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus-whychooseus {
     display: inline-block;
     margin-top: 0;
@@ -4239,26 +4266,26 @@ textarea#message {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 258, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 259, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus-ourculture {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 258, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 259, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-aboutus-ourculture {
     display: inline-block;
   }
 }
 
-/* line 270, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 271, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-aboutus:hover {
   text-decoration: none;
   background-color: #0b0b0b;
 }
 
-/* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-reviews {
   color: #fff;
   background-color: #333645;
@@ -4270,28 +4297,28 @@ textarea#message {
 }
 
 @media (min-width: 1260px) {
-  /* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews {
     margin-top: 0;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews {
     margin-bottom: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews {
     height: 56px;
     margin-top: 59px;
   }
 }
 
-/* line 291, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 292, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-reviews-google {
   display: inline-block;
   background-color: #4387f6;
@@ -4299,18 +4326,18 @@ textarea#message {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 291, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 292, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews-google {
     margin-right: 10px;
   }
 }
 
-/* line 302, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 303, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-reviews-google:hover {
   background-color: #166af4;
 }
 
-/* line 307, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 308, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-reviews-trustpilot {
   background-color: #00b67b;
   display: inline-block;
@@ -4318,27 +4345,27 @@ textarea#message {
   white-space: nowrap;
 }
 
-/* line 313, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 314, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-reviews-trustpilot:hover {
   background-color: #009b69;
   text-decoration: none;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 276, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .btn-reviews {
     display: inline-flex;
   }
 }
 
-/* line 329, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 330, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-software {
   display: inline-block;
   font-weight: 400;
@@ -4366,7 +4393,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 338, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 339, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-it {
   display: inline-block;
   font-weight: 400;
@@ -4394,7 +4421,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 347, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 348, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-dm {
   display: inline-block;
   font-weight: 400;
@@ -4422,7 +4449,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 356, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-ts {
   display: inline-block;
   font-weight: 400;
@@ -4450,7 +4477,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 365, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-wd {
   display: inline-block;
   font-weight: 400;
@@ -4479,7 +4506,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 375, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 376, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-cs {
   display: inline-block;
   font-weight: 400;
@@ -4507,7 +4534,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 384, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 385, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-dt {
   display: inline-block;
   font-weight: 400;
@@ -4536,7 +4563,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 394, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 395, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-whyus, .btn-web, .btn-bespokesoftware, .btn-itsupport, .btn-digitalmarketing, .btn-telecomsservices, .btn-webdesign, .btn-cybersecurity {
   text-decoration: none;
   padding: 15px;
@@ -4550,128 +4577,128 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 401, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 402, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-whyus:hover, .btn-web:hover, .btn-bespokesoftware:hover, .btn-itsupport:hover, .btn-digitalmarketing:hover, .btn-telecomsservices:hover, .btn-webdesign:hover, .btn-cybersecurity:hover {
   background-color: #7e57a0;
   border-color: #735093;
 }
 
-/* line 407, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 408, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-bespokesoftware {
   background-color: #67809f;
   border-color: #67809f;
 }
 
-/* line 412, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 413, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-bespokesoftware:hover {
   background-color: #566c88;
   border-color: #4e627b;
 }
 
-/* line 418, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 419, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-itsupport {
   background-color: #4183d7;
   border-color: #4183d7;
 }
 
-/* line 423, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 424, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-itsupport:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
 
-/* line 429, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 430, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-digitalmarketing {
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
 
-/* line 434, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 435, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-digitalmarketing:hover {
   background-color: #26ab5f;
   border-color: #239a55;
 }
 
-/* line 440, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 441, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-telecomsservices {
   background-color: #d64541;
   border-color: #d64541;
 }
 
-/* line 445, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 446, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-telecomsservices:hover {
   background-color: #c42e2a;
   border-color: #b32a27;
 }
 
-/* line 455, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 456, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-cybersecurity {
   background-color: #f62459;
   border-color: #f62459;
 }
 
-/* line 460, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 461, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-cybersecurity:hover {
   background-color: #e80a42;
   border-color: #d4093c;
 }
 
-/* line 471, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 472, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .facebook {
   background-color: #212330;
   align-content: center;
   justify-content: center;
 }
 
-/* line 481, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 482, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .facebook:hover {
   background-color: #3b5998;
 }
 
-/* line 486, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 487, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .linkedin {
   background-color: #212330;
   align-content: center;
   justify-content: center;
 }
 
-/* line 491, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 492, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .linkedin:hover {
   background-color: #0077B5;
 }
 
-/* line 496, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 497, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .twitter {
   background-color: #212330;
   align-content: center;
   justify-content: center;
 }
 
-/* line 501, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 502, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .twitter:hover {
   background-color: #1DA1F2;
 }
 
-/* line 506, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 507, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .instagram {
   background-color: #212330;
   align-content: center;
   justify-content: center;
 }
 
-/* line 509, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 510, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .instagram:hover {
   background-color: #E1306C;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 506, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+  /* line 507, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
   .instagram {
     margin-right: 0;
   }
 }
 
-/* line 519, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 520, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-subscribe {
   flex-direction: row;
   font-size: 1.063rem;
@@ -4682,19 +4709,19 @@ textarea#message {
   border-color: #333645;
 }
 
-/* line 528, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 529, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-subscribe:hover {
   background-color: #22242e;
   border-color: #191a22;
 }
 
-/* line 538, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 539, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .pull-right {
   margin-right: -4px;
   margin-left: 12px;
 }
 
-/* line 545, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 546, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-box {
   display: inline-block;
   width: 33px;
@@ -4702,7 +4729,7 @@ textarea#message {
   position: relative;
 }
 
-/* line 553, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 554, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-inner {
   left: 0;
   top: 10px;
@@ -4716,7 +4743,7 @@ textarea#message {
   left: 0;
 }
 
-/* line 559, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 560, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-inner::before {
   content: "";
   display: block;
@@ -4730,7 +4757,7 @@ textarea#message {
   bottom: 0;
 }
 
-/* line 565, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 566, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-inner::after {
   content: "";
   display: block;
@@ -4743,7 +4770,7 @@ textarea#message {
   top: 10px;
 }
 
-/* line 572, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 573, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin .hamburger-inner {
   content: "";
   display: block;
@@ -4759,7 +4786,7 @@ textarea#message {
   transition: .5s ease;
 }
 
-/* line 581, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 582, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin .hamburger-inner::before {
   content: "";
   display: block;
@@ -4775,12 +4802,12 @@ textarea#message {
   transform: rotate(45deg);
 }
 
-/* line 591, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 592, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin .hamburger-inner::before:hover {
   top: 10px;
 }
 
-/* line 596, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 597, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin .hamburger-inner::after {
   content: "";
   display: block;
@@ -4796,12 +4823,12 @@ textarea#message {
   transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
 
-/* line 608, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 609, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin-backwards {
   cursor: pointer;
 }
 
-/* line 611, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 612, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin-backwards .hamburger-inner {
   content: "";
   display: block;
@@ -4817,7 +4844,7 @@ textarea#message {
   transition: .5s ease;
 }
 
-/* line 620, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 621, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin-backwards .hamburger-inner::before {
   content: "";
   display: block;
@@ -4833,12 +4860,12 @@ textarea#message {
   transition: top .1s ease-out ,opacity .1s ease-out .12s;
 }
 
-/* line 630, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 631, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin-backwards .hamburger-inner::before:hover {
   top: 10px;
 }
 
-/* line 635, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 636, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .hamburger-spin-backwards .hamburger-inner::after {
   content: "";
   display: block;
@@ -4854,7 +4881,7 @@ textarea#message {
   transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
 
-/* line 650, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 651, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 #search-submit {
   position: absolute;
   right: 0;
@@ -4862,7 +4889,7 @@ textarea#message {
   line-height: 47px;
 }
 
-/* line 660, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 661, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .privacy-policy {
   text-decoration: none;
   text-decoration: underline;
@@ -4874,7 +4901,7 @@ textarea#message {
   cursor: pointer;
 }
 
-/* line 668, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 669, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 footer ul li a {
   text-decoration: none;
   color: #fff;
@@ -4885,7 +4912,7 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 673, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 674, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .li-sitemap a {
   text-decoration: none;
   color: #fff;
@@ -4896,7 +4923,7 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 678, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 679, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .client-quote-author a {
   text-decoration: none;
   font-weight: 600;
@@ -4909,12 +4936,12 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 684, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 685, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .client-quote-author a:hover {
   text-decoration: underline;
 }
 
-/* line 690, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 691, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .h2 a {
   text-decoration: none;
   color: #333645;
@@ -4925,17 +4952,17 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 695, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 696, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .view-work {
   padding: 0;
 }
 
-/* line 698, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 699, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .view-work a:hover {
   text-decoration: underline;
 }
 
-/* line 703, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 704, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .reviews a {
   text-decoration: none;
 }
@@ -4945,12 +4972,12 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 706, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 707, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .reviews a:hover {
   text-decoration: none;
 }
 
-/* line 711, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 712, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .text-align-md a {
   text-decoration: none;
   color: #333645;
@@ -4961,12 +4988,12 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 715, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 716, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .text-align-md a:hover {
   text-decoration: underline;
 }
 
-/* line 720, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 721, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .headings-bar a {
   text-decoration: none;
   color: #25262c;
@@ -4977,23 +5004,23 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-/* line 724, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 725, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .headings-bar a:hover {
   text-decoration: underline;
 }
 
-/* line 729, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 730, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .link-text {
   margin-left: 10px;
   text-decoration: none;
 }
 
-/* line 733, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 734, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .link-text:hover {
   text-decoration: underline;
 }
 
-/* line 741, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 742, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-cookie {
   display: block;
   width: 100%;
@@ -5001,31 +5028,31 @@ footer ul li a:hover {
   font-size: 1.063rem;
 }
 
-/* line 748, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 749, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-changesettings {
   background-color: #999aa2;
   border-color: #999aa2;
 }
 
-/* line 752, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 753, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-changesettings:hover {
   background-color: #84858f;
   border-color: #797a85;
 }
 
-/* line 758, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 759, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-acceptcookies {
   background-color: #926fb1;
   border-color: #926fb1;
 }
 
-/* line 762, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 763, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-acceptcookies:hover {
   background-color: #7e57a0;
   border-color: #735093;
 }
 
-/* line 768, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
+/* line 769, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 .btn-enquiry {
   font-size: 1.063rem;
   border-radius: 3px;
@@ -5761,14 +5788,19 @@ footer ul li a:hover {
   content: "\e91b";
 }
 
-/* line 205, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 203, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+.icon-chevron-down:before {
+  content: "\e91e";
+}
+
+/* line 208, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .star-format {
   color: orange;
   margin-bottom: 25px;
   font-size: 50px;
 }
 
-/* line 211, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 214, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .checkbox-unchecked-format {
   font-size: 32px;
   line-height: 32px;
@@ -5776,7 +5808,7 @@ footer ul li a:hover {
   color: #333645;
 }
 
-/* line 225, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 228, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .magnifyglass {
   fill: #0b0b0b;
   width: 24px;
@@ -5784,27 +5816,27 @@ footer ul li a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 225, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 228, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .magnifyglass {
     fill: #fff;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 225, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 228, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .magnifyglass {
     fill: #fff;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 225, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 228, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .magnifyglass {
     fill: #fff;
   }
 }
 
-/* line 243, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 246, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .telephone {
   fill: #25262c;
   padding: 10px 10px;
@@ -5814,28 +5846,28 @@ footer ul li a:hover {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 243, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 246, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .telephone {
     width: 64px;
     height: 64px;
   }
 }
 
-/* line 260, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 263, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-services {
   font-size: 2rem;
   line-height: 62px;
   color: white;
 }
 
-/* line 263, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 266, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-services-telephone {
   width: 38px;
   height: 38px;
   margin-left: 19px;
 }
 
-/* line 271, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 274, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle {
   width: 65px;
   height: 65px;
@@ -5845,49 +5877,49 @@ footer ul li a:hover {
   margin: 0 auto 17px;
 }
 
-/* line 274, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 277, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-software {
   background-color: #67809f;
 }
 
-/* line 278, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 281, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-it {
   background-color: #4183d7;
 }
 
-/* line 282, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 285, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-dm {
   background-color: #2ecc71;
 }
 
-/* line 286, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 289, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-ts {
   background-color: #d64541;
 }
 
-/* line 290, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 293, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-wd {
   background-color: #926fb1;
 }
 
-/* line 294, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 297, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-cs {
   background-color: #f62459;
 }
 
-/* line 298, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 301, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-dt {
   background-color: #ce4125;
 }
 
-/* line 302, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 305, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-circle-speechbubble {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #323544;
   margin: 0;
 }
 
-/* line 310, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 313, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-speechbubble {
   display: flex;
   flex-direction: column;
@@ -5895,7 +5927,7 @@ footer ul li a:hover {
   margin: 0;
 }
 
-/* line 317, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 320, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .mouse {
   fill: #fff;
   font-size: 1.438rem;
@@ -5903,7 +5935,7 @@ footer ul li a:hover {
   margin-right: 5px;
 }
 
-/* line 324, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 327, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .plane {
   fill: #fff;
   font-size: 1.438rem;
@@ -5911,80 +5943,80 @@ footer ul li a:hover {
   margin-right: 5px;
 }
 
-/* line 331, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 334, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav {
   font-size: 1.438rem;
 }
 
-/* line 333, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 336, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-laptop {
   color: #67809f;
 }
 
-/* line 337, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 340, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-monitor {
   color: #4183d7;
 }
 
-/* line 341, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 344, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-graph {
   color: #2ecc71;
 }
 
-/* line 345, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 348, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-telephone {
   color: #d64541;
 }
 
-/* line 349, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 352, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-code {
   color: #926fb1;
 }
 
-/* line 353, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 356, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-security {
   color: #f62459;
 }
 
-/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 360, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-nav-school {
   color: #ce4125;
 }
 
-/* line 363, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-search {
   font-size: 23px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 363, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .icon-format-search {
     font-size: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 363, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .icon-format-search {
     color: #fff;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 363, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .icon-format-search {
     color: #fff;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 363, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+  /* line 366, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
   .icon-format-search {
     color: #fff;
   }
 }
 
-/* line 385, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 388, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-format-socials {
   fill: #fff;
   width: 32px;
@@ -5992,7 +6024,7 @@ footer ul li a:hover {
   margin-top: 8%;
 }
 
-/* line 392, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
+/* line 395, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_icons.scss */
 .icon-angle-double-right:before {
   font-size: 10px;
   padding-right: 15px;

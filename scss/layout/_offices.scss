@@ -25,6 +25,8 @@
 
     & a {
         font-weight: 700;
+        
+        
     }
 }
 .page-head {
@@ -83,6 +85,7 @@
     flex-direction: column;
     padding: 30px;
     text-align: left;
+    
 
     & p {
         padding: 0;
@@ -123,3 +126,7 @@
     overflow: hidden;
 }
 
+.active {
+
+}
+    
