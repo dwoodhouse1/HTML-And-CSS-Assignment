@@ -3206,6 +3206,19 @@ footer h4 {
   margin-bottom: -7px;
 }
 
+@media (min-width: 1260px) {
+  /* line 115, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .netmatters-info {
+    width: 33.33%;
+    padding-left: 30px;
+  }
+}
+
+/* line 122, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+.office-addresses {
+  overflow: hidden;
+}
+
 /* line 7, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_img.scss */
 .img-container {
   position: relative;
@@ -3794,6 +3807,26 @@ textarea#message {
 /* line 347, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #form-message {
   height: 100px;
+}
+
+@media (min-width: 1260px) {
+  /* line 351, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-enquiry {
+    width: 66.66%;
+  }
+}
+
+/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1260px) {
+  /* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  .form-section {
+    flex-direction: row-reverse;
+  }
 }
 
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */

@@ -349,9 +349,16 @@
   }
 
   .form-enquiry {
-    
+    @include viewport(x-large) {
+      width: 66.66%;
+    }
   }
 
   .form-section {
-    
+    display: flex;
+    flex-direction: column;
+
+    @include viewport(x-large) {
+      flex-direction: row-reverse;
+    }
   }

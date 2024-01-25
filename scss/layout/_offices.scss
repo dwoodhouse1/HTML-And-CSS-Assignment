@@ -113,6 +113,13 @@
 }
 
 .netmatters-info {
-    
+    @include viewport(x-large) {
+        width: 33.33%;
+        padding-left: 30px;
+    }
+}
+
+.office-addresses {
+    overflow: hidden;
 }
 
