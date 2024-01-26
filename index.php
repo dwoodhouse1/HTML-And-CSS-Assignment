@@ -28,8 +28,7 @@
     
   </head>
   <body>
-    <?php include("php/cookies.php");
-          include("php/latestNews.php") ?>
+    <?php include("php/cookies.php"); ?>
 
     
     
@@ -406,7 +405,7 @@
                   
 
                 </div>
-
+                
               </div>
               <div class="space-between"></div>
               <div class="container">
@@ -421,113 +420,7 @@
                     </h3>
                   </div>
 
-                  <div class="article-content">
-
-                    <div class="article-blocks">
-                      
-                      <div class="block-one">
-                        <a class="article-link" href ="#"></a>
-                        <div class="img-container">
-                          <a href="#" class="btn-tooltip btn-tooltip-one" title="View all: Digital Marketing / News">News</a>
-                          <a class="article-img">
-                            <img src="img/october-notables-2023-m3Ok.png" class ="img-responsive img-container" alt="Gary Cullen - Octobers Notable of the Month">
-                          </a> 
-                        </div>
-                        <div class="block-content">
-                          <h3>
-                            <a href="#">October Notables 2023</a>
-                            <span class="readtime">- 3 minute read</span>
-                          </h3>
-                          <p>At Netmatters, we highly value the dedication and accomplishments of our staff. That is why each and...</p>
-                          <div class="btn btn-news btn-news-one">Read More</div>
-                          
-                          <div class="user">
-                            <div class="avatar">
-                              <img src="img/netmatters-profile.png" class="img-responsive" alt="Netmatters">
-                            </div>
-                            <div class="info">
-                              <strong>Posted by Netmatters</strong> <br>
-                              8th November 2023
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      
-
-                    
-                    
-               
-                    
-                  
-
-                  
-                    
-                      <div class="block-two">
-                        <a class="article-link" href ="#"></a>
-                        <div class="img-container">
-                          <a href="#" class="btn-tooltip btn-tooltip-two" title="View all: Digital Marketing / News">News</a>
-                          <a class="article-img" href="">
-                          <img src="img/dieter-harper-FK2L.png" class ="img-responsive" alt="Dieter Harper">
-                          </a> 
-                        </div>
-                        <div class="block-content">
-                          <h3>
-                            <a href="#">Dieter Harper - Netmatters 5 Year Legend</a>
-                            <span class="readtime">- 3 minute read</span>
-                          </h3>
-                          <p>Today we celebrate the amazing achievements of Dieter Harper as he champions the Netmatters Long Ser...</p>
-                          <div class="btn btn-news btn-news-two">Read More</div>
-                          <div class="user">
-                            <div class="avatar">
-                              <img src="img/netmatters-profile.png" class="img-responsive" alt="Netmatters">
-                            </div>
-                            <div class="info">
-                              <strong>Posted by Netmatters</strong> <br>
-                                7th November 2023
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-
-                    
-
-                    
-                      <div class="block-three">
-                        <a class="article-link" href ="#"></a>
-                        <div class="img-container">
-                          <a href="#" class="btn-tooltip btn-tooltip-three" title="View all: Digital Marketing / News">News</a>
-                          <a class="article-img">
-                          <img src="img/new-langley-web-bhUy.png" class ="img-responsive" alt="New Langley Web Design Project Won">
-                          </a> 
-                        </div>
-                        <div class="block-content">
-                          <h3>
-                            <a href="#">New Langley Web Design Project</a>
-                            <span class="readtime">- 3 minute read</span>
-                          </h3>
-                          <p>The Client Langley is a co-educational, inclusive, day and boarding school based in Norfolk. Establi...</p>
-                          <div class="btn btn-news btn-news-three">Read More</div>
-                          <div class="user">
-                            <div class="avatar">
-                              <img src="img/netmatters-profile.png" class="img-responsive" alt="Netmatters">
-                            </div>
-                            <div class="info">
-                              <strong>Posted by Netmatters</strong> <br>
-                              31st October 2023
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                   
-                  
-
-                  
-                   
-                  </div>
+                  <?php include("php/latestNews.php"); ?>
                   
                 </div>
               </div>

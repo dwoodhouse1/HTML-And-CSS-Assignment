@@ -10,11 +10,10 @@ function getNews()
             '
             SELECT *
             FROM news
-            ORDER BY date DESC
             LIMIT 3 
             '
         );
-        echo 'Query success';
+        //echo 'Query success';
         return $statement->fetchAll();
     }
     catch (PDOException $pe)
@@ -24,15 +23,15 @@ function getNews()
     }
 }
 
-function articleContent($image, $title, $readTime, $info, $authorImage, $authorName, $date, $counter)
+function articleContent($image, $imageAlt, $title, $readTime, $info, $authorImage, $authorName, $date, $counter)
 {
     return '
-    <div class="block' . $counter . '">
+    <div class="block-' . $counter . '">
         <a class="article-link" href ="#"></a>
         <div class="img-container">
-            <a href="#" class="btn-tooltip btn-tooltip-one" title="View all: Digital Marketing / News">News</a>
+            <a href="#" class="btn-tooltip btn-tooltip-'. $counter .'" title="View all: Digital Marketing / News">News</a>
             <a class="article-img">
-            <img src="' . $image . '" class ="img-responsive img-container" alt="Gary Cullen - Octobers Notable of the Month">
+            <img src="' . $image . '" class ="img-responsive img-container" alt="' . $imageAlt . '">
             </a> 
         </div>
         <div class="block-content">
@@ -40,24 +39,44 @@ function articleContent($image, $title, $readTime, $info, $authorImage, $authorN
             <a href="#">' . $title  . '</a>
             <span class="readtime">' . $readTime . '</span>
             </h3>
-            <p>' . $info . '</div>
+            <p>' . $info . '</p>
+            <div class="btn btn-news btn-news-' . $counter . '">Read More</div>
             
             <div class="user">
-            <div class="avatar">
-                <img src="' . $authorImage . '" class="img-responsive" alt="Netmatters">
-            </div>
-            <div class="info">
-                <strong>' . $authorName . '</strong> <br>
-                ' . $date . '
-            </div>
+                <div class="avatar">
+                    <img src="' . $authorImage . '" class="img-responsive" alt="Netmatters">
+                </div>
+                <div class="info">
+                    <strong>' . $authorName . '</strong> <br>
+                    ' . $date . '
+                </div>
             </div>
         </div>
         
     </div>
-    
-    
     ';
 }
-
-
 ?>
+<div class="article-content">
+    <div class="article-blocks">
+        <?php
+            foreach(getNews() as $article)
+            {
+                echo articleContent($article["image"],
+                                    $article["image_alt"], 
+                                    $article["title"], 
+                                    $article["read_time"], 
+                                    $article["info"], 
+                                    $article["author_image"], 
+                                    $article["author_name"], 
+                                    $article["date"], 
+                                    $article["counter"]);
+            }
+        ?>
+    </div>
+</div>
+
+
+    
+       
+  
