@@ -372,3 +372,33 @@
       flex-direction: row-reverse;
     }
   }
+  
+  .form {
+
+    &-name {
+
+      &.error input {
+        border-color: $red;
+      }
+      
+    }
+
+    &-email  {
+      
+      &.error input {
+        border-color: $red;
+      }
+    }
+
+    &-telephone {
+      &.error input {
+        border-color: $red;
+      }
+    }
+
+    &-message {
+      &.error textarea {
+        border-color: $red;
+      }
+    }
+  }

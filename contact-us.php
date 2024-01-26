@@ -1,3 +1,121 @@
+<?php
+    session_start();
+    echo 'SESSION HAS STARTED HEHE';
+    include("php/postData.php");
+
+    if (!isset($_SESSION['success']))
+    {
+        $_SESSION['success'] = false;
+    }
+
+    if (!isset($_SESSION['errorMessage']))
+    {
+        $_SESSION['errorMessage'] = [];
+    }
+
+    function sanatiseInput($input)
+    {
+        $input = htmlspecialchars($input);
+        $input = trim($input);
+        $input = stripslashes($input);
+        return $input;
+    }
+
+    function validateInput($postData, $input, $regex=true)
+    {
+        if (empty($postData) == true)
+        {
+            array_push($_SESSION['errorMessage'], $input . " is empty.");
+            $_SESSION[$input . "-valid"] = false;
+            return false;
+        }
+        else if ($regex == false)
+        {
+            array_push($_SESSION['errorMessage'], $postData . " is not the correct format");
+            $_SESSION[$input . "-valid"] = false;
+            return false;
+        }
+        else
+        {
+            $_SESSION[$input . "-valid"] = true;
+            return true;
+        }
+        
+    }
+
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+
+        // Filering / Sanitising all inputs and storing the values into session variables
+
+        $name = sanatiseInput($_POST['name']);
+        $_SESSION['name'] = $name;
+
+        $company = sanatiseInput($_POST['company']);
+        $_SESSION['company'] = $company;
+
+        $email = sanatiseInput($_POST['email']);
+        $_SESSION['email'] = $email;
+
+        $telephone = sanatiseInput($_POST['telephone']);
+        $_SESSION['telephone'] = $telephone;
+
+        $message = sanatiseInput($_POST['message']);
+        $_SESSION['message'] = $message;
+        
+        $marketing = $_POST['checkbox-marketing'];
+
+        if ($marketing != "no")
+        {
+            $marketing = "yes";
+        }
+
+
+        $_SESSION['name-valid'] = true;
+        $_SESSION['email-valid'] = true;
+        $_SESSION['telephone-valid'] = true;
+        $_SESSION['message-valid'] = true;
+
+        $nameRegex = "/^[a-zA-Z-' ]*$/";
+        $phoneRegex = "/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/";
+
+        //function validateInput($postData, $input, $regex=true)
+        $isNameValid = validateInput($name, "name", preg_match($nameRegex, $name));
+        $isEmailValid = validateInput($email, "email", filter_var($email, FILTER_VALIDATE_EMAIL));
+        $isPhoneValid = validateInput($telephone, "telephone", preg_match($phoneRegex, $telephone));
+        $isMessageValid = validateInput($message, "message");
+
+        if ($isNameValid && $isEmailValid && $isPhoneValid && $isMessageValid)
+        {
+            postData($name, $email, $company, $telephone, $message, $marketing);
+
+            unset($_SESSION['name']);
+            unset($_SESSION['email']);
+            unset($_SESSION['company']);
+            unset($_SESSION['telephone']);
+            unset($_SESSION['message']);
+            unset($_SESSION['marketing']);
+
+            $_SESSION['success'] = true;
+            $_SESSION['errorMessage'] = [];
+
+        }
+
+        header("Location: contact-us.php");
+        echo 'Data submitted to the Database Successfully';
+        exit();
+
+
+
+
+
+
+    }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,31 +300,31 @@
                                 
                             </div>
                             <div class="form-enquiry">
-                                <form method="POST" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">
+                                <form method="POST" accept-charset="UTF-8" id="contact-form" action="contact-us.php" onsubmit="return validateInputs()">
                                     <div class="form-group-flex">
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-name">
                                             <label for="name" class="required">Your Name</label>
                                             <input class="form-control" name="name" type="text" id="form-name">
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-company">
                                             <label for="company">Company Name</label>
                                             <input class="form-control" name="company" type="text" id="form-company">
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-email">
                                             <label for="email" class="required">Your Email</label>
                                             <input class="form-control" name="email" type="text" id="form-email">
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-telephone">
                                             <label for="telephone" class="required">Your Telephone Number</label>
                                             <input class="form-control" name="telephone" type="text" id="form-telephone">
                                         </div>
                                     </div>
                                     
 
-                                    <div class="form-group">
+                                    <div class="form-group form-message">
                                         <label for="message" class="required">Message</label>
                                         <textarea class="form-control" name="message" id="form-message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                             
@@ -214,7 +332,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="newsletter-tickboxarea">
-                                            <input type="checkbox" id="customCheckbox">
+                                            <input type="checkbox" id="customCheckbox" name="checkbox-marketing" value="no">
                                             <span class="label-checkbox icon-check_box"></span>
                                             <span class="media-body">
                                                 Please tick this box if you wish to receive marketing information from us. Please see our 
@@ -234,7 +352,7 @@
                                     </div>
 
                                     <div class="action-block">
-                                        <button class="btn btn-enquiry">Send Enquiry</button>
+                                        <button type="submit" id="btn-enquiry" class="btn btn-enquiry">Send Enquiry</button>
                                         <small class="helper-text">
                                             <span class="text-danger">*</span>
                                             Fields Required
@@ -264,5 +382,6 @@
    <script src="js/cookies.js"></script>
    <script src="js/sidebar.js"></script>
    <script src="js/sticky.js"></script>
+   <script src="js/form-validation.js"></script>
 </body>
 </html>

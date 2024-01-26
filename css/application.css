@@ -3855,6 +3855,26 @@ textarea#message {
   }
 }
 
+/* line 380, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-name.error input {
+  border-color: #d64541;
+}
+
+/* line 388, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-email.error input {
+  border-color: #d64541;
+}
+
+/* line 394, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-telephone.error input {
+  border-color: #d64541;
+}
+
+/* line 400, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-message.error textarea {
+  border-color: #d64541;
+}
+
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */
 #chat-button {
   position: relative;
