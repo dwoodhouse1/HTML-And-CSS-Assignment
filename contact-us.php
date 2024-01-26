@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <?php include("php/cookies.php"); ?>
+    <?php include("php/cookies.php");
+        include("php/dbConnection.php"); ?>
     <div id="container">
         <div class="main">
             <div class="main-outer">
@@ -50,11 +51,11 @@
                                         <p class="h2"><a>London Office</a></p>
                                         <p class="p">Unit G6,
                                             <br>
-                                            Pixel Business Centre
+                                            Pixel Business Centre,
                                             <br>
                                             110 Brooker Road, Waltham Abbey,
                                             <br>
-                                            London
+                                            London,
                                             <br>
                                             EN9 1JH
                                         </p>
@@ -82,7 +83,7 @@
                                             <br>
                                             Cowley Road, Milton,
                                             <br>
-                                            Cambridge
+                                            Cambridge,
                                             <br>
                                             EN9 1JH
                                         </p>

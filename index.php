@@ -28,7 +28,8 @@
     
   </head>
   <body>
-    <?php include("php/cookies.php"); ?>
+    <?php include("php/cookies.php");
+          include("php/latestNews.php") ?>
 
     
     
