@@ -1,21 +1,21 @@
 <?php
 
-    function postData($name, $email, $company, $phone, $message, $marketing)
+    function postData($name, $email, $companyName, $telephone, $message, $marketing)
     {
         include("dbConnection.php");
 
         try {
             $sql = $conn->prepare('
-                INSERT INTO enquiries (name, email, company, phone, message, marketing)
-                VALUES (:name, :email, :company, :phone, :message, :marketing);
+                INSERT INTO enquiries (name, email, company_name, telephone, message, marketing)
+                VALUES (:name, :email, :company_name, :telephone, :message, :marketing);
             ');
 
             $sql->bindValue(":name", $name, PDO::PARAM_STR);
-            $sql->bindValue(":email", $name, PDO::PARAM_STR);
-            $sql->bindValue(":company", $name, PDO::PARAM_STR);
-            $sql->bindValue(":phone", $name, PDO::PARAM_STR);
-            $sql->bindValue(":message", $name, PDO::PARAM_STR);
-            $sql->bindValue(":marketing", $name, PDO::PARAM_STR);
+            $sql->bindValue(":email", $email, PDO::PARAM_STR);
+            $sql->bindValue(":company_name", $companyName, PDO::PARAM_STR);
+            $sql->bindValue(":telephone", $telephone, PDO::PARAM_STR);
+            $sql->bindValue(":message", $message, PDO::PARAM_STR);
+            $sql->bindValue(":marketing", $marketing, PDO::PARAM_STR);
 
 
             $sql->execute();

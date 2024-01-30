@@ -1,18 +1,27 @@
 <?php
+    //include ("php/formSubmission.php");
     session_start();
-    echo 'SESSION HAS STARTED HEHE';
+    //echo 'SESSION HAS STARTED HEHE';
+    include("php/dbConnection.php");
     include("php/postData.php");
-
+    
+    $formSent = false;
     if (!isset($_SESSION['success']))
     {
         $_SESSION['success'] = false;
+      
     }
 
+    if (!isset($_SESSION['form_sent']))
+    {
+        $_SESSION['form_sent'] = false;
+    }
+    
     if (!isset($_SESSION['errorMessage']))
     {
         $_SESSION['errorMessage'] = [];
     }
-
+    
     function sanatiseInput($input)
     {
         $input = htmlspecialchars($input);
@@ -25,13 +34,13 @@
     {
         if (empty($postData) == true)
         {
-            array_push($_SESSION['errorMessage'], $input . " is empty.");
+            array_push($_SESSION['errorMessage'], "Please enter a value into " . $input . ".");
             $_SESSION[$input . "-valid"] = false;
             return false;
         }
         else if ($regex == false)
         {
-            array_push($_SESSION['errorMessage'], $postData . " is not the correct format");
+            array_push($_SESSION['errorMessage'], "The " . $input . " format is incorrect.");
             $_SESSION[$input . "-valid"] = false;
             return false;
         }
@@ -43,11 +52,10 @@
         
     }
 
-
+    
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-
         // Filering / Sanitising all inputs and storing the values into session variables
 
         $name = sanatiseInput($_POST['name']);
@@ -67,11 +75,9 @@
         
         $marketing = $_POST['checkbox-marketing'];
 
-        if ($marketing != "no")
-        {
-            $marketing = "yes";
-        }
+        
 
+        
 
         $_SESSION['name-valid'] = true;
         $_SESSION['email-valid'] = true;
@@ -96,16 +102,21 @@
             unset($_SESSION['company']);
             unset($_SESSION['telephone']);
             unset($_SESSION['message']);
-            unset($_SESSION['marketing']);
 
             $_SESSION['success'] = true;
             $_SESSION['errorMessage'] = [];
 
-        }
+            $_SESSION['form_sent'] = true;
 
-        header("Location: contact-us.php");
-        echo 'Data submitted to the Database Successfully';
-        exit();
+            echo 'Data submitted to the Database Successfully';
+            header("Location: contact-us.php#contact-form");
+        
+            exit();
+
+        }
+        
+        
+        
 
 
 
@@ -133,7 +144,8 @@
 
 <body>
     <?php include("php/cookies.php");
-        include("php/dbConnection.php"); ?>
+         ?>
+        
     <div id="container">
         <div class="main">
             <div class="main-outer">
@@ -287,7 +299,7 @@
                                 <div id="dropdown-accordian">
                                     <h4><strong><a>Out of Hours IT Support&nbsp;</a><span class="icon-chevron-down"></strong></h4>
                                 </div> <!-- Need a new icon here -->
-                                    <div id="dropdown-expand"> <!-- Section needs JS to expand / collapse -->
+                                    <div id="dropdown-expand">
                                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                         <p>
                                             <strong>Monday - Friday 18:00 - 22:00</strong>
@@ -300,39 +312,46 @@
                                 
                             </div>
                             <div class="form-enquiry">
-                                <form method="POST" accept-charset="UTF-8" id="contact-form" action="contact-us.php" onsubmit="return validateInputs()">
+                                <form method="POST" id="contact-form" action="contact-us.php">
+                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else {echo 'error-validating';}  ?>">
+                                        <span><?php if($_SESSION['form_sent'] == true) {echo 'Your Enquiry has been Submitted';} else {echo implode("<br>",$_SESSION['errorMessage']); $_SESSION['errorMessage'] = [];} ?></span>
+                                        <button type="button" class="close">X</button>
+                                    </div>
+
                                     <div class="form-group-flex">
+                                        
                                         <div class="form-group form-group-space-between form-name">
                                             <label for="name" class="required">Your Name</label>
-                                            <input class="form-control" name="name" type="text" id="form-name">
+                                            <input class="form-control" name="name" type="text" id="form-name" value="<?php echo $_SESSION['name'] ?? ''; ?>"> <!-- checking set variable, if set, display this ?? otherwise output this instead -->
                                         </div>
 
                                         <div class="form-group form-group-space-between form-company">
                                             <label for="company">Company Name</label>
-                                            <input class="form-control" name="company" type="text" id="form-company">
+                                            <input class="form-control" name="company" type="text" id="form-company" value="<?php echo $_SESSION['company'] ?? ''?>">
                                         </div>
 
                                         <div class="form-group form-group-space-between form-email">
                                             <label for="email" class="required">Your Email</label>
-                                            <input class="form-control" name="email" type="text" id="form-email">
+                                            <input class="form-control" name="email" type="text" id="form-email" value="<?php echo $_SESSION['email'] ?? ''?>">
                                         </div>
 
                                         <div class="form-group form-group-space-between form-telephone">
                                             <label for="telephone" class="required">Your Telephone Number</label>
-                                            <input class="form-control" name="telephone" type="text" id="form-telephone">
+                                            <input class="form-control" name="telephone" type="text" id="form-telephone" value="<?php echo $_SESSION['telephone'] ?? ''?>">
                                         </div>
                                     </div>
                                     
 
                                     <div class="form-group form-message">
                                         <label for="message" class="required">Message</label>
-                                        <textarea class="form-control" name="message" id="form-message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                        <textarea class="form-control" name="message" id="form-message"><?php echo $_SESSION['message'] ?? 'Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?'?></textarea>
                                             
                                         
                                     </div>
                                     <div class="form-group">
                                         <label class="newsletter-tickboxarea">
-                                            <input type="checkbox" id="customCheckbox" name="checkbox-marketing" value="no">
+                                            <input type="hidden" name="checkbox-marketing" value="no" >
+                                            <input type="checkbox" id="enquiryCheckbox" name="checkbox-marketing" value="yes" >
                                             <span class="label-checkbox icon-check_box"></span>
                                             <span class="media-body">
                                                 Please tick this box if you wish to receive marketing information from us. Please see our 
@@ -352,7 +371,7 @@
                                     </div>
 
                                     <div class="action-block">
-                                        <button type="submit" id="btn-enquiry" class="btn btn-enquiry">Send Enquiry</button>
+                                        <button type="submit" name="submit" id="btn-enquiry" class="btn btn-enquiry">Send Enquiry</button>
                                         <small class="helper-text">
                                             <span class="text-danger">*</span>
                                             Fields Required
@@ -365,8 +384,7 @@
                             
                         </div>
                        
-                    </div>
-                    
+                    </div>                         
                     <?php include("php/newsletter.php"); ?> <!-- Newsletter Content -->
                     <?php include("php/footer.php"); ?> <!-- Footer Content -->
                 </div>

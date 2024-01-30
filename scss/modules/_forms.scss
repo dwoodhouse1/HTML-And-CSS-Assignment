@@ -402,3 +402,34 @@
       }
     }
   }
+
+.error-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: $pink-form-background;
+  color: $red-danger;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid $pink-form-border;
+  border-radius: 2px;
+}
+
+.success-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: $green;
+  color: $red-danger;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid $green-d-hover;
+  border-radius: 2px;
+}
+
+.close {
+  position: relative;
+  
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}

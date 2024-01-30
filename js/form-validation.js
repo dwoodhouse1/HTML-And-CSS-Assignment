@@ -5,6 +5,10 @@ const companyNameEl = document.querySelector("#form-company");
 const emailEl = document.querySelector("#form-email");
 const phoneEl = document.querySelector("#form-telephone");
 const messageEl = document.querySelector("#form-message");
+const btnClose = document.querySelector(".close");
+
+const errorValidation = document.querySelector(".error-validating");
+const successValidation = document.querySelector(".success-validating");
 
 const form = document.querySelector("#contact-form");
 
@@ -121,10 +125,27 @@ const checkPhoneNumber = () => {
     return valid;
 }
 
+btnClose.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (errorValidation != null)
+    {
+        e.target.closest('div.error-validating').remove();
+    }
+    
+    if (successValidation != null)
+    {
+        e.target.closest('div.success-validating').remove();
+    }
+    
+})
 
 
 
-form.addEventListener("submit", function (e){
+
+
+
+/*form.addEventListener("submit", function (e){
     e.preventDefault();
 
     let isNameValid = checkName(),
@@ -141,7 +162,7 @@ form.addEventListener("submit", function (e){
     {
        //PHP code will go here. 
     }
-})
+})*/
 
 
 // Instant Feedback on inputs
@@ -164,5 +185,9 @@ form.addEventListener("input", function (e){
         case "form-message":
             checkMessage();
             break;
+
+        
+            
+
     }
 })
