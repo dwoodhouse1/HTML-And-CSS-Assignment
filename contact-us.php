@@ -1,20 +1,15 @@
 <?php
-    //include ("php/formSubmission.php");
+    
     session_start();
-    //echo 'SESSION HAS STARTED HEHE';
+
     include("php/dbConnection.php");
     include("php/postData.php");
+
+    $pageWasRefreshed = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0'; // Not currently in use
     
-    $formSent = false;
     if (!isset($_SESSION['success']))
     {
         $_SESSION['success'] = false;
-      
-    }
-
-    if (!isset($_SESSION['form_sent']))
-    {
-        $_SESSION['form_sent'] = false;
     }
     
     if (!isset($_SESSION['errorMessage']))
@@ -35,24 +30,19 @@
         if (empty($postData) == true)
         {
             array_push($_SESSION['errorMessage'], "Please enter a value into " . $input . ".");
-            $_SESSION[$input . "-valid"] = false;
             return false;
         }
         else if ($regex == false)
         {
             array_push($_SESSION['errorMessage'], "The " . $input . " format is incorrect.");
-            $_SESSION[$input . "-valid"] = false;
             return false;
         }
         else
         {
-            $_SESSION[$input . "-valid"] = true;
             return true;
         }
         
     }
-
-    
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -75,15 +65,7 @@
         
         $marketing = $_POST['checkbox-marketing'];
 
-        
-
-        
-
-        $_SESSION['name-valid'] = true;
-        $_SESSION['email-valid'] = true;
-        $_SESSION['telephone-valid'] = true;
-        $_SESSION['message-valid'] = true;
-
+ 
         $nameRegex = "/^[a-zA-Z-' ]*$/";
         $phoneRegex = "/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/";
 
@@ -113,6 +95,13 @@
         
             exit();
 
+        }
+        else
+        {
+            $_SESSION['form_sent'] = false;
+            header("Location: contact-us.php#contact-form");
+
+            exit();
         }
         
         
@@ -311,11 +300,11 @@
                                     </div>
                                 
                             </div>
-                            <div class="form-enquiry">
+                            <div class="form-enquiry"> 
                                 <form method="POST" id="contact-form" action="contact-us.php">
-                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else {echo 'error-validating';}  ?>">
-                                        <span><?php if($_SESSION['form_sent'] == true) {echo 'Your Enquiry has been Submitted';} else {echo implode("<br>",$_SESSION['errorMessage']); $_SESSION['errorMessage'] = [];} ?></span>
-                                        <button type="button" class="close">X</button>
+                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else if (!PHP_SESSION_ACTIVE) {echo '';} else  {echo 'error-validating';}  ?>">
+                                        <span><?php if($_SESSION['form_sent'] == true) {echo 'Your Enquiry has been Submitted';} else {echo implode("<br><br>",$_SESSION['errorMessage']); $_SESSION['errorMessage'] = [];} ?></span>
+                                        <button type="button" class="close">×</button>
                                     </div>
 
                                     <div class="form-group-flex">

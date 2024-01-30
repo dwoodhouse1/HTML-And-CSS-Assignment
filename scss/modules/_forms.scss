@@ -302,6 +302,7 @@
 
     @include viewport(375){
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
@@ -417,11 +418,11 @@
 .success-validating {
   display: flex;
   justify-content: space-between;
-  background-color: $green;
-  color: $red-danger;
+  background-color: $green-success-background;
+  color: $green-d;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid $green-d-hover;
+  border: 1px solid $green-success-border;
   border-radius: 2px;
 }
 
