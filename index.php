@@ -1,16 +1,16 @@
 <?php 
-  //load .env file
-  require_once realpath(__DIR__ . "/vendor/autoload.php");
-  use Dotenv\Dotenv;
+  // //load .env file
+  // require_once realpath(__DIR__ . "/vendor/autoload.php");
+  // use Dotenv\Dotenv;
 
-  $dotenv = Dotenv::createImmutable(__DIR__);
-  $dotenv->load();
+  // $dotenv = Dotenv::createImmutable(__DIR__);
+  // $dotenv->load();
 
-  //get app name from .env file
-  $appName = $_ENV['APP_NAME'];
+  // //get app name from .env file
+  // $appName = $_ENV['APP_NAME'];
 
-  //echo the app name
-  //echo $appName;
+  // //echo the app name
+  // //echo $appName;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -600,6 +600,7 @@
               
 
               <?php include("php/newsletter.php"); ?> <!-- Newsletter Content -->
+              <?php include("php/dbConnection.php"); ?>
             </div>
             
             <?php include("php/footer.php"); ?> <!-- Footer Content -->
