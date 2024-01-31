@@ -1,3 +1,121 @@
+<?php
+    
+    session_start();
+
+    include("php/dbConnection.php");
+    include("php/postData.php");
+
+    $pageWasRefreshed = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0'; // Not currently in use
+    
+    if (!isset($_SESSION['success']))
+    {
+        $_SESSION['success'] = false;
+    }
+    
+    if (!isset($_SESSION['errorMessage']))
+    {
+        $_SESSION['errorMessage'] = [];
+    }
+    
+    function sanatiseInput($input)
+    {
+        $input = htmlspecialchars($input);
+        $input = trim($input);
+        $input = stripslashes($input);
+        return $input;
+    }
+
+    function validateInput($postData, $input, $regex=true)
+    {
+        if (empty($postData) == true)
+        {
+            array_push($_SESSION['errorMessage'], "Please enter a value into " . $input . ".");
+            return false;
+        }
+        else if ($regex == false)
+        {
+            array_push($_SESSION['errorMessage'], "The " . $input . " format is incorrect.");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+        
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        // Filering / Sanitising all inputs and storing the values into session variables
+
+        $name = sanatiseInput($_POST['name']);
+        $_SESSION['name'] = $name;
+
+        $company = sanatiseInput($_POST['company']);
+        $_SESSION['company'] = $company;
+
+        $email = sanatiseInput($_POST['email']);
+        $_SESSION['email'] = $email;
+
+        $telephone = sanatiseInput($_POST['telephone']);
+        $_SESSION['telephone'] = $telephone;
+
+        $message = sanatiseInput($_POST['message']);
+        $_SESSION['message'] = $message;
+        
+        $marketing = $_POST['checkbox-marketing'];
+
+ 
+        $nameRegex = "/^[a-zA-Z-' ]*$/";
+        $phoneRegex = "/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/";
+
+        //function validateInput($postData, $input, $regex=true)
+        $isNameValid = validateInput($name, "name", preg_match($nameRegex, $name));
+        $isEmailValid = validateInput($email, "email", filter_var($email, FILTER_VALIDATE_EMAIL));
+        $isPhoneValid = validateInput($telephone, "telephone", preg_match($phoneRegex, $telephone));
+        $isMessageValid = validateInput($message, "message");
+
+        if ($isNameValid && $isEmailValid && $isPhoneValid && $isMessageValid)
+        {
+            postData($name, $email, $company, $telephone, $message, $marketing);
+
+            unset($_SESSION['name']);
+            unset($_SESSION['email']);
+            unset($_SESSION['company']);
+            unset($_SESSION['telephone']);
+            unset($_SESSION['message']);
+
+            $_SESSION['success'] = true;
+            $_SESSION['errorMessage'] = [];
+
+            $_SESSION['form_sent'] = true;
+
+            echo 'Data submitted to the Database Successfully';
+            header("Location: contact-us.php#contact-form");
+        
+            exit();
+
+        }
+        else
+        {
+            $_SESSION['form_sent'] = false;
+            header("Location: contact-us.php#contact-form");
+
+            exit();
+        }
+        
+        
+        
+
+
+
+
+
+
+    }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +132,9 @@
 </head>
 
 <body>
-    <?php include("php/cookies.php"); ?>
+    <?php include("php/cookies.php");
+         ?>
+        
     <div id="container">
         <div class="main">
             <div class="main-outer">
@@ -50,11 +170,11 @@
                                         <p class="h2"><a>London Office</a></p>
                                         <p class="p">Unit G6,
                                             <br>
-                                            Pixel Business Centre
+                                            Pixel Business Centre,
                                             <br>
                                             110 Brooker Road, Waltham Abbey,
                                             <br>
-                                            London
+                                            London,
                                             <br>
                                             EN9 1JH
                                         </p>
@@ -82,7 +202,7 @@
                                             <br>
                                             Cowley Road, Milton,
                                             <br>
-                                            Cambridge
+                                            Cambridge,
                                             <br>
                                             EN9 1JH
                                         </p>
@@ -168,7 +288,7 @@
                                 <div id="dropdown-accordian">
                                     <h4><strong><a>Out of Hours IT Support&nbsp;</a><span class="icon-chevron-down"></strong></h4>
                                 </div> <!-- Need a new icon here -->
-                                    <div id="dropdown-expand"> <!-- Section needs JS to expand / collapse -->
+                                    <div id="dropdown-expand">
                                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                         <p>
                                             <strong>Monday - Friday 18:00 - 22:00</strong>
@@ -180,40 +300,47 @@
                                     </div>
                                 
                             </div>
-                            <div class="form-enquiry">
-                                <form method="POST" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">
+                            <div class="form-enquiry"> 
+                                <form method="POST" id="contact-form" action="contact-us.php">
+                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else if (!PHP_SESSION_ACTIVE) {echo '';} else  {echo 'error-validating';}  ?>">
+                                        <span><?php if($_SESSION['form_sent'] == true) {echo 'Your Enquiry has been Submitted';} else {echo implode("<br><br>",$_SESSION['errorMessage']); $_SESSION['errorMessage'] = [];} ?></span>
+                                        <button type="button" class="close">×</button>
+                                    </div>
+
                                     <div class="form-group-flex">
-                                        <div class="form-group form-group-space-between">
+                                        
+                                        <div class="form-group form-group-space-between form-name">
                                             <label for="name" class="required">Your Name</label>
-                                            <input class="form-control" name="name" type="text" id="form-name">
+                                            <input class="form-control" name="name" type="text" id="form-name" value="<?php echo $_SESSION['name'] ?? ''; ?>"> <!-- checking set variable, if set, display this ?? otherwise output this instead -->
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-company">
                                             <label for="company">Company Name</label>
-                                            <input class="form-control" name="company" type="text" id="form-company">
+                                            <input class="form-control" name="company" type="text" id="form-company" value="<?php echo $_SESSION['company'] ?? ''?>">
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-email">
                                             <label for="email" class="required">Your Email</label>
-                                            <input class="form-control" name="email" type="text" id="form-email">
+                                            <input class="form-control" name="email" type="text" id="form-email" value="<?php echo $_SESSION['email'] ?? ''?>">
                                         </div>
 
-                                        <div class="form-group form-group-space-between">
+                                        <div class="form-group form-group-space-between form-telephone">
                                             <label for="telephone" class="required">Your Telephone Number</label>
-                                            <input class="form-control" name="telephone" type="text" id="form-telephone">
+                                            <input class="form-control" name="telephone" type="text" id="form-telephone" value="<?php echo $_SESSION['telephone'] ?? ''?>">
                                         </div>
                                     </div>
                                     
 
-                                    <div class="form-group">
+                                    <div class="form-group form-message">
                                         <label for="message" class="required">Message</label>
-                                        <textarea class="form-control" name="message" id="form-message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                        <textarea class="form-control" name="message" id="form-message"><?php echo $_SESSION['message'] ?? 'Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?'?></textarea>
                                             
                                         
                                     </div>
                                     <div class="form-group">
                                         <label class="newsletter-tickboxarea">
-                                            <input type="checkbox" id="customCheckbox">
+                                            <input type="hidden" name="checkbox-marketing" value="no" >
+                                            <input type="checkbox" id="enquiryCheckbox" name="checkbox-marketing" value="yes" >
                                             <span class="label-checkbox icon-check_box"></span>
                                             <span class="media-body">
                                                 Please tick this box if you wish to receive marketing information from us. Please see our 
@@ -233,7 +360,7 @@
                                     </div>
 
                                     <div class="action-block">
-                                        <button class="btn btn-enquiry">Send Enquiry</button>
+                                        <button type="submit" name="submit" id="btn-enquiry" class="btn btn-enquiry">Send Enquiry</button>
                                         <small class="helper-text">
                                             <span class="text-danger">*</span>
                                             Fields Required
@@ -246,8 +373,7 @@
                             
                         </div>
                        
-                    </div>
-                    
+                    </div>                         
                     <?php include("php/newsletter.php"); ?> <!-- Newsletter Content -->
                     <?php include("php/footer.php"); ?> <!-- Footer Content -->
                 </div>
@@ -263,5 +389,6 @@
    <script src="js/cookies.js"></script>
    <script src="js/sidebar.js"></script>
    <script src="js/sticky.js"></script>
+   <script src="js/form-validation.js"></script>
 </body>
 </html>

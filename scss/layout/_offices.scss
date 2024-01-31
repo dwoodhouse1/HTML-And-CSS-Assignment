@@ -123,7 +123,16 @@
 }
 
 .office-addresses {
-    overflow: hidden;
+
+
+    @include viewport(large) {
+        
+        height: 1640px;
+    }
+    @include viewport(x-large) {
+        width: 1170px;
+        height: 1732px;
+    }
 }
 
 .active {

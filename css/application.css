@@ -237,6 +237,11 @@ u {
   }
 }
 
+/* line 196, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/base/_base.scss */
+.hidden-all {
+  display: none;
+}
+
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_container.scss */
 #container {
   position: relative;
@@ -289,12 +294,6 @@ u {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* line 72, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_container.scss */
-.container::before {
-  content: " ";
-  display: table;
 }
 
 /* line 77, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_container.scss */
@@ -3224,9 +3223,19 @@ footer h4 {
   }
 }
 
-/* line 125, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
-.office-addresses {
-  overflow: hidden;
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 125, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .office-addresses {
+    height: 1640px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 125, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/layout/_offices.scss */
+  .office-addresses {
+    width: 1170px;
+    height: 1732px;
+  }
 }
 
 /* line 7, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_img.scss */
@@ -3767,92 +3776,146 @@ input[type="checkbox"]:checked + .label-checkbox::before {
   /* line 297, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .action-block {
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
-/* line 308, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 309, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .text-danger {
   color: #a94442;
 }
 
-/* line 312, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 313, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 textarea#message {
   min-height: 100px;
   height: 100px;
 }
 
-/* line 317, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 318, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .netmatters-info p a {
   color: #333645;
   cursor: pointer;
 }
 
-/* line 322, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 323, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #dropdown-accordian {
   cursor: pointer;
 }
 
-/* line 324, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 325, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #dropdown-accordian h4 a {
   color: #333645;
 }
 
-/* line 327, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 328, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #dropdown-accordian h4 a:hover {
   text-decoration: underline;
 }
 
-/* line 333, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 334, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #dropdown-accordian span {
   color: #333645;
 }
 
-/* line 338, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 339, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #dropdown-expand {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
-/* line 344, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 345, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .text-web {
   color: #926fb1 !important;
 }
 
-/* line 348, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 349, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a {
   font-weight: 700;
 }
 
-/* line 350, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 351, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .tel a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 357, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 358, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 #form-message {
   height: 100px;
 }
 
 @media (min-width: 1260px) {
-  /* line 361, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 362, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-enquiry {
     width: 66.66%;
   }
 }
 
-/* line 367, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+/* line 368, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
 .form-section {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 1260px) {
-  /* line 367, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+  /* line 368, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
   .form-section {
     flex-direction: row-reverse;
   }
+}
+
+/* line 381, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-name.error input {
+  border-color: #d64541;
+}
+
+/* line 389, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-email.error input {
+  border-color: #d64541;
+}
+
+/* line 395, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-telephone.error input {
+  border-color: #d64541;
+}
+
+/* line 401, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.form-message.error textarea {
+  border-color: #d64541;
+}
+
+/* line 407, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.error-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ebccd1;
+  border-radius: 2px;
+}
+
+/* line 418, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.success-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddffdd;
+  color: #00b67b;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #9ae9b2;
+  border-radius: 2px;
+}
+
+/* line 429, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_forms.scss */
+.close {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 
 /* line 5, ../../xampp/htdocs/HTML-And-CSS-Assignment/scss/modules/_buttons.scss */

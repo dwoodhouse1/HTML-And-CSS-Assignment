@@ -302,6 +302,7 @@
 
     @include viewport(375){
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
@@ -372,3 +373,64 @@
       flex-direction: row-reverse;
     }
   }
+  
+  .form {
+
+    &-name {
+
+      &.error input {
+        border-color: $red;
+      }
+      
+    }
+
+    &-email  {
+      
+      &.error input {
+        border-color: $red;
+      }
+    }
+
+    &-telephone {
+      &.error input {
+        border-color: $red;
+      }
+    }
+
+    &-message {
+      &.error textarea {
+        border-color: $red;
+      }
+    }
+  }
+
+.error-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: $pink-form-background;
+  color: $red-danger;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid $pink-form-border;
+  border-radius: 2px;
+}
+
+.success-validating {
+  display: flex;
+  justify-content: space-between;
+  background-color: $green-success-background;
+  color: $green-d;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid $green-success-border;
+  border-radius: 2px;
+}
+
+.close {
+  position: relative;
+  
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
