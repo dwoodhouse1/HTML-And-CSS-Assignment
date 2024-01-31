@@ -1,5 +1,4 @@
 <?php
-    
     session_start();
 
     include("php/dbConnection.php");
@@ -302,7 +301,7 @@
                             </div>
                             <div class="form-enquiry"> 
                                 <form method="POST" id="contact-form" action="contact-us.php">
-                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else if (!PHP_SESSION_ACTIVE) {echo '';} else  {echo 'error-validating';}  ?>">
+                                    <div class="hidden-all <?php if ($_SESSION['form_sent'] == true) {echo 'success-validating';} else if (!empty($_SESSION['errorMessage'])){echo 'error-validating';}   else {echo '';}   ?>">
                                         <span><?php if($_SESSION['form_sent'] == true) {echo 'Your Enquiry has been Submitted';} else {echo implode("<br><br>",$_SESSION['errorMessage']); $_SESSION['errorMessage'] = [];} ?></span>
                                         <button type="button" class="close">×</button>
                                     </div>
