@@ -11,5 +11,7 @@ Assessment Review for JS section:
     - If running locally without a localhost server or webserver, document.cookie doesn't work with Chrome / Edge security protocols (it does work with Firefox).
      
 
+Assessment PHP section:
 
+- 'contact-us.php' file displays empty error message box once loaded for the first time (on cPanel, on local it doesn't).
 
