@@ -11,7 +11,7 @@
     
     &-header {
     
-    & img {
+        & img {
             opacity: .5;
 
             @include viewport(large) {
