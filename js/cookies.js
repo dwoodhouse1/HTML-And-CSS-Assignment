@@ -9,7 +9,7 @@ let testDate = new Date();
 console.log(testDate);
 btnAcceptCookies.click(() => {
     cookieSection.hide();
-    setCookie("cookie", true, 1); // number is minutes
+    setCookie("cookie", true, 1); // number is days
     
     webPage.css("overflow", "auto");
     console.log("cookie should be stored now");

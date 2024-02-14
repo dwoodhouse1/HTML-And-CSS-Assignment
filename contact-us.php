@@ -10,6 +10,11 @@
     {
         $_SESSION['success'] = false;
     }
+
+    if (!isset($_SESSION['form_sent']))
+    {
+        $_SESSION['form_sent'] = false;
+    }
     
     if (!isset($_SESSION['errorMessage']))
     {
