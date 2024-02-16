@@ -9,7 +9,7 @@
                   <div class="header-row">
 
                     <div class="logo-container">
-                      <a class="logo" href="#">
+                      <a class="logo" href="index.php">
                         <img src="img/netmatters-logo-black.png" alt="Netmatters Logo">
                       </a>
                     </div>

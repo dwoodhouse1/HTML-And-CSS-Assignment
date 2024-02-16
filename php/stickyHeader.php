@@ -11,7 +11,7 @@
             <div class="header-row">
 
               <div class="logo-container">
-                <a class="logo" href="#">
+                <a class="logo" href="index.php">
                   <img src="img/netmatters-logo-black.png" alt="Netmatters Logo">
                 </a>
               </div>
@@ -26,12 +26,14 @@
                 </div>
 
                 <div class="hidden-sm hidden-md">
-                  <button type="button" class="btn btn-help btn-help-contact">
-                    <span class="pull-left">
-                      <span class="icon-paperplane plane"></span>
-                    </span>
-                    Contact
-                  </button>
+                  <a href="contact-us.php">
+                    <button type="button" class="btn btn-help btn-help-contact">
+                      <span class="pull-left">
+                        <span class="icon-paperplane plane"></span>
+                      </span>
+                      Contact
+                    </button>
+                  </a>
                 </div>
                 
                 <div class="hidden-sm visible-md">

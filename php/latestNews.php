@@ -8,8 +8,8 @@ function getNews()
         $conn = new PDO("mysql:host=$host;dbname=$dbname;", $username);
         $statement = $conn->query(
             '
-            SELECT *
-            FROM news
+            SELECT * FROM news
+            ORDER BY date DESC
             LIMIT 3 
             '
         );
